@@ -1,0 +1,221 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="2.0" xmlns:edmx="http://schemas.microsoft.com/ado/2008/10/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="ProductsDBModel.Store" Alias="Self" Provider="System.Data.SqlServerCe.4.0" ProviderManifestToken="4.0" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+        <EntityContainer Name="ProductsDBModelStoreContainer">
+          <EntitySet Name="tblBUnits" EntityType="ProductsDBModel.Store.tblBUnits" store:Type="Tables" />
+          <EntitySet Name="tblCables" EntityType="ProductsDBModel.Store.tblCables" store:Type="Tables" />
+          <EntitySet Name="tblComponents" EntityType="ProductsDBModel.Store.tblComponents" store:Type="Tables" />
+          <EntitySet Name="tblImages" EntityType="ProductsDBModel.Store.tblImages" store:Type="Tables" />
+          <EntitySet Name="tblSoftware" EntityType="ProductsDBModel.Store.tblSoftware" store:Type="Tables" />
+        </EntityContainer>
+        <EntityType Name="tblBUnits">
+          <Key>
+            <PropertyRef Name="BUnitsID" />
+          </Key>
+          <Property Name="BUnitsID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="BUnitsName" Type="nvarchar" Nullable="false" MaxLength="100" />
+          <Property Name="BUnitsType" Type="nvarchar" Nullable="false" MaxLength="50" />
+          <Property Name="BUnitsDetails" Type="nvarchar" Nullable="false" MaxLength="500" />
+          <Property Name="BUnitsStock" Type="int" Nullable="false" />
+          <Property Name="BUnitsPrice" Type="money" Nullable="false" />
+        </EntityType>
+        <EntityType Name="tblCables">
+          <Key>
+            <PropertyRef Name="CablesID" />
+          </Key>
+          <Property Name="CablesID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="CablesName" Type="nvarchar" Nullable="false" MaxLength="100" />
+          <Property Name="CablesType" Type="nvarchar" Nullable="false" MaxLength="50" />
+          <Property Name="CablesDetails" Type="nvarchar" Nullable="false" MaxLength="500" />
+          <Property Name="CablesStock" Type="int" Nullable="false" />
+          <Property Name="CablesPrice" Type="money" Nullable="false" />
+        </EntityType>
+        <EntityType Name="tblComponents">
+          <Key>
+            <PropertyRef Name="ComponentsID" />
+          </Key>
+          <Property Name="ComponentsID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="ComponentsName" Type="nvarchar" Nullable="false" MaxLength="100" />
+          <Property Name="ComponentsType" Type="nvarchar" Nullable="false" MaxLength="50" />
+          <Property Name="ComponentsDetails" Type="nvarchar" Nullable="false" MaxLength="500" />
+          <Property Name="ComponentsStock" Type="int" Nullable="false" />
+          <Property Name="ComponentsPrice" Type="money" Nullable="false" />
+        </EntityType>
+        <EntityType Name="tblImages">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="Extension" Type="nvarchar" Nullable="false" MaxLength="4" />
+          <Property Name="AltText" Type="ntext" Nullable="false" />
+          <Property Name="Width" Type="int" />
+          <Property Name="Height" Type="int" />
+        </EntityType>
+        <EntityType Name="tblSoftware">
+          <Key>
+            <PropertyRef Name="SoftwareID" />
+          </Key>
+          <Property Name="SoftwareID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="SoftwareName" Type="nvarchar" Nullable="false" MaxLength="100" />
+          <Property Name="SoftwareType" Type="nvarchar" Nullable="false" MaxLength="50" />
+          <Property Name="SoftwareDetails" Type="nvarchar" Nullable="false" MaxLength="500" />
+          <Property Name="SoftwareStock" Type="int" Nullable="false" />
+          <Property Name="SoftwarePrice" Type="money" Nullable="false" />
+        </EntityType>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="ProductsDBModel" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+        <EntityContainer Name="ProductsDBEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="tblBUnits" EntityType="ProductsDBModel.tblBUnit" />
+          <EntitySet Name="tblCables" EntityType="ProductsDBModel.tblCable" />
+          <EntitySet Name="tblComponents" EntityType="ProductsDBModel.tblComponent" />
+          <EntitySet Name="tblImages" EntityType="ProductsDBModel.tblImage" />
+          <EntitySet Name="tblSoftwares" EntityType="ProductsDBModel.tblSoftware" />
+        </EntityContainer>
+        <EntityType Name="tblBUnit">
+          <Key>
+            <PropertyRef Name="BUnitsID" />
+          </Key>
+          <Property Name="BUnitsID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="BUnitsName" Type="String" Nullable="false" MaxLength="100" Unicode="true" FixedLength="false" />
+          <Property Name="BUnitsType" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="BUnitsDetails" Type="String" Nullable="false" MaxLength="500" Unicode="true" FixedLength="false" />
+          <Property Name="BUnitsStock" Type="Int32" Nullable="false" />
+          <Property Name="BUnitsPrice" Type="Decimal" Nullable="false" Precision="19" Scale="4" />
+        </EntityType>
+        <EntityType Name="tblCable">
+          <Key>
+            <PropertyRef Name="CablesID" />
+          </Key>
+          <Property Name="CablesID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="CablesName" Type="String" Nullable="false" MaxLength="100" Unicode="true" FixedLength="false" />
+          <Property Name="CablesType" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="CablesDetails" Type="String" Nullable="false" MaxLength="500" Unicode="true" FixedLength="false" />
+          <Property Name="CablesStock" Type="Int32" Nullable="false" />
+          <Property Name="CablesPrice" Type="Decimal" Nullable="false" Precision="19" Scale="4" />
+        </EntityType>
+        <EntityType Name="tblComponent">
+          <Key>
+            <PropertyRef Name="ComponentsID" />
+          </Key>
+          <Property Name="ComponentsID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="ComponentsName" Type="String" Nullable="false" MaxLength="100" Unicode="true" FixedLength="false" />
+          <Property Name="ComponentsType" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="ComponentsDetails" Type="String" Nullable="false" MaxLength="500" Unicode="true" FixedLength="false" />
+          <Property Name="ComponentsStock" Type="Int32" Nullable="false" />
+          <Property Name="ComponentsPrice" Type="Decimal" Nullable="false" Precision="19" Scale="4" />
+        </EntityType>
+        <EntityType Name="tblImage">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Extension" Type="String" Nullable="false" MaxLength="4" Unicode="true" FixedLength="false" />
+          <Property Name="AltText" Type="String" Nullable="false" MaxLength="Max" Unicode="true" FixedLength="false" />
+          <Property Name="Width" Type="Int32" />
+          <Property Name="Height" Type="Int32" />
+        </EntityType>
+        <EntityType Name="tblSoftware">
+          <Key>
+            <PropertyRef Name="SoftwareID" />
+          </Key>
+          <Property Name="SoftwareID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="SoftwareName" Type="String" Nullable="false" MaxLength="100" Unicode="true" FixedLength="false" />
+          <Property Name="SoftwareType" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="SoftwareDetails" Type="String" Nullable="false" MaxLength="500" Unicode="true" FixedLength="false" />
+          <Property Name="SoftwareStock" Type="Int32" Nullable="false" />
+          <Property Name="SoftwarePrice" Type="Decimal" Nullable="false" Precision="19" Scale="4" />
+        </EntityType>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="ProductsDBModelStoreContainer" CdmEntityContainer="ProductsDBEntities">
+          <EntitySetMapping Name="tblBUnits">
+            <EntityTypeMapping TypeName="ProductsDBModel.tblBUnit">
+              <MappingFragment StoreEntitySet="tblBUnits">
+                <ScalarProperty Name="BUnitsID" ColumnName="BUnitsID" />
+                <ScalarProperty Name="BUnitsName" ColumnName="BUnitsName" />
+                <ScalarProperty Name="BUnitsType" ColumnName="BUnitsType" />
+                <ScalarProperty Name="BUnitsDetails" ColumnName="BUnitsDetails" />
+                <ScalarProperty Name="BUnitsStock" ColumnName="BUnitsStock" />
+                <ScalarProperty Name="BUnitsPrice" ColumnName="BUnitsPrice" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="tblCables">
+            <EntityTypeMapping TypeName="ProductsDBModel.tblCable">
+              <MappingFragment StoreEntitySet="tblCables">
+                <ScalarProperty Name="CablesID" ColumnName="CablesID" />
+                <ScalarProperty Name="CablesName" ColumnName="CablesName" />
+                <ScalarProperty Name="CablesType" ColumnName="CablesType" />
+                <ScalarProperty Name="CablesDetails" ColumnName="CablesDetails" />
+                <ScalarProperty Name="CablesStock" ColumnName="CablesStock" />
+                <ScalarProperty Name="CablesPrice" ColumnName="CablesPrice" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="tblComponents">
+            <EntityTypeMapping TypeName="ProductsDBModel.tblComponent">
+              <MappingFragment StoreEntitySet="tblComponents">
+                <ScalarProperty Name="ComponentsID" ColumnName="ComponentsID" />
+                <ScalarProperty Name="ComponentsName" ColumnName="ComponentsName" />
+                <ScalarProperty Name="ComponentsType" ColumnName="ComponentsType" />
+                <ScalarProperty Name="ComponentsDetails" ColumnName="ComponentsDetails" />
+                <ScalarProperty Name="ComponentsStock" ColumnName="ComponentsStock" />
+                <ScalarProperty Name="ComponentsPrice" ColumnName="ComponentsPrice" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="tblImages">
+            <EntityTypeMapping TypeName="ProductsDBModel.tblImage">
+              <MappingFragment StoreEntitySet="tblImages">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="Extension" ColumnName="Extension" />
+                <ScalarProperty Name="AltText" ColumnName="AltText" />
+                <ScalarProperty Name="Width" ColumnName="Width" />
+                <ScalarProperty Name="Height" ColumnName="Height" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="tblSoftwares">
+            <EntityTypeMapping TypeName="ProductsDBModel.tblSoftware">
+              <MappingFragment StoreEntitySet="tblSoftware">
+                <ScalarProperty Name="SoftwareID" ColumnName="SoftwareID" />
+                <ScalarProperty Name="SoftwareName" ColumnName="SoftwareName" />
+                <ScalarProperty Name="SoftwareType" ColumnName="SoftwareType" />
+                <ScalarProperty Name="SoftwareDetails" ColumnName="SoftwareDetails" />
+                <ScalarProperty Name="SoftwareStock" ColumnName="SoftwareStock" />
+                <ScalarProperty Name="SoftwarePrice" ColumnName="SoftwarePrice" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2008/10/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="True" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="True" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>
