@@ -4,6 +4,8 @@
     <description>
         An app to show the latest food trails around the UK.
     </description>
+	<icon src="Images/icon.png" />
+	
     <author email="cw2pol@gmail.com" href="http://cordova.io">
         University Of Chester
     </author>
