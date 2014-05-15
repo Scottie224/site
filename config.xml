@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="org.coenraets.workshop" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+    <name>Great British Food Trails</name>
+    <description>
+        An app to show the latest food trails around the UK.
+    </description>
+    <author email="cw2pol@gmail.com" href="http://cordova.io">
+        University Of Chester
+    </author>
+    <content src="index.html" />
+    <access origin="*" />
+</widget>
