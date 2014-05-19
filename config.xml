@@ -11,8 +11,6 @@
     </author>
     <content src="index.html" />
   <preference name="stay-in-webview" value="false" />
-
-  <gap:plugin name="org.apache.cordova.inappbrowser" version="0.3.3" />
   
     <access origin="http://127.0.0.1*" />
 </widget>
