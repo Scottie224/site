@@ -6,9 +6,13 @@
     </description>
 	<icon src="Images/icon.png" />
 	
-    <author email="cw2pol@gmail.com" href="http://cordova.io">
-        University Of Chester
+    <author email="cw2pol@gmail.com" href="http://www.informaticscentre.co.uk/">
+        Informatics Centre
     </author>
     <content src="index.html" />
-    <access origin="*" />
+  <preference name="stay-in-webview" value="false" />
+
+  <gap:plugin name="org.apache.cordova.inappbrowser" version="0.3.3" />
+  
+    <access origin="http://127.0.0.1*" />
 </widget>

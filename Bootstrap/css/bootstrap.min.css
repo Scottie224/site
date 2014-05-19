@@ -4948,9 +4948,30 @@ th.visible-print, td.visible-print {
 }
 }
 .footer {
-	background-color: #ddd4d4;
-	opacity: 0.75;
-	display: inline-block;
-	height: 37px;
+	text-align:center;
+	border:10px solid black;
+	height: 60px;
 	width: auto;
+}
+
+.infoleft {
+	width:37px;
+	height:37px;
+	border:5px solid blue;
+	float:left;
+}
+
+.copyright {
+	width:300px;
+	height:auto;
+	border:5px solid red;
+	float:left;
+	margin-left:480px;
+}
+
+.chesterlogo {
+	width:87px;
+	height:35px;
+	border:5px solid green;
+	float:right;
 }

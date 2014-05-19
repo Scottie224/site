@@ -64,9 +64,18 @@
 </div>
 <!-- #EndEditable -->
 <div class="footer">
-	<img alt="Informatics Centre" height="37" src="Images/ic_logo.png" width="37" />
+<div class="infoleft">
+<img alt="Informatics Centre" id="infocentrelogo" height="37" src="Images/ic_logo.png" width="37" />
+</div>
+
+<div class="copyright">
 	<p>Copyright 2014</p>
-	<img alt="University of Chester" height="35" src="Images/chesteruni_logo.png" width="87" />
+	</div>
+	
+<div class="chesterlogo">
+<img alt="University of Chester" id="chesterlogo" height="35" src="Images/chesteruni_logo.png" width="87" />
+</div>
+	
 </div>
 
 </body>
