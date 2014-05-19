@@ -15,9 +15,11 @@
 <script src="Bootstrap/js/dropdown.js"></script>
 <script src="cordova.js"></script>
 
-
+<script>
 function openDeviceBrowser (externalLinkToOpen){ window.open(externalLinkToOpen, 
 '_system', 'location=no');}
+
+</script>
 
 
 </head>
