@@ -22,7 +22,7 @@
 	<div class="container-fluid">
 		<!-- Brand and toggle get grouped for better mobile display -->
 		<div class="navbar-header">
-			<button class="navbar-toggle" data-target="#bs-example-navbar-collapse-1" data-toggle="collapse" type="button">
+			<button class="navbar-toggle" data-target="#bs-example-navbar-collapse-1" data-toggle="collapse" type="button" onclick="background-color:blue;">
 			<span class="sr-only">Toggle navigation</span>
 			<span class="icon-bar"></span><span class="icon-bar"></span>
 			<span class="icon-bar"></span></button>
@@ -63,21 +63,29 @@
 <div>
 </div>
 <!-- #EndEditable -->
+
 <div class="footer">
-<div class="infoleft">
+
+<div class="infocentrelogo">
+
 <img alt="Informatics Centre" id="infocentrelogo" height="37" src="Images/ic_logo.png" width="37" />
+
 </div>
 
-<div class="copyright">
-	<p>Copyright 2014</p>
-	</div>
-	
+© Copyright 2014
+
 <div class="chesterlogo">
+
 <img alt="University of Chester" id="chesterlogo" height="35" src="Images/chesteruni_logo.png" width="87" />
-</div>
-	
+
 </div>
 
+
+
+
+</div>
+
+	
 </body>
 
 </html>

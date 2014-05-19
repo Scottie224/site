@@ -238,7 +238,8 @@ a {
 }
 a:hover, a:focus {
 	color: #2a6496;
-	text-decoration: underline;
+	text-decoration: none;
+	font-weight:bold;
 }
 a:focus {
 	outline: thin dotted;
@@ -3144,6 +3145,7 @@ textarea.input-group-sm > .form-control, textarea.input-group-sm > .input-group-
 	font-size: 18px;
 	line-height: 20px;
 	height: 50px;
+	text-align:center;
 }
 .navbar-brand:hover, .navbar-brand:focus {
 	text-decoration: none;
@@ -3189,6 +3191,7 @@ textarea.input-group-sm > .form-control, textarea.input-group-sm > .input-group-
 	padding-top: 10px;
 	padding-bottom: 10px;
 	line-height: 20px;
+
 }
 @media (max-width:767px){
 .navbar-nav .open .dropdown-menu {
@@ -3221,6 +3224,7 @@ textarea.input-group-sm > .form-control, textarea.input-group-sm > .input-group-
 .navbar-nav > li > a {
 	padding-top: 15px;
 	padding-bottom: 15px;
+	
 }
 .navbar-nav.navbar-right:last-child {
 	margin-right: -15px;
@@ -4047,6 +4051,7 @@ a.list-group-item-danger.active, a.list-group-item-danger.active:hover, a.list-g
 	margin:20px;
 	padding:5px;
 }
+
 .panel-body {
 	padding: 15px;
 	color: black;
@@ -4062,6 +4067,7 @@ a.list-group-item-danger.active, a.list-group-item-danger.active:hover, a.list-g
 	opacity:0.80;
 	border-radius:10px;
 }
+
 .panel-heading {
 	padding: 10px 15px;
 	border-bottom: 1px solid transparent;
@@ -4069,6 +4075,7 @@ a.list-group-item-danger.active, a.list-group-item-danger.active:hover, a.list-g
 	border:2px solid transparent;
 	text-align:center;
 }
+
 .panel-heading > .dropdown .dropdown-toggle {
 	color: inherit;
 }
@@ -4182,7 +4189,7 @@ a.list-group-item-danger.active, a.list-group-item-danger.active:hover, a.list-g
 .panel-default {
 	border-color: #ddd;
 }
-.panel-default > .panel-heading {
+.panel-default > .panel-heading { /*Trail buttons*/
 	color: black;
 	border-color: black;
 	background: rgb(192,175,175); /* Old browsers */
@@ -4949,29 +4956,26 @@ th.visible-print, td.visible-print {
 }
 .footer {
 	text-align:center;
-	border:10px solid black;
-	height: 60px;
+	font-weight:bold;
+	height: 57px;
 	width: auto;
+	background: rgb(192,175,175); /* Old browsers */
+	background: -moz-linear-gradient(top,  rgba(192,175,175,1) 0%, rgba(255,255,255,1) 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(192,175,175,1)), color-stop(100%,rgba(255,255,255,1))); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  rgba(192,175,175,1) 0%,rgba(255,255,255,1) 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  rgba(192,175,175,1) 0%,rgba(255,255,255,1) 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  rgba(192,175,175,1) 0%,rgba(255,255,255,1) 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  rgba(192,175,175,1) 0%,rgba(255,255,255,1) 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c0afaf', endColorstr='#ffffff',GradientType=0 ); /* IE6-9 */
+	opacity:0.80;
+	padding:10px;
+
 }
 
-.infoleft {
-	width:37px;
-	height:37px;
-	border:5px solid blue;
+.infocentrelogo {
 	float:left;
-}
-
-.copyright {
-	width:300px;
-	height:auto;
-	border:5px solid red;
-	float:left;
-	margin-left:480px;
 }
 
 .chesterlogo {
-	width:87px;
-	height:35px;
-	border:5px solid green;
 	float:right;
 }
