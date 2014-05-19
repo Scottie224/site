@@ -16,6 +16,13 @@
 <script src="Bootstrap/js/collapse.js"></script>
 <script src="Bootstrap/js/carousel.js"></script>
 <script src="Bootstrap/js/dropdown.js"></script>
+
+
+function loadURL(url){
+    navigator.app.loadUrl(url, { openExternal:true });
+    return false;
+}
+
 </head>
 
 <body>
@@ -72,7 +79,7 @@
         <div class="panel panel-default">
             <div class="panel-heading">
                 <h4 class="panel-title">
-                <a href="http://www.ribblevalleyfoodtrail.com/">Ribble Valley Food Trail</a>
+                <a href="loadURL('http://www.ribblevalleyfoodtrail.com/')">Ribble Valley Food Trail</a>
                 </h4>
             </div>
         </div>
