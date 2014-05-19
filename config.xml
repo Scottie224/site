@@ -11,5 +11,5 @@
     </author>
     <content src="index.html" />
   
-    <access origin="*" browserOnly="true"/>
+    <access origin="*"/>
 </widget>
