@@ -11,11 +11,17 @@
 <!-- #BeginEditable "doctitle" -->
 <title>Untitled 1</title>
 <!-- #EndEditable -->
-
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 <script src="Bootstrap/js/collapse.js"></script>
 <script src="Bootstrap/js/carousel.js"></script>
 <script src="Bootstrap/js/dropdown.js"></script>
+<script src="cordova.js"></script>
+
+
+function openDeviceBrowser (externalLinkToOpen){ window.open(externalLinkToOpen, 
+'_system', 'location=no');}
+
+
 </head>
 
 <body>
@@ -24,11 +30,12 @@
 	<div class="container-fluid">
 		<!-- Brand and toggle get grouped for better mobile display -->
 		<div class="navbar-header">
-			<button class="navbar-toggle" data-target="#bs-example-navbar-collapse-1" data-toggle="collapse" type="button" onclick="background-color:blue;">
+			<button class="navbar-toggle" data-target="#bs-example-navbar-collapse-1" data-toggle="collapse" onclick="background-color:blue;" type="button">
 			<span class="sr-only">Toggle navigation</span>
 			<span class="icon-bar"></span><span class="icon-bar"></span>
 			<span class="icon-bar"></span></button>
-			<a class="navbar-brand" href="Trails.html">Great British Food Trail</a> </div>
+			<a class="navbar-brand" href="Trails.html">Great British Food Trail</a>
+		</div>
 		<!-- Collect the nav links, forms, and other content for toggling -->
 		<div id="bs-example-navbar-collapse-1" class="collapse navbar-collapse">
 			<form class="navbar-form navbar-left" role="search">
@@ -116,6 +123,9 @@
 
 
 
+
+
+
       html { height: 100% }
       body { height: 100%; margin: 0; padding: 0 }
       #map-canvas { height: 100% }
@@ -136,29 +146,16 @@
     </script>
     </div>
 <!-- #EndEditable -->
-
 <div class="footer">
-
-<div class="infocentrelogo">
-
-<img alt="Informatics Centre" id="infocentrelogo" height="37" src="Images/ic_logo.png" width="37" />
-
+	<div class="infocentrelogo">
+		<img id="infocentrelogo" alt="Informatics Centre" height="37" src="Images/ic_logo.png" width="37" />
+	</div>
+	© Copyright 2014
+	<div class="chesterlogo">
+		<img id="chesterlogo" alt="University of Chester" height="35" src="Images/chesteruni_logo.png" width="87" />
+	</div>
 </div>
 
-© Copyright 2014
-
-<div class="chesterlogo">
-
-<img alt="University of Chester" id="chesterlogo" height="35" src="Images/chesteruni_logo.png" width="87" />
-
-</div>
-
-
-
-
-</div>
-
-	
 </body>
 
 <!-- #EndTemplate -->
