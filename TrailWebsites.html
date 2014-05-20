@@ -17,6 +17,8 @@
 <script src="Bootstrap/js/dropdown.js"></script>
 <script src="cordova.js"></script>
 
+<script src="device.js"></script>
+
 </head>
 
 <body>
@@ -189,7 +191,15 @@
 		<img id="chesterlogo" alt="University of Chester" height="35" src="Images/chesteruni_logo.png" width="87" />
 	</div>
 </div>
-
+<script>
+function openUrl(url) {
+    if(device.platform === 'Android') {
+        navigator.app.loadUrl(url, {openExternal:true});
+    } else {
+        window.open(url, '_system');
+    }
+}
+</script>
 </body>
 
 <!-- #EndTemplate -->
