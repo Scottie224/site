@@ -15,5 +15,6 @@
     <access origin="*"/>
 	
 	<gap:plugin name="org.apache.cordova.core.device" />
+	<gap:plugin name="org.apache.cordova.inappbrowser" />
 </widget>
 
