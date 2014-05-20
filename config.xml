@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='utf-8'?>
-<gap:plugin name="Device" value="org.apache.cordova.core.Device"/>
-<widget id="org.coenraets.workshop" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+
+<widget id="org.coenraets.workshop" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0"  xmlns:gap   = "http://phonegap.com/ns/1.0">
     <name>GB Food Trails</name>
     <description>
         An app to show the latest food trails around the UK.
@@ -13,4 +13,7 @@
     <content src="index.html" />
   
     <access origin="*"/>
+	
+	<gap:plugin name="Device" value="org.apache.cordova.core.Device"/>
 </widget>
+
