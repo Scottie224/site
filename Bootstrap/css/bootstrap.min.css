@@ -3224,7 +3224,6 @@ textarea.input-group-sm > .form-control, textarea.input-group-sm > .input-group-
 .navbar-nav > li > a {
 	padding-top: 15px;
 	padding-bottom: 15px;
-	
 }
 .navbar-nav.navbar-right:last-child {
 	margin-right: -15px;
@@ -3236,6 +3235,9 @@ textarea.input-group-sm > .form-control, textarea.input-group-sm > .input-group-
 }
 .navbar-right {
 	float: right !important;
+}
+.collapse {
+
 }
 }
 .navbar-form {
@@ -4978,4 +4980,12 @@ th.visible-print, td.visible-print {
 
 .chesterlogo {
 	float:right;
+}
+
+.welcomelogo {
+	
+}
+
+.filler {
+	padding-bottom:110px;
 }
