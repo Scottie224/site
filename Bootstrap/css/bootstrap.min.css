@@ -225,7 +225,7 @@ body {
 	font-size: 14px;
 	line-height: 1.42857143;
 	background-image:url('../../Images/bgimage.jpg');
-	background-repeat:no-repeat;
+	background-repeat:repeat-y;
 }
 input, button, select, textarea {
 	font-family: inherit;
@@ -3079,6 +3079,13 @@ textarea.input-group-sm > .form-control, textarea.input-group-sm > .input-group-
 }
 .navbar-collapse.in {
 	overflow-y: auto;
+	background: -moz-linear-gradient(top,  rgba(0,0,0,0.74) 0%, rgba(28,28,28,0.88) 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,0.74)), color-stop(100%,rgba(28,28,28,0.88))); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  rgba(0,0,0,0.74) 0%,rgba(28,28,28,0.88) 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  rgba(0,0,0,0.74) 0%,rgba(28,28,28,0.88) 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  rgba(0,0,0,0.74) 0%,rgba(28,28,28,0.88) 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  rgba(0,0,0,0.74) 0%,rgba(28,28,28,0.88) 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#bd000000', endColorstr='#e01c1c1c',GradientType=0 ); /* IE6-9 */
 }
 @media (min-width:768px){
 .navbar-collapse {
@@ -3094,6 +3101,7 @@ textarea.input-group-sm > .form-control, textarea.input-group-sm > .input-group-
 }
 .navbar-collapse.in {
 	overflow-y: visible;
+	background:none;
 }
 .navbar-fixed-top .navbar-collapse, .navbar-static-top .navbar-collapse, .navbar-fixed-bottom .navbar-collapse {
 	padding-left: 0;
@@ -3342,19 +3350,24 @@ textarea.input-group-sm > .form-control, textarea.input-group-sm > .input-group-
 .navbar-default {
 	background-color: #ddd4d4;
 	border-color: #e7e7e7;
+	box-shadow: 5px 5px 10px black;
 }
-.navbar-default .navbar-brand {
-	color: #777;	
+.navbar-default .navbar-brand {/*nav logo*/
+	color: #777;
+	font-weight:bold;
+	letter-spacing: 2px;	
 }
 .navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:focus {
-	color: #5e5e5e;
+	color: red;
+	font-weight:bold;
 	background-color: transparent;
 }
 .navbar-default .navbar-text {
 	color: #777;
 }
 .navbar-default .navbar-nav > li > a {
-	color: #777;
+	color: black;
+	font-weight:300;
 }
 .navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
 	color: #333;
@@ -3370,6 +3383,7 @@ textarea.input-group-sm > .form-control, textarea.input-group-sm > .input-group-
 }
 .navbar-default .navbar-toggle {
 	border-color: #ddd;
+	box-shadow: 5px 5px 80px black;
 }
 .navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
 	background-color: #ddd;
@@ -4076,6 +4090,7 @@ a.list-group-item-danger.active, a.list-group-item-danger.active:hover, a.list-g
 	border-radius:10px;
 	border:2px solid transparent;
 	text-align:center;
+	box-shadow: 5px 5px 10px black;
 }
 
 .panel-heading > .dropdown .dropdown-toggle {
@@ -4971,7 +4986,6 @@ th.visible-print, td.visible-print {
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c0afaf', endColorstr='#ffffff',GradientType=0 ); /* IE6-9 */
 	opacity:0.80;
 	padding:10px;
-
 }
 
 .infocentrelogo {
@@ -4982,10 +4996,7 @@ th.visible-print, td.visible-print {
 	float:right;
 }
 
-.welcomelogo {
-	
-}
-
 .filler {
-	padding-bottom:110px;
+	padding-bottom:270px;
+	clear:both;
 }
