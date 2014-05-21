@@ -3354,8 +3354,7 @@ textarea.input-group-sm > .form-control, textarea.input-group-sm > .input-group-
 }
 .navbar-default .navbar-brand {/*nav logo*/
 	color: #777;
-	font-weight:bold;
-	letter-spacing: 2px;	
+	font-weight:bold;	
 }
 .navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:focus {
 	color: red;
