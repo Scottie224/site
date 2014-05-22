@@ -3044,7 +3044,7 @@ textarea.input-group-sm > .form-control, textarea.input-group-sm > .input-group-
 	border-top-left-radius: 0;
 }
 .navbar {
-	position: relative;
+	position:relative;
 	min-height: 50px;
 	margin-bottom: 20px;
 	border: 1px solid transparent;
@@ -4973,8 +4973,6 @@ th.visible-print, td.visible-print {
 .footer {
 	text-align:center;
 	font-weight:bold;
-	height: 57px;
-	width: auto;
 	background: rgb(192,175,175); /* Old browsers */
 	background: -moz-linear-gradient(top,  rgba(192,175,175,1) 0%, rgba(255,255,255,1) 100%); /* FF3.6+ */
 	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(192,175,175,1)), color-stop(100%,rgba(255,255,255,1))); /* Chrome,Safari4+ */
@@ -4985,6 +4983,10 @@ th.visible-print, td.visible-print {
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c0afaf', endColorstr='#ffffff',GradientType=0 ); /* IE6-9 */
 	opacity:0.80;
 	padding:10px;
+	position:fixed;
+	width:100%;
+	height:40pt;
+	bottom:0pt;
 }
 
 .infocentrelogo {
@@ -4996,6 +4998,11 @@ th.visible-print, td.visible-print {
 }
 
 .filler {
-	padding-bottom:270px;
+	padding-bottom:50px;
 	clear:both;
+}
+
+#map {
+    height:100%;
+    width: 100%;
 }
