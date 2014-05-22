@@ -9,7 +9,7 @@
 <link href="../Bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
 <link href="../GreatBritishFoodTrailsStyleSheet.css" rel="stylesheet" type="text/css" />
 <!-- #BeginEditable "doctitle" -->
-<title>Great British Food Trail</title>
+<title>Exeter Incomplete</title>
 <!-- #EndEditable -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 <script src="../Bootstrap/js/collapse.js"></script>
@@ -19,6 +19,27 @@
 
 <script src="../device.js"></script>
 <script src="../inappbrowser.js"></script>
+
+<style type="text/css">
+
+      html { height: 100% }
+      body { height: 100%; margin: 0; padding: 0 }
+      #map-canvas { height: 100% }
+    </style>
+    <script type="text/javascript"
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB8jDR0YIs8s4BvExFK_7QUkitHtenuYh4&ampsensor=true">
+    </script>
+    <script type="text/javascript">
+      function initialize() {
+        var mapOptions = {
+          center: new google.maps.LatLng(-34.397, 150.644),
+          zoom: 8
+        };
+        var map = new google.maps.Map(document.getElementById("map-canvas"),
+            mapOptions);
+      }
+      google.maps.event.addDomListener(window, 'load', initialize);
+    </script>
 
 </head>
 
@@ -31,10 +52,16 @@
 			<button class="navbar-toggle" data-target="#bs-example-navbar-collapse-1" data-toggle="collapse" type="button">
 			<span class="sr-only">Toggle navigation</span>
 			<span class="icon-bar"></span><span class="icon-bar"></span>
-			<span class="icon-bar"></span></button>
-			<a class="navbar-brand" href="../index.html">Great British Food Trail</a>
-		</div>
-		<!-- Collect the nav links, forms, and other content for toggling -->
+			<span class="icon-bar"></span>
+			</button>
+			<div id="menu_back">
+      <span class="glyphicon glyphicon-chevron-left" onClick="history.go(-1);return true;"></span>
+      </div>      
+      <div id="app_title">
+      <a class="navbar-brand" href="../index.html">Great British Food Trail</a>
+      </div>
+    </div>
+    		<!-- Collect the nav links, forms, and other content for toggling -->
 		<div id="bs-example-navbar-collapse-1" class="collapse navbar-collapse">
 			<form class="navbar-form navbar-left" role="search">
 				<div class="form-group">
@@ -48,6 +75,7 @@
 				<li><a href="../Map.html">Map</a></li>
 				<li><a href="../Help.html">Help</a></li>
 				<li><a href="../TrailWebsites.html">Trail Websites</a></li>
+				<li><a href="../AboutUs.html">About Us</a></li>
 				<li class="divider"></li>
 				<!--<li class="dropdown">
 				<a class="dropdown-toggle" data-toggle="dropdown" href="#">Select 
@@ -68,10 +96,880 @@
 </nav>
 <!-- #BeginEditable "body" -->
 <div>
-<div class="filler">
+<div class="panel panel-default">
+  <div class="panel-body">
+  <p>Exeters Food Trail</p>
+</div>
+</div>
+<div id="accordion" class="panel-group">
+		<div class="panel panel-default">
+			<div class="panel-heading">
+				<h4 class="panel-title">
+				<a data-parent="#accordion" data-toggle="collapse" href="#collapse1">
+				Hartnells Fresh Foods</a></h4>
+			</div>
+			<div id="collapse1" class="panel-collapse collapse">
+				<div class="panel-body">
+					<div class="Destination_Information">
+						<p>Hartnells Fresh Foods are an independent butchers and bakers. They make a large range of their products in the shop, which include a variety of Sausages. Hartnells also sell home-made burgers, including Beef (gluten free beef only), Pork and Apple and many more.
+The Bakery sells freshly baked baguettes and rolls made daily. There are homemade pies and pasties, cakes and flapjacks baked on the premises.</p>
+						<p>40 Longbrook Street
+EX4 6AE</p>
+						<p>01392 272080</p>
+					</div>
+					<div class="Destination_Gallery">
+						<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+							<!-- Indicators -->
+							<ol class="carousel-indicators">
+								<li class="active" data-slide-to="0" data-target="#carousel-example-generic">
+								</li>
+								<li data-slide-to="1" data-target="#carousel-example-generic">
+								</li>
+								<li data-slide-to="2" data-target="#carousel-example-generic">
+								</li>
+							</ol>
+							<!-- Wrapper for slides -->
+							<div class="carousel-inner">
+								<div class="item active">
+									<img alt="Stanley House" src="../Images/StanleyHouse1.jpg">
+								</div>
+								<div class="item">
+									<img alt="Map" src="http://maps.googleapis.com/maps/api/staticmap?center=53.767684,-2.540424&amp;zoom=15&amp;size=600x300&amp;maptype=roadmap
+&amp;markers=color:red%7Clabel:C%7C53.767684,-2.540424&amp;sensor=false"> </div>
+								<div class="item">
+									<img alt="Lamb Chops" src="../Images/StanleyHouse2.jpg">
+								</div>
+							</div>
+							<!-- Controls -->
+							<a class="left carousel-control" data-slide="prev" href="#carousel-example-generic">
+							<span class="glyphicon glyphicon-chevron-left">
+							</span></a>
+							<a class="right carousel-control" data-slide="next" href="#carousel-example-generic">
+							<span class="glyphicon glyphicon-chevron-right">
+							</span></a></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<div class="panel panel-default">
+			<div class="panel-heading">
+				<h4 class="panel-title">
+				<a data-parent="#accordion" data-toggle="collapse" href="#collapse2">
+				Seasons</a></h4>
+			</div>
+			<div id="collapse2" class="panel-collapse collapse">
+				<div class="panel-body">
+					<div class="Destination_Information">
+						<p>Seasons are a unique, well established and independent health food shop in Exeter that has been serving the local community since 1978. Seasons is an Aladdin’s cave of culinary delights selling local food from Devon and beyond, specialising in organic food produced in the local rural area.</p>
+						<p>8 Well Street
+EX4 6QR</p>
+						<p>01392 201282</p>
+					</div>
+					<div class="Destination_Gallery">
+						<div id="carousel-example-generic0" class="carousel slide" data-ride="carousel">
+							<!-- Indicators -->
+							<ol class="carousel-indicators">
+								<li class="active" data-slide-to="0" data-target="#carousel-example-generic">
+								</li>
+								<li data-slide-to="1" data-target="#carousel-example-generic">
+								</li>
+								<li data-slide-to="2" data-target="#carousel-example-generic">
+								</li>
+							</ol>
+							<!-- Wrapper for slides -->
+							<div class="carousel-inner">
+								<div class="item active">
+									<img alt="Stanley House" src="../Images/StanleyHouse1.jpg">
+								</div>
+								<div class="item">
+									<img alt="Map" src="http://maps.googleapis.com/maps/api/staticmap?center=53.767684,-2.540424&amp;zoom=15&amp;size=600x300&amp;maptype=roadmap
+&amp;markers=color:red%7Clabel:C%7C53.767684,-2.540424&amp;sensor=false"> </div>
+								<div class="item">
+									<img alt="Lamb Chops" src="../Images/StanleyHouse2.jpg">
+								</div>
+							</div>
+							<!-- Controls -->
+							<a class="left carousel-control" data-slide="prev" href="#carousel-example-generic">
+							<span class="glyphicon glyphicon-chevron-left">
+							</span></a>
+							<a class="right carousel-control" data-slide="next" href="#carousel-example-generic">
+							<span class="glyphicon glyphicon-chevron-right">
+							</span></a></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<div class="panel panel-default">
+			<div class="panel-heading">
+				<h4 class="panel-title">
+				<a data-parent="#accordion" data-toggle="collapse" href="#collapse3">
+				Martin's Sandwiches</a></h4>
+			</div>
+			<div id="collapse3" class="panel-collapse collapse">
+				<div class="panel-body">
+					<div class="Destination_Information">
+						<p>We’ve been making great food locally since 1983, that’s well over a quarter of a century! Our dedicated team of workers take great care in handcrafting each sandwich. Because we don’t use a conveyor belt system with buttering machines and depositors we are able to make small batches of one off fillings which can be for specific individual needs, for example gluten free, halal, vegan etc</p>
+						<p>75 Pinhoe Road
+EX4 7HT
+</p>
+						<p>01392 211221</p>
+					</div>
+					<div class="Destination_Gallery">
+						<div id="carousel-example-generic1" class="carousel slide" data-ride="carousel">
+							<!-- Indicators -->
+							<ol class="carousel-indicators">
+								<li class="active" data-slide-to="0" data-target="#carousel-example-generic">
+								</li>
+								<li data-slide-to="1" data-target="#carousel-example-generic">
+								</li>
+								<li data-slide-to="2" data-target="#carousel-example-generic">
+								</li>
+							</ol>
+							<!-- Wrapper for slides -->
+							<div class="carousel-inner">
+								<div class="item active">
+									<img alt="Stanley House" src="../Images/StanleyHouse1.jpg">
+								</div>
+								<div class="item">
+									<img alt="Map" src="http://maps.googleapis.com/maps/api/staticmap?center=53.767684,-2.540424&amp;zoom=15&amp;size=600x300&amp;maptype=roadmap
+&amp;markers=color:red%7Clabel:C%7C53.767684,-2.540424&amp;sensor=false"> </div>
+								<div class="item">
+									<img alt="Lamb Chops" src="../Images/StanleyHouse2.jpg">
+								</div>
+							</div>
+							<!-- Controls -->
+							<a class="left carousel-control" data-slide="prev" href="#carousel-example-generic">
+							<span class="glyphicon glyphicon-chevron-left">
+							</span></a>
+							<a class="right carousel-control" data-slide="next" href="#carousel-example-generic">
+							<span class="glyphicon glyphicon-chevron-right">
+							</span></a></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<div class="panel panel-default">
+			<div class="panel-heading">
+				<h4 class="panel-title">
+				<a data-parent="#accordion" data-toggle="collapse" href="#collapse4">
+				The Real Food Store</a></h4>
+			</div>
+			<div id="collapse4" class="panel-collapse collapse">
+				<div class="panel-body">
+					<div class="Destination_Information">
+						<p>We are a unique, independent, community-owned store, bakery and cafe, with more than 300 shareholders who came together to ensure that it would be possible to establish a shop that has brought fresh produce back to the city centre
+We stock a wide range of ‘larder goods’ – oats, dried fruits, pasta, and rice – as well as locally produced cheeses, yoghurt, pickles and honey. Alongside these essentials we stock beers from local micro-breweries, Sandford Orchards award winning ciders and a great range of Luscombe’s soft drinks and juices.
+</p>
+						<p>11-13 Paris Street
+EX1 2JB</p>
+						<p>01392 681234</p>
+					</div>
+					<div class="Destination_Gallery">
+						<div id="carousel-example-generic2" class="carousel slide" data-ride="carousel">
+							<!-- Indicators -->
+							<ol class="carousel-indicators">
+								<li class="active" data-slide-to="0" data-target="#carousel-example-generic">
+								</li>
+								<li data-slide-to="1" data-target="#carousel-example-generic">
+								</li>
+								<li data-slide-to="2" data-target="#carousel-example-generic">
+								</li>
+							</ol>
+							<!-- Wrapper for slides -->
+							<div class="carousel-inner">
+								<div class="item active">
+									<img alt="Stanley House" src="../Images/StanleyHouse1.jpg">
+								</div>
+								<div class="item">
+									<img alt="Map" src="http://maps.googleapis.com/maps/api/staticmap?center=53.767684,-2.540424&amp;zoom=15&amp;size=600x300&amp;maptype=roadmap
+&amp;markers=color:red%7Clabel:C%7C53.767684,-2.540424&amp;sensor=false"> </div>
+								<div class="item">
+									<img alt="Lamb Chops" src="../Images/StanleyHouse2.jpg">
+								</div>
+							</div>
+							<!-- Controls -->
+							<a class="left carousel-control" data-slide="prev" href="#carousel-example-generic">
+							<span class="glyphicon glyphicon-chevron-left">
+							</span></a>
+							<a class="right carousel-control" data-slide="next" href="#carousel-example-generic">
+							<span class="glyphicon glyphicon-chevron-right">
+							</span></a></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<div class="panel panel-default">
+			<div class="panel-heading">
+				<h4 class="panel-title">
+				<a data-parent="#accordion" data-toggle="collapse" href="#collapse5">
+				Gibsons Plaice Fishmongers</a></h4>
+			</div>
+			<div id="collapse5" class="panel-collapse collapse">
+				<div class="panel-body">
+					<div class="Destination_Information">
+						<p>Established in 1992 Gibsons Plaice is a traditional wet fishmongers supplying fresh local fish to the general public and the trade. They buy the majority of the fish from the smaller day boats landing into Brixham and Exmouth.
+Due to seasonal variations of the fishing this means they have in excess of 50 different species of fish and shellfish to choose from over the course of a year.</p>
+						<p>38 Magdalen Road
+EX2 4TD
+</p>
+						<p>01392 495344</p>
+					</div>
+					<div class="Destination_Gallery">
+						<div id="carousel-example-generic3" class="carousel slide" data-ride="carousel">
+							<!-- Indicators -->
+							<ol class="carousel-indicators">
+								<li class="active" data-slide-to="0" data-target="#carousel-example-generic">
+								</li>
+								<li data-slide-to="1" data-target="#carousel-example-generic">
+								</li>
+								<li data-slide-to="2" data-target="#carousel-example-generic">
+								</li>
+							</ol>
+							<!-- Wrapper for slides -->
+							<div class="carousel-inner">
+								<div class="item active">
+									<img alt="Stanley House" src="../Images/StanleyHouse1.jpg">
+								</div>
+								<div class="item">
+									<img alt="Map" src="http://maps.googleapis.com/maps/api/staticmap?center=53.767684,-2.540424&amp;zoom=15&amp;size=600x300&amp;maptype=roadmap
+&amp;markers=color:red%7Clabel:C%7C53.767684,-2.540424&amp;sensor=false"> </div>
+								<div class="item">
+									<img alt="Lamb Chops" src="../Images/StanleyHouse2.jpg">
+								</div>
+							</div>
+							<!-- Controls -->
+							<a class="left carousel-control" data-slide="prev" href="#carousel-example-generic">
+							<span class="glyphicon glyphicon-chevron-left">
+							</span></a>
+							<a class="right carousel-control" data-slide="next" href="#carousel-example-generic">
+							<span class="glyphicon glyphicon-chevron-right">
+							</span></a></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		
+		<div class="panel panel-default">
+			<div class="panel-heading">
+				<h4 class="panel-title">
+				<a data-parent="#accordion" data-toggle="collapse" href="#collapse6">
+				Smith's Fabulous Wines and Spirits</a></h4>
+			</div>
+			<div id="collapse6" class="panel-collapse collapse">
+				<div class="panel-body">
+					<div class="Destination_Information">
+						<p>Iain Smith is a retail supplier of fabulous wines and spirits from around the world, ranging from stunning every day quaffers, through special treats to age worthy beauties
+The quality of service is second to none as all the staff have recognised qualifications in wines and spirits married with an encyclopaedic knowledge of the wines and what foods they work with. 
+</p>
+						<p>39 Magdelan Road
+EX2 4TA
+</p>
+						<p>01392 426550</p>
+					</div>
+					<div class="Destination_Gallery">
+						<div id="carousel-example-generic4" class="carousel slide" data-ride="carousel">
+							<!-- Indicators -->
+							<ol class="carousel-indicators">
+								<li class="active" data-slide-to="0" data-target="#carousel-example-generic">
+								</li>
+								<li data-slide-to="1" data-target="#carousel-example-generic">
+								</li>
+								<li data-slide-to="2" data-target="#carousel-example-generic">
+								</li>
+							</ol>
+							<!-- Wrapper for slides -->
+							<div class="carousel-inner">
+								<div class="item active">
+									<img alt="Stanley House" src="../Images/StanleyHouse1.jpg">
+								</div>
+								<div class="item">
+									<img alt="Map" src="http://maps.googleapis.com/maps/api/staticmap?center=53.767684,-2.540424&amp;zoom=15&amp;size=600x300&amp;maptype=roadmap
+&amp;markers=color:red%7Clabel:C%7C53.767684,-2.540424&amp;sensor=false"> </div>
+								<div class="item">
+									<img alt="Lamb Chops" src="../Images/StanleyHouse2.jpg">
+								</div>
+							</div>
+							<!-- Controls -->
+							<a class="left carousel-control" data-slide="prev" href="#carousel-example-generic">
+							<span class="glyphicon glyphicon-chevron-left">
+							</span></a>
+							<a class="right carousel-control" data-slide="next" href="#carousel-example-generic">
+							<span class="glyphicon glyphicon-chevron-right">
+							</span></a></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<div class="panel panel-default">
+			<div class="panel-heading">
+				<h4 class="panel-title">
+				<a data-parent="#accordion" data-toggle="collapse" href="#collapse7">
+				Oliver's Bakery</a></h4>
+			</div>
+			<div id="collapse7" class="panel-collapse collapse">
+				<div class="panel-body">
+					<div class="Destination_Information">
+						<p>We are an independent family bakery situated in the middle of Crediton High Street. We have been providing the locals with a tempting array of delicious handmade products for the last 10 years.
+We offer a wide range of bread, savouries, cakes and confectionery products, as well as personalised celebration cakes and beautiful wedding cakes.
+We use only the best ingredients and are extremely proud of our products, whether it’s our crusty white bread made with overnight fermented dough or our all butter shortbreads and flapjack, it’s all about quality and flavour.
+</p>
+						<p>Olivers, 24 High Street, Crediton EX17 3AH</p>
+						<p>01363 772843</p>
+					</div>
+					<div class="Destination_Gallery">
+						<div id="carousel-example-generic5" class="carousel slide" data-ride="carousel">
+							<!-- Indicators -->
+							<ol class="carousel-indicators">
+								<li class="active" data-slide-to="0" data-target="#carousel-example-generic">
+								</li>
+								<li data-slide-to="1" data-target="#carousel-example-generic">
+								</li>
+								<li data-slide-to="2" data-target="#carousel-example-generic">
+								</li>
+							</ol>
+							<!-- Wrapper for slides -->
+							<div class="carousel-inner">
+								<div class="item active">
+									<img alt="Stanley House" src="../Images/StanleyHouse1.jpg">
+								</div>
+								<div class="item">
+									<img alt="Map" src="http://maps.googleapis.com/maps/api/staticmap?center=53.767684,-2.540424&amp;zoom=15&amp;size=600x300&amp;maptype=roadmap
+&amp;markers=color:red%7Clabel:C%7C53.767684,-2.540424&amp;sensor=false"> </div>
+								<div class="item">
+									<img alt="Lamb Chops" src="../Images/StanleyHouse2.jpg">
+								</div>
+							</div>
+							<!-- Controls -->
+							<a class="left carousel-control" data-slide="prev" href="#carousel-example-generic">
+							<span class="glyphicon glyphicon-chevron-left">
+							</span></a>
+							<a class="right carousel-control" data-slide="next" href="#carousel-example-generic">
+							<span class="glyphicon glyphicon-chevron-right">
+							</span></a></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<div class="panel panel-default">
+			<div class="panel-heading">
+				<h4 class="panel-title">
+				<a data-parent="#accordion" data-toggle="collapse" href="#collapse8">
+				
+				Bon Gout Delicatessen</a></h4>
+			</div>
+			<div id="collapse8" class="panel-collapse collapse">
+				<div class="panel-body">
+					<div class="Destination_Information">
+						<p>Bon Goût Delicatessen (Est. 1987) is Exeter’s only true delicatessen. It is an Aladdins cave of delights” – is full of the most delicious & exciting range of the highest quality food, sourced locally & from around the world.
+They also stock local wine and cider from suppliers such as Sharpham vineyard, Pebblebed wine and Sandford Orchards. Devon biscuits from Teonis, milk and clotted cream from Ashclyst dairy….. and much more!
+</p>
+						<p>45 Magdelan Road
+EX2 4TA
+</p>
+						<p>01392 435521</p>
+					</div>
+					<div class="Destination_Gallery">
+						<div id="carousel-example-generic6" class="carousel slide" data-ride="carousel">
+							<!-- Indicators -->
+							<ol class="carousel-indicators">
+								<li class="active" data-slide-to="0" data-target="#carousel-example-generic">
+								</li>
+								<li data-slide-to="1" data-target="#carousel-example-generic">
+								</li>
+								<li data-slide-to="2" data-target="#carousel-example-generic">
+								</li>
+							</ol>
+							<!-- Wrapper for slides -->
+							<div class="carousel-inner">
+								<div class="item active">
+									<img alt="Stanley House" src="../Images/StanleyHouse1.jpg">
+								</div>
+								<div class="item">
+									<img alt="Map" src="http://maps.googleapis.com/maps/api/staticmap?center=53.767684,-2.540424&amp;zoom=15&amp;size=600x300&amp;maptype=roadmap
+&amp;markers=color:red%7Clabel:C%7C53.767684,-2.540424&amp;sensor=false"> </div>
+								<div class="item">
+									<img alt="Lamb Chops" src="../Images/StanleyHouse2.jpg">
+								</div>
+							</div>
+							<!-- Controls -->
+							<a class="left carousel-control" data-slide="prev" href="#carousel-example-generic">
+							<span class="glyphicon glyphicon-chevron-left">
+							</span></a>
+							<a class="right carousel-control" data-slide="next" href="#carousel-example-generic">
+							<span class="glyphicon glyphicon-chevron-right">
+							</span></a></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<div class="panel panel-default">
+			<div class="panel-heading">
+				<h4 class="panel-title">
+				<a data-parent="#accordion" data-toggle="collapse" href="#collapse9">
+				EM Hills & Son</a></h4>
+			</div>
+			<div id="collapse9" class="panel-collapse collapse">
+				<div class="panel-body">
+					<div class="Destination_Information">
+						<p>We are a local family business and have been trading in Exeter for 65 years. My father and I run the business with the help of my son and three part-time ladies. Our aim is to provide the public with the best service we can offer. Our produce is fresh daily. Most of our fruit and vegetables are local when in season. We also provide a friendly and competitively priced daily delivery service, free of charge to all catering trade and customers.</p>
+						<p>59, Magdelan Road
+EX2 4TA
+</p>
+						<p>01392 272588</p>
+					</div>
+					<div class="Destination_Gallery">
+						<div id="carousel-example-generic7" class="carousel slide" data-ride="carousel">
+							<!-- Indicators -->
+							<ol class="carousel-indicators">
+								<li class="active" data-slide-to="0" data-target="#carousel-example-generic">
+								</li>
+								<li data-slide-to="1" data-target="#carousel-example-generic">
+								</li>
+								<li data-slide-to="2" data-target="#carousel-example-generic">
+								</li>
+							</ol>
+							<!-- Wrapper for slides -->
+							<div class="carousel-inner">
+								<div class="item active">
+									<img alt="Stanley House" src="../Images/StanleyHouse1.jpg">
+								</div>
+								<div class="item">
+									<img alt="Map" src="http://maps.googleapis.com/maps/api/staticmap?center=53.767684,-2.540424&amp;zoom=15&amp;size=600x300&amp;maptype=roadmap
+&amp;markers=color:red%7Clabel:C%7C53.767684,-2.540424&amp;sensor=false"> </div>
+								<div class="item">
+									<img alt="Lamb Chops" src="../Images/StanleyHouse2.jpg">
+								</div>
+							</div>
+							<!-- Controls -->
+							<a class="left carousel-control" data-slide="prev" href="#carousel-example-generic">
+							<span class="glyphicon glyphicon-chevron-left">
+							</span></a>
+							<a class="right carousel-control" data-slide="next" href="#carousel-example-generic">
+							<span class="glyphicon glyphicon-chevron-right">
+							</span></a></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<div class="panel panel-default">
+			<div class="panel-heading">
+				<h4 class="panel-title">
+				<a data-parent="#accordion" data-toggle="collapse" href="#collapse10">
+				The Bran Tub</a></h4>
+			</div>
+			<div id="collapse10" class="panel-collapse collapse">
+				<div class="panel-body">
+					<div class="Destination_Information">
+						<p>The Bran Tub is an independent supplier of a wide range of health foods and supplements, located in Magdalen Road. 
+Bran Tub stocks a wide variety of products including dried fruit, pulses, nuts, free range eggs, honey and cereals – including many at very low prices. The Bran Tub can do this because they buy in bulk and package the goods in-house.
+</p>
+						<p>67 Magdalen Rd
+EX2 4TA 
+</p>
+						<p>01392 252295</p>
+					</div>
+					<div class="Destination_Gallery">
+						<div id="carousel-example-generic8" class="carousel slide" data-ride="carousel">
+							<!-- Indicators -->
+							<ol class="carousel-indicators">
+								<li class="active" data-slide-to="0" data-target="#carousel-example-generic">
+								</li>
+								<li data-slide-to="1" data-target="#carousel-example-generic">
+								</li>
+								<li data-slide-to="2" data-target="#carousel-example-generic">
+								</li>
+							</ol>
+							<!-- Wrapper for slides -->
+							<div class="carousel-inner">
+								<div class="item active">
+									<img alt="Stanley House" src="../Images/StanleyHouse1.jpg">
+								</div>
+								<div class="item">
+									<img alt="Map" src="http://maps.googleapis.com/maps/api/staticmap?center=53.767684,-2.540424&amp;zoom=15&amp;size=600x300&amp;maptype=roadmap
+&amp;markers=color:red%7Clabel:C%7C53.767684,-2.540424&amp;sensor=false"> </div>
+								<div class="item">
+									<img alt="Lamb Chops" src="../Images/StanleyHouse2.jpg">
+								</div>
+							</div>
+							<!-- Controls -->
+							<a class="left carousel-control" data-slide="prev" href="#carousel-example-generic">
+							<span class="glyphicon glyphicon-chevron-left">
+							</span></a>
+							<a class="right carousel-control" data-slide="next" href="#carousel-example-generic">
+							<span class="glyphicon glyphicon-chevron-right">
+							</span></a></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		
+		<div class="panel panel-default">
+			<div class="panel-heading">
+				<h4 class="panel-title">
+				<a data-parent="#accordion" data-toggle="collapse" href="#collapse11">
+				Marmalade</a></h4>
+			</div>
+			<div id="collapse11" class="panel-collapse collapse">
+				<div class="panel-body">
+					<div class="Destination_Information">
+						<p>Marmalade is a sandwich bar and delicatessen. There is indoor seating or you may prefer to sit outside in the sun and eat.
+Marmalade offers a wide range of quality products. They serve pasties, pie and Panini. Artisan baguettes with a choice of delicious fillings, locally made cakes, hot and cold drinks.
+</p>
+						<p>The Coolings,
+Haven Road,
+EX2 8AX
+</p>
+						<p>01392 277856</p>
+					</div>
+					<div class="Destination_Gallery">
+						<div id="carousel-example-generic9" class="carousel slide" data-ride="carousel">
+							<!-- Indicators -->
+							<ol class="carousel-indicators">
+								<li class="active" data-slide-to="0" data-target="#carousel-example-generic">
+								</li>
+								<li data-slide-to="1" data-target="#carousel-example-generic">
+								</li>
+								<li data-slide-to="2" data-target="#carousel-example-generic">
+								</li>
+							</ol>
+							<!-- Wrapper for slides -->
+							<div class="carousel-inner">
+								<div class="item active">
+									<img alt="Stanley House" src="../Images/StanleyHouse1.jpg">
+								</div>
+								<div class="item">
+									<img alt="Map" src="http://maps.googleapis.com/maps/api/staticmap?center=53.767684,-2.540424&amp;zoom=15&amp;size=600x300&amp;maptype=roadmap
+&amp;markers=color:red%7Clabel:C%7C53.767684,-2.540424&amp;sensor=false"> </div>
+								<div class="item">
+									<img alt="Lamb Chops" src="../Images/StanleyHouse2.jpg">
+								</div>
+							</div>
+							<!-- Controls -->
+							<a class="left carousel-control" data-slide="prev" href="#carousel-example-generic">
+							<span class="glyphicon glyphicon-chevron-left">
+							</span></a>
+							<a class="right carousel-control" data-slide="next" href="#carousel-example-generic">
+							<span class="glyphicon glyphicon-chevron-right">
+							</span></a></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<div class="panel panel-default">
+			<div class="panel-heading">
+				<h4 class="panel-title">
+				<a data-parent="#accordion" data-toggle="collapse" href="#collapse12">
+				Burrow Farm at Courtneys</a></h4>
+			</div>
+			<div id="collapse12" class="panel-collapse collapse">
+				<div class="panel-body">
+					<div class="Destination_Information">
+						<p>Burrow Farm at Courtneys is a traditional Butchers shop, supplying traditional Devon meats. The award-winning Red Ruby Devon beef is from their own farm on the nearby Killerton Estate in Broadclyst and the lamb, pork and chicken is all supplied from local farms. The butchers make all of their own sausages and hogs puddings and prepare all joints of meat on the premises
+They offer a personal service, supplying your favourite cuts of meat just the way you like it.
+</p>
+						<p>30 Cowick Street
+St Thomas
+EX4 1AL
+</p>
+						<p>01392 461215</p>
+					</div>
+					<div class="Destination_Gallery">
+						<div id="carousel-example-generic10" class="carousel slide" data-ride="carousel">
+							<!-- Indicators -->
+							<ol class="carousel-indicators">
+								<li class="active" data-slide-to="0" data-target="#carousel-example-generic">
+								</li>
+								<li data-slide-to="1" data-target="#carousel-example-generic">
+								</li>
+								<li data-slide-to="2" data-target="#carousel-example-generic">
+								</li>
+							</ol>
+							<!-- Wrapper for slides -->
+							<div class="carousel-inner">
+								<div class="item active">
+									<img alt="Stanley House" src="../Images/StanleyHouse1.jpg">
+								</div>
+								<div class="item">
+									<img alt="Map" src="http://maps.googleapis.com/maps/api/staticmap?center=53.767684,-2.540424&amp;zoom=15&amp;size=600x300&amp;maptype=roadmap
+&amp;markers=color:red%7Clabel:C%7C53.767684,-2.540424&amp;sensor=false"> </div>
+								<div class="item">
+									<img alt="Lamb Chops" src="../Images/StanleyHouse2.jpg">
+								</div>
+							</div>
+							<!-- Controls -->
+							<a class="left carousel-control" data-slide="prev" href="#carousel-example-generic">
+							<span class="glyphicon glyphicon-chevron-left">
+							</span></a>
+							<a class="right carousel-control" data-slide="next" href="#carousel-example-generic">
+							<span class="glyphicon glyphicon-chevron-right">
+							</span></a></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<div class="panel panel-default">
+			<div class="panel-heading">
+				<h4 class="panel-title">
+				<a data-parent="#accordion" data-toggle="collapse" href="#collapse13">
+				Crafty Cakes</a></h4>
+			</div>
+			<div id="collapse13" class="panel-collapse collapse">
+				<div class="panel-body">
+					<div class="Destination_Information">
+						<p>Crafty Cakes specialises in creating bespoke wedding cakes, cupcakes and cookies, all of which are made using the finest ingredients to ensure they taste as amazing as they look. Whether classic, vintage, contemporary or novelty, each cake is individually designed to complement your own style and wedding theme to ensure a truly personalised wedding cake. All of their products are made using the finest ingredients.</p>
+						<p>104 Cowick St
+EX4 1JE</p>
+						<p>01392 210243</p>
+					</div>
+					<div class="Destination_Gallery">
+						<div id="carousel-example-generic11" class="carousel slide" data-ride="carousel">
+							<!-- Indicators -->
+							<ol class="carousel-indicators">
+								<li class="active" data-slide-to="0" data-target="#carousel-example-generic">
+								</li>
+								<li data-slide-to="1" data-target="#carousel-example-generic">
+								</li>
+								<li data-slide-to="2" data-target="#carousel-example-generic">
+								</li>
+							</ol>
+							<!-- Wrapper for slides -->
+							<div class="carousel-inner">
+								<div class="item active">
+									<img alt="Stanley House" src="../Images/StanleyHouse1.jpg">
+								</div>
+								<div class="item">
+									<img alt="Map" src="http://maps.googleapis.com/maps/api/staticmap?center=53.767684,-2.540424&amp;zoom=15&amp;size=600x300&amp;maptype=roadmap
+&amp;markers=color:red%7Clabel:C%7C53.767684,-2.540424&amp;sensor=false"> </div>
+								<div class="item">
+									<img alt="Lamb Chops" src="../Images/StanleyHouse2.jpg">
+								</div>
+							</div>
+							<!-- Controls -->
+							<a class="left carousel-control" data-slide="prev" href="#carousel-example-generic">
+							<span class="glyphicon glyphicon-chevron-left">
+							</span></a>
+							<a class="right carousel-control" data-slide="next" href="#carousel-example-generic">
+							<span class="glyphicon glyphicon-chevron-right">
+							</span></a></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<div class="panel panel-default">
+			<div class="panel-heading">
+				<h4 class="panel-title">
+				<a data-parent="#accordion" data-toggle="collapse" href="#collapse14">
+				Fizzywizzywoo</a></h4>
+			</div>
+			<div id="collapse14" class="panel-collapse collapse">
+				<div class="panel-body">
+					<div class="Destination_Information">
+						<p>Young or old, or somewhere in between – Fizzywizzywoo have something for everyone! There are sweet treats and gifts galore – wrap it, box it and send it, and if you can’t find what you’re looking for, just ask – Fizzywizzywoo seeks all treats from everywhere!</p>
+						<p>141 Fore Street
+EX4 3AN</p>
+						<p>01392 439447</p>
+					</div>
+					<div class="Destination_Gallery">
+						<div id="carousel-example-generic12" class="carousel slide" data-ride="carousel">
+							<!-- Indicators -->
+							<ol class="carousel-indicators">
+								<li class="active" data-slide-to="0" data-target="#carousel-example-generic">
+								</li>
+								<li data-slide-to="1" data-target="#carousel-example-generic">
+								</li>
+								<li data-slide-to="2" data-target="#carousel-example-generic">
+								</li>
+							</ol>
+							<!-- Wrapper for slides -->
+							<div class="carousel-inner">
+								<div class="item active">
+									<img alt="Stanley House" src="../Images/StanleyHouse1.jpg">
+								</div>
+								<div class="item">
+									<img alt="Map" src="http://maps.googleapis.com/maps/api/staticmap?center=53.767684,-2.540424&amp;zoom=15&amp;size=600x300&amp;maptype=roadmap
+&amp;markers=color:red%7Clabel:C%7C53.767684,-2.540424&amp;sensor=false"> </div>
+								<div class="item">
+									<img alt="Lamb Chops" src="../Images/StanleyHouse2.jpg">
+								</div>
+							</div>
+							<!-- Controls -->
+							<a class="left carousel-control" data-slide="prev" href="#carousel-example-generic">
+							<span class="glyphicon glyphicon-chevron-left">
+							</span></a>
+							<a class="right carousel-control" data-slide="next" href="#carousel-example-generic">
+							<span class="glyphicon glyphicon-chevron-right">
+							</span></a></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<div class="panel panel-default">
+			<div class="panel-heading">
+				<h4 class="panel-title">
+				<a data-parent="#accordion" data-toggle="collapse" href="#collapse15">
+				Sweetcheeksuk</a></h4>
+			</div>
+			<div id="collapse15" class="panel-collapse collapse">
+				<div class="panel-body">
+					<div class="Destination_Information">
+						<p>sweetcheeksuk.com is a one stop sweetshop, based on South Street, and now also out and about mobile in the sweet van. including American treats and boiled sweets, luxury Chocolate and handmade fudge.</p>
+						<p>89, South Street
+EX1 1EQ</p>
+						<p>01392 277646</p>
+					</div>
+					<div class="Destination_Gallery">
+						<div id="carousel-example-generic13" class="carousel slide" data-ride="carousel">
+							<!-- Indicators -->
+							<ol class="carousel-indicators">
+								<li class="active" data-slide-to="0" data-target="#carousel-example-generic">
+								</li>
+								<li data-slide-to="1" data-target="#carousel-example-generic">
+								</li>
+								<li data-slide-to="2" data-target="#carousel-example-generic">
+								</li>
+							</ol>
+							<!-- Wrapper for slides -->
+							<div class="carousel-inner">
+								<div class="item active">
+									<img alt="Stanley House" src="../Images/StanleyHouse1.jpg">
+								</div>
+								<div class="item">
+									<img alt="Map" src="http://maps.googleapis.com/maps/api/staticmap?center=53.767684,-2.540424&amp;zoom=15&amp;size=600x300&amp;maptype=roadmap
+&amp;markers=color:red%7Clabel:C%7C53.767684,-2.540424&amp;sensor=false"> </div>
+								<div class="item">
+									<img alt="Lamb Chops" src="../Images/StanleyHouse2.jpg">
+								</div>
+							</div>
+							<!-- Controls -->
+							<a class="left carousel-control" data-slide="prev" href="#carousel-example-generic">
+							<span class="glyphicon glyphicon-chevron-left">
+							</span></a>
+							<a class="right carousel-control" data-slide="next" href="#carousel-example-generic">
+							<span class="glyphicon glyphicon-chevron-right">
+							</span></a></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<div class="panel panel-default">
+			<div class="panel-heading">
+				<h4 class="panel-title">
+				<a data-parent="#accordion" data-toggle="collapse" href="#collapse16">
+				Mr Simms Olde Sweet Shoppe</a></h4>
+			</div>
+			<div id="collapse16" class="panel-collapse collapse">
+				<div class="panel-body">
+					<div class="Destination_Information">
+						<p>Rows of colourful jars of sweets await your delectation, including Aniseed Balls, Mint Imperials, Barley Sugar, Rhubarb & Custard, and various crystals, as well as an amazing pick-n-mix. we also stock 12 flavours of bonbon, 8 different fudges, 16 varieties of mints, an extensive range of original Lion's gums, imported high-quality Belgian and Dutch liquorice, and probably the largest selection of sugar-free confectionary and sweets you will find locally.</p>
+						<p>9 North Street
+Exeter
+EX4 3QS</p>
+						<p>01392 278537</p>
+					</div>
+					<div class="Destination_Gallery">
+						<div id="carousel-example-generic14" class="carousel slide" data-ride="carousel">
+							<!-- Indicators -->
+							<ol class="carousel-indicators">
+								<li class="active" data-slide-to="0" data-target="#carousel-example-generic">
+								</li>
+								<li data-slide-to="1" data-target="#carousel-example-generic">
+								</li>
+								<li data-slide-to="2" data-target="#carousel-example-generic">
+								</li>
+							</ol>
+							<!-- Wrapper for slides -->
+							<div class="carousel-inner">
+								<div class="item active">
+									<img alt="Stanley House" src="../Images/StanleyHouse1.jpg">
+								</div>
+								<div class="item">
+									<img alt="Map" src="http://maps.googleapis.com/maps/api/staticmap?center=53.767684,-2.540424&amp;zoom=15&amp;size=600x300&amp;maptype=roadmap
+&amp;markers=color:red%7Clabel:C%7C53.767684,-2.540424&amp;sensor=false"> </div>
+								<div class="item">
+									<img alt="Lamb Chops" src="../Images/StanleyHouse2.jpg">
+								</div>
+							</div>
+							<!-- Controls -->
+							<a class="left carousel-control" data-slide="prev" href="#carousel-example-generic">
+							<span class="glyphicon glyphicon-chevron-left">
+							</span></a>
+							<a class="right carousel-control" data-slide="next" href="#carousel-example-generic">
+							<span class="glyphicon glyphicon-chevron-right">
+							</span></a></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<div class="panel panel-default">
+			<div class="panel-heading">
+				<h4 class="panel-title">
+				<a data-parent="#accordion" data-toggle="collapse" href="#collapse17">
+				The Cook's Shop</a></h4>
+			</div>
+			<div id="collapse17" class="panel-collapse collapse">
+				<div class="panel-body">
+					<div class="Destination_Information">
+						<p>The Cook’s Shop is a haven for cooks of all abilities and is regarded in the trade as one of the premier cook shops in the UK. They have always used the strapline Everything for Cooks which sums up the nature of the shop perfectly.
+They stock just over 10,500 product lines and many of the original brands from 25 years ago are still going strong.
+</p>
+						<p>Unit 13
+Harlequin Centre
+Paul Street
+EX4 3TT</p>
+						<p>01392 258576</p>
+					</div>
+					<div class="Destination_Gallery">
+						<div id="carousel-example-generic15" class="carousel slide" data-ride="carousel">
+							<!-- Indicators -->
+							<ol class="carousel-indicators">
+								<li class="active" data-slide-to="0" data-target="#carousel-example-generic">
+								</li>
+								<li data-slide-to="1" data-target="#carousel-example-generic">
+								</li>
+								<li data-slide-to="2" data-target="#carousel-example-generic">
+								</li>
+							</ol>
+							<!-- Wrapper for slides -->
+							<div class="carousel-inner">
+								<div class="item active">
+									<img alt="Stanley House" src="../Images/StanleyHouse1.jpg">
+								</div>
+								<div class="item">
+									<img alt="Map" src="http://maps.googleapis.com/maps/api/staticmap?center=53.767684,-2.540424&amp;zoom=15&amp;size=600x300&amp;maptype=roadmap
+&amp;markers=color:red%7Clabel:C%7C53.767684,-2.540424&amp;sensor=false"> </div>
+								<div class="item">
+									<img alt="Lamb Chops" src="../Images/StanleyHouse2.jpg">
+								</div>
+							</div>
+							<!-- Controls -->
+							<a class="left carousel-control" data-slide="prev" href="#carousel-example-generic">
+							<span class="glyphicon glyphicon-chevron-left">
+							</span></a>
+							<a class="right carousel-control" data-slide="next" href="#carousel-example-generic">
+							<span class="glyphicon glyphicon-chevron-right">
+							</span></a></div>
+					</div>
+				</div>
+			</div>
+		</div>
 
 </div>
-
 </div>
 <!-- #EndEditable -->
 <div class="footer">

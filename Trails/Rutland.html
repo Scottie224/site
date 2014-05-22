@@ -9,7 +9,7 @@
 <link href="../Bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
 <link href="../GreatBritishFoodTrailsStyleSheet.css" rel="stylesheet" type="text/css" />
 <!-- #BeginEditable "doctitle" -->
-<title>Great British Food Trail</title>
+<title>Rutland Incomplete</title>
 <!-- #EndEditable -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 <script src="../Bootstrap/js/collapse.js"></script>
@@ -19,6 +19,27 @@
 
 <script src="../device.js"></script>
 <script src="../inappbrowser.js"></script>
+
+<style type="text/css">
+
+      html { height: 100% }
+      body { height: 100%; margin: 0; padding: 0 }
+      #map-canvas { height: 100% }
+    </style>
+    <script type="text/javascript"
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB8jDR0YIs8s4BvExFK_7QUkitHtenuYh4&ampsensor=true">
+    </script>
+    <script type="text/javascript">
+      function initialize() {
+        var mapOptions = {
+          center: new google.maps.LatLng(-34.397, 150.644),
+          zoom: 8
+        };
+        var map = new google.maps.Map(document.getElementById("map-canvas"),
+            mapOptions);
+      }
+      google.maps.event.addDomListener(window, 'load', initialize);
+    </script>
 
 </head>
 
@@ -31,10 +52,16 @@
 			<button class="navbar-toggle" data-target="#bs-example-navbar-collapse-1" data-toggle="collapse" type="button">
 			<span class="sr-only">Toggle navigation</span>
 			<span class="icon-bar"></span><span class="icon-bar"></span>
-			<span class="icon-bar"></span></button>
-			<a class="navbar-brand" href="../index.html">Great British Food Trail</a>
-		</div>
-		<!-- Collect the nav links, forms, and other content for toggling -->
+			<span class="icon-bar"></span>
+			</button>
+			<div id="menu_back">
+      <span class="glyphicon glyphicon-chevron-left" onClick="history.go(-1);return true;"></span>
+      </div>      
+      <div id="app_title">
+      <a class="navbar-brand" href="../index.html">Great British Food Trail</a>
+      </div>
+    </div>
+    		<!-- Collect the nav links, forms, and other content for toggling -->
 		<div id="bs-example-navbar-collapse-1" class="collapse navbar-collapse">
 			<form class="navbar-form navbar-left" role="search">
 				<div class="form-group">
@@ -48,6 +75,7 @@
 				<li><a href="../Map.html">Map</a></li>
 				<li><a href="../Help.html">Help</a></li>
 				<li><a href="../TrailWebsites.html">Trail Websites</a></li>
+				<li><a href="../AboutUs.html">About Us</a></li>
 				<li class="divider"></li>
 				<!--<li class="dropdown">
 				<a class="dropdown-toggle" data-toggle="dropdown" href="#">Select 
@@ -68,10 +96,1046 @@
 </nav>
 <!-- #BeginEditable "body" -->
 <div>
-<div class="filler">
-
+<div class="panel panel-default">
+  <div class="panel-body">
+  <p>Rutland Food Trail</p>
 </div>
+</div>
+<div id="accordion" class="panel-group">
+		<div class="panel panel-default">
+			<div class="panel-heading">
+				<h4 class="panel-title">
+				<a data-parent="#accordion" data-toggle="collapse" href="#collapse1">
+				The Olive Branch </a></h4>
+			</div>
+			<div id="collapse1" class="panel-collapse collapse">
+				<div class="panel-body">
+					<div class="Destination_Information">
+						<p></p>
+						<p></p>
+						<p></p>
+					</div>
+					<div class="Destination_Gallery">
+						<div id="carousel1" class="carousel slide" data-ride="carousel">
+							<!-- Indicators -->
+							<ol class="carousel-indicators">
+								<li class="active" data-slide-to="0" data-target="#carousel1">
+								</li>
+								<li data-slide-to="1" data-target="#carousel1">
+								</li>
+								<li data-slide-to="2" data-target="#carousel1">
+								</li>
+							</ol>
+							<!-- Wrapper for slides -->
+							<div class="carousel-inner">
+								<div class="item active">
+									<img alt="Stanley House" src="../Images/StanleyHouse1.jpg">
+								</div>
+								<div class="item">
+									<img alt="Map" src="http://maps.googleapis.com/maps/api/staticmap?center=53.767684,-2.540424&amp;zoom=15&amp;size=600x300&amp;maptype=roadmap
+&amp;markers=color:red%7Clabel:C%7C53.767684,-2.540424&amp;sensor=false">
+								</div>
+								<div class="item">
+									<img alt="Lamb Chops" src="../Images/StanleyHouse2.jpg">
+								</div>
+							</div>
+														<!-- Controls -->
+							<a class="left carousel-control" data-slide="prev" href="#carousel1">
+							<span class="glyphicon glyphicon-chevron-left">
+							</span></a>
+							<a class="right carousel-control" data-slide="next" href="#carousel1">
+							<span class="glyphicon glyphicon-chevron-right">
+							</span></a></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="panel panel-default">
+			<div class="panel-heading">
+				<h4 class="panel-title">
+				<a data-parent="#accordion" data-toggle="collapse" href="#collapse2">
+				Hambleton Hall</a></h4>
+			</div>
+			<div id="collapse2" class="panel-collapse collapse">
+				<div class="panel-body">
+					<div class="Destination_Information">
+						<p></p>
+						<p></p>
+						<p></p>
+						</div>
+					<div class="Destination_Gallery">
+						<div id="carousel2" class="carousel slide" data-ride="carousel">
+							<!-- Indicators -->
+							<ol class="carousel-indicators">
+								<li class="active" data-slide-to="0" data-target="#carousel2">
+								</li>
+								<li data-slide-to="1" data-target="#carousel2">
+								</li>
+								<li data-slide-to="2" data-target="#carousel2">
+								</li>
+							</ol>
+							<!-- Wrapper for slides -->
+							<div class="carousel-inner">
+								<div class="item active">
+									<img alt="Stanley House" src="../Images/StanleyHouse1.jpg">
+								</div>
+								<div class="item">
+									<img alt="Map" src="http://maps.googleapis.com/maps/api/staticmap?center=53.767684,-2.540424&amp;zoom=15&amp;size=600x300&amp;maptype=roadmap
+&amp;markers=color:red%7Clabel:C%7C53.767684,-2.540424&amp;sensor=false">
+								</div>
+								<div class="item">
+									<img alt="Lamb Chops" src="../Images/StanleyHouse2.jpg">
+								</div>
+							</div>
+														<!-- Controls -->
+							<a class="left carousel-control" data-slide="prev" href="#carousel2">
+							<span class="glyphicon glyphicon-chevron-left">
+							</span></a>
+							<a class="right carousel-control" data-slide="next" href="#carousel2">
+							<span class="glyphicon glyphicon-chevron-right">
+							</span></a></div>
+					</div>
+				</div>
+				</div>
+			</div>
+		
+		<div class="panel panel-default">
+			<div class="panel-heading">
+				<h4 class="panel-title">
+				<a data-parent="#accordion" data-toggle="collapse" href="#collapse3">
+				The Horse and Jockey </a></h4>
+			</div>
+			<div id="collapse3" class="panel-collapse collapse">
+				<div class="panel-body">
+					<div class="Destination_Information">
+						<p></p>
+						<p></p>
+						<p></p>
+						</div>
+					<div class="Destination_Gallery">
+						<div id="carousel3" class="carousel slide" data-ride="carousel">
+							<!-- Indicators -->
+							<ol class="carousel-indicators">
+								<li class="active" data-slide-to="0" data-target="#carousel3">
+								</li>
+								<li data-slide-to="1" data-target="#carousel3">
+								</li>
+								<li data-slide-to="2" data-target="#carousel3">
+								</li>
+							</ol>
+							<!-- Wrapper for slides -->
+							<div class="carousel-inner">
+								<div class="item active">
+									<img alt="Stanley House" src="../Images/StanleyHouse1.jpg">
+								</div>
+								<div class="item">
+									<img alt="Map" src="http://maps.googleapis.com/maps/api/staticmap?center=53.767684,-2.540424&amp;zoom=15&amp;size=600x300&amp;maptype=roadmap
+&amp;markers=color:red%7Clabel:C%7C53.767684,-2.540424&amp;sensor=false">
+								</div>
+								<div class="item">
+									<img alt="Lamb Chops" src="../Images/StanleyHouse2.jpg">
+								</div>
+							</div>
+														<!-- Controls -->
+							<a class="left carousel-control" data-slide="prev" href="#carousel3">
+							<span class="glyphicon glyphicon-chevron-left">
+							</span></a>
+							<a class="right carousel-control" data-slide="next" href="#carousel3">
+							<span class="glyphicon glyphicon-chevron-right">
+							</span></a></div>
+					</div>
+				</div>
+				</div>
+			</div>
+	
+		<div class="panel panel-default">
+			<div class="panel-heading">
+				<h4 class="panel-title">
+				<a data-parent="#accordion" data-toggle="collapse" href="#collapse4">
+				Greetham Valley Hotel, Golf and Conference Centre</a></h4>
+			</div>
+			<div id="collapse4" class="panel-collapse collapse">
+				<div class="panel-body">
+					<div class="Destination_Information">
+						<p></p>
+						<p></p>
+						<p></p>
+						</div>
+					<div class="Destination_Gallery">
+						<div id="carousel4" class="carousel slide" data-ride="carousel">
+							<!-- Indicators -->
+							<ol class="carousel-indicators">
+								<li class="active" data-slide-to="0" data-target="#carousel4">
+								</li>
+								<li data-slide-to="1" data-target="#carousel4">
+								</li>
+								<li data-slide-to="2" data-target="#carousel4">
+								</li>
+							</ol>
+							<!-- Wrapper for slides -->
+							<div class="carousel-inner">
+								<div class="item active">
+									<img alt="Stanley House" src="../Images/StanleyHouse1.jpg">
+								</div>
+								<div class="item">
+									<img alt="Map" src="http://maps.googleapis.com/maps/api/staticmap?center=53.767684,-2.540424&amp;zoom=15&amp;size=600x300&amp;maptype=roadmap
+&amp;markers=color:red%7Clabel:C%7C53.767684,-2.540424&amp;sensor=false">
+								</div>
+								<div class="item">
+									<img alt="Lamb Chops" src="../Images/StanleyHouse2.jpg">
+								</div>
+							</div>
+														<!-- Controls -->
+							<a class="left carousel-control" data-slide="prev" href="#carousel4">
+							<span class="glyphicon glyphicon-chevron-left">
+							</span></a>
+							<a class="right carousel-control" data-slide="next" href="#carousel4">
+							<span class="glyphicon glyphicon-chevron-right">
+							</span></a></div>
+					</div>
+				</div>
+				</div>
+			</div>
+		
+		<div class="panel panel-default">
+			<div class="panel-heading">
+				<h4 class="panel-title">
+				<a data-parent="#accordion" data-toggle="collapse" href="#collapse5">
+				The Kings Arms Inn</a></h4>
+			</div>
+			<div id="collapse5" class="panel-collapse collapse">
+				<div class="panel-body">
+					<div class="Destination_Information">
+						<p></p>
+						<p></p>
+						<p></p>
+						</div>
+					<div class="Destination_Gallery">
+						<div id="carousel5" class="carousel slide" data-ride="carousel">
+							<!-- Indicators -->
+							<ol class="carousel-indicators">
+								<li class="active" data-slide-to="0" data-target="#carousel5">
+								</li>
+								<li data-slide-to="1" data-target="#carousel5">
+								</li>
+								<li data-slide-to="2" data-target="#carousel5">
+								</li>
+							</ol>
+							<!-- Wrapper for slides -->
+							<div class="carousel-inner">
+								<div class="item active">
+									<img alt="Stanley House" src="../Images/StanleyHouse1.jpg">
+								</div>
+								<div class="item">
+									<img alt="Map" src="http://maps.googleapis.com/maps/api/staticmap?center=53.767684,-2.540424&amp;zoom=15&amp;size=600x300&amp;maptype=roadmap
+&amp;markers=color:red%7Clabel:C%7C53.767684,-2.540424&amp;sensor=false">
+								</div>
+								<div class="item">
+									<img alt="Lamb Chops" src="../Images/StanleyHouse2.jpg">
+								</div>
+							</div>
+														<!-- Controls -->
+							<a class="left carousel-control" data-slide="prev" href="#carousel5">
+							<span class="glyphicon glyphicon-chevron-left">
+							</span></a>
+							<a class="right carousel-control" data-slide="next" href="#carousel5">
+							<span class="glyphicon glyphicon-chevron-right">
+							</span></a></div>
+					</div>
+				</div>
 
+				</div>
+			</div>
+		
+		<div class="panel panel-default">
+			<div class="panel-heading">
+				<h4 class="panel-title">
+				<a data-parent="#accordion" data-toggle="collapse" href="#collapse6">
+				The Black Bull</a></h4>
+			</div>
+			<div id="collapse6" class="panel-collapse collapse">
+				<div class="panel-body">
+					<div class="Destination_Information">
+						<p></p>
+						<p></p>
+						<p></p>
+						</div>
+					<div class="Destination_Gallery">
+						<div id="carousel6" class="carousel slide" data-ride="carousel">
+							<!-- Indicators -->
+							<ol class="carousel-indicators">
+								<li class="active" data-slide-to="0" data-target="#carousel6">
+								</li>
+								<li data-slide-to="1" data-target="#carousel6">
+								</li>
+								<li data-slide-to="2" data-target="#carousel6">
+								</li>
+							</ol>
+							<!-- Wrapper for slides -->
+							<div class="carousel-inner">
+								<div class="item active">
+									<img alt="Stanley House" src="../Images/StanleyHouse1.jpg">
+								</div>
+								<div class="item">
+									<img alt="Map" src="http://maps.googleapis.com/maps/api/staticmap?center=53.767684,-2.540424&amp;zoom=15&amp;size=600x300&amp;maptype=roadmap
+&amp;markers=color:red%7Clabel:C%7C53.767684,-2.540424&amp;sensor=false">
+								</div>
+								<div class="item">
+									<img alt="Lamb Chops" src="../Images/StanleyHouse2.jpg">
+								</div>
+							</div>
+														<!-- Controls -->
+							<a class="left carousel-control" data-slide="prev" href="#carousel6">
+							<span class="glyphicon glyphicon-chevron-left">
+							</span></a>
+							<a class="right carousel-control" data-slide="next" href="#carousel6">
+							<span class="glyphicon glyphicon-chevron-right">
+							</span></a></div>
+					</div>
+				</div>
+
+				</div>
+			</div>
+		
+		<div class="panel panel-default">
+			<div class="panel-heading">
+				<h4 class="panel-title">
+				<a data-parent="#accordion" data-toggle="collapse" href="#collapse7">
+				The Plough Inn</a></h4>
+			</div>
+			<div id="collapse7" class="panel-collapse collapse">
+				<div class="panel-body">
+					<div class="Destination_Information">
+						<p></p>
+						<p></p>
+						<p></p>
+						</div>
+					<div class="Destination_Gallery">
+						<div id="carousel7" class="carousel slide" data-ride="carousel">
+							<!-- Indicators -->
+							<ol class="carousel-indicators">
+								<li class="active" data-slide-to="0" data-target="#carousel7">
+								</li>
+								<li data-slide-to="1" data-target="#carousel7">
+								</li>
+								<li data-slide-to="2" data-target="#carousel7">
+								</li>
+							</ol>
+							<!-- Wrapper for slides -->
+							<div class="carousel-inner">
+								<div class="item active">
+									<img alt="Stanley House" src="../Images/StanleyHouse1.jpg">
+								</div>
+								<div class="item">
+									<img alt="Map" src="http://maps.googleapis.com/maps/api/staticmap?center=53.767684,-2.540424&amp;zoom=15&amp;size=600x300&amp;maptype=roadmap
+&amp;markers=color:red%7Clabel:C%7C53.767684,-2.540424&amp;sensor=false">
+								</div>
+								<div class="item">
+									<img alt="Lamb Chops" src="../Images/StanleyHouse2.jpg">
+								</div>
+							</div>
+														<!-- Controls -->
+							<a class="left carousel-control" data-slide="prev" href="#carousel7">
+							<span class="glyphicon glyphicon-chevron-left">
+							</span></a>
+							<a class="right carousel-control" data-slide="next" href="#carousel7">
+							<span class="glyphicon glyphicon-chevron-right">
+							</span></a></div>
+					</div>
+				</div>
+				</div>
+			</div>
+		
+		<div class="panel panel-default">
+			<div class="panel-heading">
+				<h4 class="panel-title">
+				<a data-parent="#accordion" data-toggle="collapse" href="#collapse8">
+				The Noel at Whitwell</a></h4>
+			</div>
+			<div id="collapse8" class="panel-collapse collapse">
+				<div class="panel-body">
+					<div class="Destination_Information">
+						<p></p>
+						<p></p>
+						<p></p>
+						</div>
+					<div class="Destination_Gallery">
+						<div id="carousel8" class="carousel slide" data-ride="carousel">
+							<!-- Indicators -->
+							<ol class="carousel-indicators">
+								<li class="active" data-slide-to="0" data-target="#carousel8">
+								</li>
+								<li data-slide-to="1" data-target="#carousel8">
+								</li>
+								<li data-slide-to="2" data-target="#carousel8">
+								</li>
+							</ol>
+							<!-- Wrapper for slides -->
+							<div class="carousel-inner">
+								<div class="item active">
+									<img alt="Stanley House" src="../Images/StanleyHouse1.jpg">
+								</div>
+								<div class="item">
+									<img alt="Map" src="http://maps.googleapis.com/maps/api/staticmap?center=53.767684,-2.540424&amp;zoom=15&amp;size=600x300&amp;maptype=roadmap
+&amp;markers=color:red%7Clabel:C%7C53.767684,-2.540424&amp;sensor=false">
+								</div>
+								<div class="item">
+									<img alt="Lamb Chops" src="../Images/StanleyHouse2.jpg">
+								</div>
+							</div>
+														<!-- Controls -->
+							<a class="left carousel-control" data-slide="prev" href="#carousel8">
+							<span class="glyphicon glyphicon-chevron-left">
+							</span></a>
+							<a class="right carousel-control" data-slide="next" href="#carousel8">
+							<span class="glyphicon glyphicon-chevron-right">
+							</span></a></div>
+					</div>
+				</div>
+				</div>
+			</div>
+		
+		<div class="panel panel-default">
+			<div class="panel-heading">
+				<h4 class="panel-title">
+				<a data-parent="#accordion" data-toggle="collapse" href="#collapse9">
+				The Old White Hart</a></h4>
+			</div>
+			<div id="collapse9" class="panel-collapse collapse">
+				<div class="panel-body">
+					<div class="Destination_Information">
+						<p></p>
+						<p></p>
+						<p></p>
+						</div>
+					<div class="Destination_Gallery">
+						<div id="carousel9" class="carousel slide" data-ride="carousel">
+							<!-- Indicators -->
+							<ol class="carousel-indicators">
+								<li class="active" data-slide-to="0" data-target="#carousel9">
+								</li>
+								<li data-slide-to="1" data-target="#carousel9">
+								</li>
+								<li data-slide-to="2" data-target="#carousel9">
+								</li>
+							</ol>
+							<!-- Wrapper for slides -->
+							<div class="carousel-inner">
+								<div class="item active">
+									<img alt="Stanley House" src="../Images/StanleyHouse1.jpg">
+								</div>
+								<div class="item">
+									<img alt="Map" src="http://maps.googleapis.com/maps/api/staticmap?center=53.767684,-2.540424&amp;zoom=15&amp;size=600x300&amp;maptype=roadmap
+&amp;markers=color:red%7Clabel:C%7C53.767684,-2.540424&amp;sensor=false">
+								</div>
+								<div class="item">
+									<img alt="Lamb Chops" src="../Images/StanleyHouse2.jpg">
+								</div>
+							</div>
+														<!-- Controls -->
+							<a class="left carousel-control" data-slide="prev" href="#carousel9">
+							<span class="glyphicon glyphicon-chevron-left">
+							</span></a>
+							<a class="right carousel-control" data-slide="next" href="#carousel9">
+							<span class="glyphicon glyphicon-chevron-right">
+							</span></a></div>
+					</div>
+				</div>
+
+				</div>
+			</div>
+		
+		<div class="panel panel-default">
+			<div class="panel-heading">
+				<h4 class="panel-title">
+				<a data-parent="#accordion" data-toggle="collapse" href="#collapse10">
+				Nicks Restaurant</a></h4>
+			</div>
+			<div id="collapse10" class="panel-collapse collapse">
+				<div class="panel-body">
+					<div class="Destination_Information">
+						<p></p>
+						<p></p>
+						<p></p>
+						</div>
+					<div class="Destination_Gallery">
+						<div id="carousel10" class="carousel slide" data-ride="carousel">
+							<!-- Indicators -->
+							<ol class="carousel-indicators">
+								<li class="active" data-slide-to="0" data-target="#carousel10">
+								</li>
+								<li data-slide-to="1" data-target="#carousel10">
+								</li>
+								<li data-slide-to="2" data-target="#carousel10">
+								</li>
+							</ol>
+							<!-- Wrapper for slides -->
+							<div class="carousel-inner">
+								<div class="item active">
+									<img alt="Stanley House" src="../Images/StanleyHouse1.jpg">
+								</div>
+								<div class="item">
+									<img alt="Map" src="http://maps.googleapis.com/maps/api/staticmap?center=53.767684,-2.540424&amp;zoom=15&amp;size=600x300&amp;maptype=roadmap
+&amp;markers=color:red%7Clabel:C%7C53.767684,-2.540424&amp;sensor=false">
+								</div>
+								<div class="item">
+									<img alt="Lamb Chops" src="../Images/StanleyHouse2.jpg">
+								</div>
+							</div>
+														<!-- Controls -->
+							<a class="left carousel-control" data-slide="prev" href="#carousel10">
+							<span class="glyphicon glyphicon-chevron-left">
+							</span></a>
+							<a class="right carousel-control" data-slide="next" href="#carousel10">
+							<span class="glyphicon glyphicon-chevron-right">
+							</span></a></div>
+					</div>
+				</div>
+				</div>
+			</div>
+		
+		<div class="panel panel-default">
+			<div class="panel-heading">
+				<h4 class="panel-title">
+				<a data-parent="#accordion" data-toggle="collapse" href="#collapse11">
+				Best Western Normanton Park Hotel Clock Restaurant</a></h4>
+			</div>
+			<div id="collapse11" class="panel-collapse collapse">
+				<div class="panel-body">
+					<div class="Destination_Information">
+						<p></p>
+						<p></p>
+						<p></p>
+						</div>
+					<div class="Destination_Gallery">
+						<div id="carousel11" class="carousel slide" data-ride="carousel">
+							<!-- Indicators -->
+							<ol class="carousel-indicators">
+								<li class="active" data-slide-to="0" data-target="#carousel11">
+								</li>
+								<li data-slide-to="1" data-target="#carousel11">
+								</li>
+								<li data-slide-to="2" data-target="#carousel11">
+								</li>
+							</ol>
+							<!-- Wrapper for slides -->
+							<div class="carousel-inner">
+								<div class="item active">
+									<img alt="Stanley House" src="../Images/StanleyHouse1.jpg">
+								</div>
+								<div class="item">
+									<img alt="Map" src="http://maps.googleapis.com/maps/api/staticmap?center=53.767684,-2.540424&amp;zoom=15&amp;size=600x300&amp;maptype=roadmap
+&amp;markers=color:red%7Clabel:C%7C53.767684,-2.540424&amp;sensor=false">
+								</div>
+								<div class="item">
+									<img alt="Lamb Chops" src="../Images/StanleyHouse2.jpg">
+								</div>
+							</div>
+														<!-- Controls -->
+							<a class="left carousel-control" data-slide="prev" href="#carousel11">
+							<span class="glyphicon glyphicon-chevron-left">
+							</span></a>
+							<a class="right carousel-control" data-slide="next" href="#carousel11">
+							<span class="glyphicon glyphicon-chevron-right">
+							</span></a></div>
+					</div>
+				</div>
+				</div>
+			</div>
+		
+		<div class="panel panel-default">
+			<div class="panel-heading">
+				<h4 class="panel-title">
+				<a data-parent="#accordion" data-toggle="collapse" href="#collapse12">
+				Barnsdale Lodge Hotel</a></h4>
+			</div>
+			<div id="collapse12" class="panel-collapse collapse">
+				<div class="panel-body">
+					<div class="Destination_Information">
+						<p></p>
+						<p></p>
+						<p></p>
+						</div>
+					<div class="Destination_Gallery">
+						<div id="carousel12" class="carousel slide" data-ride="carousel">
+							<!-- Indicators -->
+							<ol class="carousel-indicators">
+								<li class="active" data-slide-to="0" data-target="#carousel12">
+								</li>
+								<li data-slide-to="1" data-target="#carousel12">
+								</li>
+								<li data-slide-to="2" data-target="#carousel12">
+								</li>
+							</ol>
+							<!-- Wrapper for slides -->
+							<div class="carousel-inner">
+								<div class="item active">
+									<img alt="Stanley House" src="../Images/StanleyHouse1.jpg">
+								</div>
+								<div class="item">
+									<img alt="Map" src="http://maps.googleapis.com/maps/api/staticmap?center=53.767684,-2.540424&amp;zoom=15&amp;size=600x300&amp;maptype=roadmap
+&amp;markers=color:red%7Clabel:C%7C53.767684,-2.540424&amp;sensor=false">
+								</div>
+								<div class="item">
+									<img alt="Lamb Chops" src="../Images/StanleyHouse2.jpg">
+								</div>
+							</div>
+														<!-- Controls -->
+							<a class="left carousel-control" data-slide="prev" href="#carousel12">
+							<span class="glyphicon glyphicon-chevron-left">
+							</span></a>
+							<a class="right carousel-control" data-slide="next" href="#carousel12">
+							<span class="glyphicon glyphicon-chevron-right">
+							</span></a></div>
+					</div>
+				</div>
+				</div>
+			</div>
+		
+		<div class="panel panel-default">
+			<div class="panel-heading">
+				<h4 class="panel-title">
+				<a data-parent="#accordion" data-toggle="collapse" href="#collapse13">
+				George and Dragon</a></h4>
+			</div>
+			<div id="collapse13" class="panel-collapse collapse">
+				<div class="panel-body">
+					<div class="Destination_Information">
+						<p></p>
+						<p></p>
+						<p></p>
+						</div>
+					<div class="Destination_Gallery">
+						<div id="carousel13" class="carousel slide" data-ride="carousel">
+							<!-- Indicators -->
+							<ol class="carousel-indicators">
+								<li class="active" data-slide-to="0" data-target="#carousel13">
+								</li>
+								<li data-slide-to="1" data-target="#carousel13">
+								</li>
+								<li data-slide-to="2" data-target="#carousel13">
+								</li>
+							</ol>
+							<!-- Wrapper for slides -->
+							<div class="carousel-inner">
+								<div class="item active">
+									<img alt="Stanley House" src="../Images/StanleyHouse1.jpg">
+								</div>
+								<div class="item">
+									<img alt="Map" src="http://maps.googleapis.com/maps/api/staticmap?center=53.767684,-2.540424&amp;zoom=15&amp;size=600x300&amp;maptype=roadmap
+&amp;markers=color:red%7Clabel:C%7C53.767684,-2.540424&amp;sensor=false">
+								</div>
+								<div class="item">
+									<img alt="Lamb Chops" src="../Images/StanleyHouse2.jpg">
+								</div>
+							</div>
+														<!-- Controls -->
+							<a class="left carousel-control" data-slide="prev" href="#carousel13">
+							<span class="glyphicon glyphicon-chevron-left">
+							</span></a>
+							<a class="right carousel-control" data-slide="next" href="#carousel13">
+							<span class="glyphicon glyphicon-chevron-right">
+							</span></a></div>
+					</div>
+				</div>
+				</div>
+			</div>
+		
+		<div class="panel panel-default">
+			<div class="panel-heading">
+				<h4 class="panel-title">
+				<a data-parent="#accordion" data-toggle="collapse" href="#collapse14">
+				The Blue Ball</a></h4>
+			</div>
+			<div id="collapse14" class="panel-collapse collapse">
+				<div class="panel-body">
+					<div class="Destination_Information">
+						<p></p>
+						<p></p>
+						<p></p>
+						</div>
+					<div class="Destination_Gallery">
+						<div id="carousel14" class="carousel slide" data-ride="carousel">
+							<!-- Indicators -->
+							<ol class="carousel-indicators">
+								<li class="active" data-slide-to="0" data-target="#carousel14">
+								</li>
+								<li data-slide-to="1" data-target="#carousel14">
+								</li>
+								<li data-slide-to="2" data-target="#carousel14">
+								</li>
+							</ol>
+							<!-- Wrapper for slides -->
+							<div class="carousel-inner">
+								<div class="item active">
+									<img alt="Stanley House" src="../Images/StanleyHouse1.jpg">
+								</div>
+								<div class="item">
+									<img alt="Map" src="http://maps.googleapis.com/maps/api/staticmap?center=53.767684,-2.540424&amp;zoom=15&amp;size=600x300&amp;maptype=roadmap
+&amp;markers=color:red%7Clabel:C%7C53.767684,-2.540424&amp;sensor=false">
+								</div>
+								<div class="item">
+									<img alt="Lamb Chops" src="../Images/StanleyHouse2.jpg">
+								</div>
+							</div>
+														<!-- Controls -->
+							<a class="left carousel-control" data-slide="prev" href="#carousel14">
+							<span class="glyphicon glyphicon-chevron-left">
+							</span></a>
+							<a class="right carousel-control" data-slide="next" href="#carousel14">
+							<span class="glyphicon glyphicon-chevron-right">
+							</span></a></div>
+					</div>
+				</div>
+
+				</div>
+			</div>
+		
+		<div class="panel panel-default">
+			<div class="panel-heading">
+				<h4 class="panel-title">
+				<a data-parent="#accordion" data-toggle="collapse" href="#collapse15">
+				The Marquess of Exeter</a></h4>
+			</div>
+			<div id="collapse15" class="panel-collapse collapse">
+				<div class="panel-body">
+					<div class="Destination_Information">
+						<p></p>
+						<p></p>
+						<p></p>
+						</div>
+					<div class="Destination_Gallery">
+						<div id="carousel15" class="carousel slide" data-ride="carousel">
+							<!-- Indicators -->
+							<ol class="carousel-indicators">
+								<li class="active" data-slide-to="0" data-target="#carousel15">
+								</li>
+								<li data-slide-to="1" data-target="#carousel15">
+								</li>1
+								<li data-slide-to="2" data-target="#carousel15">
+								</li>
+							</ol>
+							<!-- Wrapper for slides -->
+							<div class="carousel-inner">
+								<div class="item active">
+									<img alt="Stanley House" src="../Images/StanleyHouse1.jpg">
+								</div>
+								<div class="item">
+									<img alt="Map" src="http://maps.googleapis.com/maps/api/staticmap?center=53.767684,-2.540424&amp;zoom=15&amp;size=600x300&amp;maptype=roadmap
+&amp;markers=color:red%7Clabel:C%7C53.767684,-2.540424&amp;sensor=false">
+								</div>
+								<div class="item">
+									<img alt="Lamb Chops" src="../Images/StanleyHouse2.jpg">
+								</div>
+							</div>
+														<!-- Controls -->
+							<a class="left carousel-control" data-slide="prev" href="#carousel15">
+							<span class="glyphicon glyphicon-chevron-left">
+							</span></a>
+							<a class="right carousel-control" data-slide="next" href="#carousel15">
+							<span class="glyphicon glyphicon-chevron-right">
+							</span></a></div>
+					</div>
+				</div>
+				</div>
+			</div>
+		
+		<div class="panel panel-default">
+			<div class="panel-heading">
+				<h4 class="panel-title">
+				<a data-parent="#accordion" data-toggle="collapse" href="#collapse16">
+				The White Horse</a></h4>
+			</div>
+			<div id="collapse16" class="panel-collapse collapse">
+				<div class="panel-body">
+					<div class="Destination_Information">
+						<p></p>
+						<p></p>
+						<p></p>
+						</div>
+					<div class="Destination_Gallery">
+						<div id="carousel16" class="carousel slide" data-ride="carousel">
+							<!-- Indicators -->
+							<ol class="carousel-indicators">
+								<li class="active" data-slide-to="0" data-target="#carousel16">
+								</li>
+								<li data-slide-to="1" data-target="#carousel16">
+								</li>
+								<li data-slide-to="2" data-target="#carousel16">
+								</li>
+							</ol>
+							<!-- Wrapper for slides -->
+							<div class="carousel-inner">
+								<div class="item active">
+									<img alt="Stanley House" src="../Images/StanleyHouse1.jpg">
+								</div>
+								<div class="item">
+									<img alt="Map" src="http://maps.googleapis.com/maps/api/staticmap?center=53.767684,-2.540424&amp;zoom=15&amp;size=600x300&amp;maptype=roadmap
+&amp;markers=color:red%7Clabel:C%7C53.767684,-2.540424&amp;sensor=false">
+								</div>
+								<div class="item">
+									<img alt="Lamb Chops" src="../Images/StanleyHouse2.jpg">
+								</div>
+							</div>
+														<!-- Controls -->
+							<a class="left carousel-control" data-slide="prev" href="#carousel16">
+							<span class="glyphicon glyphicon-chevron-left">
+							</span></a>
+							<a class="right carousel-control" data-slide="next" href="#carousel16">
+							<span class="glyphicon glyphicon-chevron-right">
+							</span></a></div>
+					</div>
+				</div>
+				</div>
+			</div>
+		
+		<div class="panel panel-default">
+			<div class="panel-heading">
+				<h4 class="panel-title">
+				<a data-parent="#accordion" data-toggle="collapse" href="#collapse17">
+				The Merry Monk</a></h4>
+			</div>
+			<div id="collapse17" class="panel-collapse collapse">
+				<div class="panel-body">
+					<div class="Destination_Information">
+						<p></p>
+						<p></p>
+						<p></p>
+						</div>
+					<div class="Destination_Gallery">
+						<div id="carousel17" class="carousel slide" data-ride="carousel">
+							<!-- Indicators -->
+							<ol class="carousel-indicators">
+								<li class="active" data-slide-to="0" data-target="#carousel17">
+								</li>
+								<li data-slide-to="1" data-target="#carousel17">
+								</li>
+								<li data-slide-to="2" data-target="#carousel17">
+								</li>
+							</ol>
+							<!-- Wrapper for slides -->
+							<div class="carousel-inner">
+								<div class="item active">
+									<img alt="Stanley House" src="../Images/StanleyHouse1.jpg">
+								</div>
+								<div class="item">
+									<img alt="Map" src="http://maps.googleapis.com/maps/api/staticmap?center=53.767684,-2.540424&amp;zoom=15&amp;size=600x300&amp;maptype=roadmap
+&amp;markers=color:red%7Clabel:C%7C53.767684,-2.540424&amp;sensor=false">
+								</div>
+								<div class="item">
+									<img alt="Lamb Chops" src="../Images/StanleyHouse2.jpg">
+								</div>
+							</div>
+														<!-- Controls -->
+							<a class="left carousel-control" data-slide="prev" href="#carousel17">
+							<span class="glyphicon glyphicon-chevron-left">
+							</span></a>
+							<a class="right carousel-control" data-slide="next" href="#carousel17">
+							<span class="glyphicon glyphicon-chevron-right">
+							</span></a></div>
+					</div>
+				</div>
+
+				</div>
+			</div>
+		
+		<div class="panel panel-default">
+			<div class="panel-heading">
+				<h4 class="panel-title">
+				<a data-parent="#accordion" data-toggle="collapse" href="#collapse18">
+				The Coach House Inn</a></h4>
+			</div>
+			<div id="collapse18" class="panel-collapse collapse">
+				<div class="panel-body">
+					<div class="Destination_Information">
+						<p></p>
+						<p></p>
+						<p></p>
+						</div>
+					<div class="Destination_Gallery">
+						<div id="carousel18" class="carousel slide" data-ride="carousel">
+							<!-- Indicators -->
+							<ol class="carousel-indicators">
+								<li class="active" data-slide-to="0" data-target="#carousel18">
+								</li>
+								<li data-slide-to="1" data-target="#carousel18">
+								</li>
+								<li data-slide-to="2" data-target="#carousel18">
+								</li>
+							</ol>
+							<!-- Wrapper for slides -->
+							<div class="carousel-inner">
+								<div class="item active">
+									<img alt="Stanley House" src="../Images/StanleyHouse1.jpg">
+								</div>
+								<div class="item">
+									<img alt="Map" src="http://maps.googleapis.com/maps/api/staticmap?center=53.767684,-2.540424&amp;zoom=15&amp;size=600x300&amp;maptype=roadmap
+&amp;markers=color:red%7Clabel:C%7C53.767684,-2.540424&amp;sensor=false">
+								</div>
+								<div class="item">
+									<img alt="Lamb Chops" src="../Images/StanleyHouse2.jpg">
+								</div>
+							</div>
+														<!-- Controls -->
+							<a class="left carousel-control" data-slide="prev" href="#carousel18">
+							<span class="glyphicon glyphicon-chevron-left">
+							</span></a>
+							<a class="right carousel-control" data-slide="next" href="#carousel18">
+							<span class="glyphicon glyphicon-chevron-right">
+							</span></a></div>
+					</div>
+				</div>
+
+				</div>
+			</div>
+		
+		<div class="panel panel-default">
+			<div class="panel-heading">
+				<h4 class="panel-title">
+				<a data-parent="#accordion" data-toggle="collapse" href="#collapse19">
+				The Fox and Hounds</a></h4>
+			</div>
+			<div id="collapse19" class="panel-collapse collapse">
+				<div class="panel-body">
+					<div class="Destination_Information">
+						<p></p>
+						<p></p>
+						<p></p>
+						</div>
+					<div class="Destination_Gallery">
+						<div id="carousel19" class="carousel slide" data-ride="carousel">
+							<!-- Indicators -->
+							<ol class="carousel-indicators">
+								<li class="active" data-slide-to="0" data-target="#carousel19">
+								</li>
+								<li data-slide-to="1" data-target="#carousel19">
+								</li>
+								<li data-slide-to="2" data-target="#carousel19">
+								</li>
+							</ol>
+							<!-- Wrapper for slides -->
+							<div class="carousel-inner">
+								<div class="item active">
+									<img alt="Stanley House" src="../Images/StanleyHouse1.jpg">
+								</div>
+								<div class="item">
+									<img alt="Map" src="http://maps.googleapis.com/maps/api/staticmap?center=53.767684,-2.540424&amp;zoom=15&amp;size=600x300&amp;maptype=roadmap
+&amp;markers=color:red%7Clabel:C%7C53.767684,-2.540424&amp;sensor=false">
+								</div>
+								<div class="item">
+									<img alt="Lamb Chops" src="../Images/StanleyHouse2.jpg">
+								</div>
+							</div>
+														<!-- Controls -->
+							<a class="left carousel-control" data-slide="prev" href="#carousel19">
+							<span class="glyphicon glyphicon-chevron-left">
+							</span></a>
+							<a class="right carousel-control" data-slide="next" href="#carousel19">
+							<span class="glyphicon glyphicon-chevron-right">
+							</span></a></div>
+					</div>
+				</div>
+				</div>
+			</div>
+		
+		<div class="panel panel-default">
+			<div class="panel-heading">
+				<h4 class="panel-title">
+				<a data-parent="#accordion" data-toggle="collapse" href="#collapse20">
+				The Grainstore Brewery</a></h4>
+			</div>
+			<div id="collapse20" class="panel-collapse collapse">
+				<div class="panel-body">
+					<div class="Destination_Information">
+						<p></p>
+						<p></p>
+						<p></p>
+						</div>
+					<div class="Destination_Gallery">
+						<div id="carousel20" class="carousel slide" data-ride="carousel">
+							<!-- Indicators -->
+							<ol class="carousel-indicators">
+								<li class="active" data-slide-to="0" data-target="#carousel20">
+								</li>
+								<li data-slide-to="1" data-target="#carousel20">
+								</li>
+								<li data-slide-to="2" data-target="#carousel20">
+								</li>
+							</ol>
+							<!-- Wrapper for slides -->
+							<div class="carousel-inner">
+								<div class="item active">
+									<img alt="Stanley House" src="../Images/StanleyHouse1.jpg">
+								</div>
+								<div class="item">
+									<img alt="Map" src="http://maps.googleapis.com/maps/api/staticmap?center=53.767684,-2.540424&amp;zoom=15&amp;size=600x300&amp;maptype=roadmap
+&amp;markers=color:red%7Clabel:C%7C53.767684,-2.540424&amp;sensor=false">
+								</div>
+								<div class="item">
+									<img alt="Lamb Chops" src="../Images/StanleyHouse2.jpg">
+								</div>
+							</div>
+														<!-- Controls -->
+							<a class="left carousel-control" data-slide="prev" href="#carousel20">
+							<span class="glyphicon glyphicon-chevron-left">
+							</span></a>
+							<a class="right carousel-control" data-slide="next" href="#carousel20">
+							<span class="glyphicon glyphicon-chevron-right">
+							</span></a></div>
+					</div>
+				</div>
+				</div>
+			</div>
+		
+		<div class="panel panel-default">
+			<div class="panel-heading">
+				<h4 class="panel-title">
+				<a data-parent="#accordion" data-toggle="collapse" href="#collapse21">
+				The Exeter Arms</a></h4>
+			</div>
+			<div id="collapse21" class="panel-collapse collapse">
+				<div class="panel-body">
+					<div class="Destination_Information">
+						<p></p>
+						<p></p>
+						<p></p>
+						</div>
+					<div class="Destination_Gallery">
+						<div id="carousel21" class="carousel slide" data-ride="carousel">
+							<!-- Indicators -->
+							<ol class="carousel-indicators">
+								<li class="active" data-slide-to="0" data-target="#carousel21">
+								</li>
+								<li data-slide-to="1" data-target="#carousel21">
+								</li>
+								<li data-slide-to="2" data-target="#carousel21">
+								</li>
+							</ol>
+							<!-- Wrapper for slides -->
+							<div class="carousel-inner">
+								<div class="item active">
+									<img alt="Stanley House" src="../Images/StanleyHouse1.jpg">
+								</div>
+								<div class="item">
+									<img alt="Map" src="http://maps.googleapis.com/maps/api/staticmap?center=53.767684,-2.540424&amp;zoom=15&amp;size=600x300&amp;maptype=roadmap
+&amp;markers=color:red%7Clabel:C%7C53.767684,-2.540424&amp;sensor=false">
+								</div>
+								<div class="item">
+									<img alt="Lamb Chops" src="../Images/StanleyHouse2.jpg">
+								</div>
+							</div>
+														<!-- Controls -->
+							<a class="left carousel-control" data-slide="prev" href="#carousel21">
+							<span class="glyphicon glyphicon-chevron-left">
+							</span></a>
+							<a class="right carousel-control" data-slide="next" href="#carousel21">
+							<span class="glyphicon glyphicon-chevron-right">
+							</span></a></div>
+					</div>
+				</div>
+				</div>
+			</div>
+</div>
 </div>
 <!-- #EndEditable -->
 <div class="footer">

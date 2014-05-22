@@ -9,7 +9,7 @@
 <link href="../Bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
 <link href="../GreatBritishFoodTrailsStyleSheet.css" rel="stylesheet" type="text/css" />
 <!-- #BeginEditable "doctitle" -->
-<title>Great British Food Trail</title>
+<title>Chester</title>
 <!-- #EndEditable -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 <script src="../Bootstrap/js/collapse.js"></script>
@@ -19,6 +19,27 @@
 
 <script src="../device.js"></script>
 <script src="../inappbrowser.js"></script>
+
+<style type="text/css">
+
+      html { height: 100% }
+      body { height: 100%; margin: 0; padding: 0 }
+      #map-canvas { height: 100% }
+    </style>
+    <script type="text/javascript"
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB8jDR0YIs8s4BvExFK_7QUkitHtenuYh4&ampsensor=true">
+    </script>
+    <script type="text/javascript">
+      function initialize() {
+        var mapOptions = {
+          center: new google.maps.LatLng(-34.397, 150.644),
+          zoom: 8
+        };
+        var map = new google.maps.Map(document.getElementById("map-canvas"),
+            mapOptions);
+      }
+      google.maps.event.addDomListener(window, 'load', initialize);
+    </script>
 
 </head>
 
@@ -31,10 +52,16 @@
 			<button class="navbar-toggle" data-target="#bs-example-navbar-collapse-1" data-toggle="collapse" type="button">
 			<span class="sr-only">Toggle navigation</span>
 			<span class="icon-bar"></span><span class="icon-bar"></span>
-			<span class="icon-bar"></span></button>
-			<a class="navbar-brand" href="../index.html">Great British Food Trail</a>
-		</div>
-		<!-- Collect the nav links, forms, and other content for toggling -->
+			<span class="icon-bar"></span>
+			</button>
+			<div id="menu_back">
+      <span class="glyphicon glyphicon-chevron-left" onClick="history.go(-1);return true;"></span>
+      </div>      
+      <div id="app_title">
+      <a class="navbar-brand" href="../index.html">Great British Food Trail</a>
+      </div>
+    </div>
+    		<!-- Collect the nav links, forms, and other content for toggling -->
 		<div id="bs-example-navbar-collapse-1" class="collapse navbar-collapse">
 			<form class="navbar-form navbar-left" role="search">
 				<div class="form-group">
@@ -48,6 +75,7 @@
 				<li><a href="../Map.html">Map</a></li>
 				<li><a href="../Help.html">Help</a></li>
 				<li><a href="../TrailWebsites.html">Trail Websites</a></li>
+				<li><a href="../AboutUs.html">About Us</a></li>
 				<li class="divider"></li>
 				<!--<li class="dropdown">
 				<a class="dropdown-toggle" data-toggle="dropdown" href="#">Select 
@@ -68,6 +96,11 @@
 </nav>
 <!-- #BeginEditable "body" -->
 <div>
+<div class="panel panel-default">
+  <div class="panel-body">
+  <p>Chester Ale Trail</p>
+</div>
+</div>
 	<div id="accordion" class="panel-group">
 		<div class="panel panel-default">
 			<div class="panel-heading">
@@ -78,12 +111,9 @@
 			<div id="collapse1" class="panel-collapse collapse">
 				<div class="panel-body">
 					<div class="Destination_Information">
-						<p>Located a short 15 minute walk from Chester’s city centre, 
-						The Lodge Bar has many ales available, with over 400 different 
-						ales stocked last year alone. The bar buys direct from many 
-						different breweries across the country.</p>
+						<p>Located a short 15 minute walk from Chester’s city centre, The Lodge Bar has many ales available, with over 400 different ales stocked last year alone. The bar buys direct from many different breweries across the country.</p>
 						<p>8-10 Hoole Road, Chester, CH2 3NH</p>
-						<p>01244 324971</p>
+						<p>01244324971</p>
 					</div>
 					<div class="Destination_Gallery">
 						<div id="carousel1" class="carousel slide" data-ride="carousel">
@@ -102,7 +132,7 @@
 									<img alt="Stanley House" src="../Images/BawnLodge1.jpg">
 								</div>
 								<div class="item">
-									<img alt="Map" src="../Images/BawnLodge3.jpg">
+									<img alt="Map" src="../Images/BawnLodge3.jpg"> 
 								</div>
 								<div class="item">
 									<img alt="Lamb Chops" src="../Images/BawnLodge2.jpg">
@@ -128,10 +158,7 @@
 			<div id="collapse2" class="panel-collapse collapse">
 				<div class="panel-body">
 					<div class="Destination_Information">
-						<p>This friendly, relaxing atmosphere is the place of home 
-						cooked food and a wide selection of real ales and bottles 
-						beers from all around the world, with live football, rugby 
-						and cricket to name a few for entertainment.</p>
+						<p>This friendly, relaxing atmosphere is the place of home cooked food and a wide selection of real ales and bottles beers from all around the world, with live football, rugby and cricket to name a few for entertainment.</p>
 						<p>94 Lower Bridge Street, Chester, Cheshire, CH1 1RU</p>
 						<p>01244 311886</p>
 					</div>
@@ -152,8 +179,7 @@
 									<img alt="Stanley House" src="../Images/BearBillet1.jpg">
 								</div>
 								<div class="item">
-									<img alt="Map" src="../Images/BearBillet3.jpg">
-								</div>
+									<img alt="Map" src="../Images/BearBillet3.jpg"> </div>
 								<div class="item">
 									<img alt="Lamb Chops" src="../Images/BearBillet2.jpg">
 								</div>
@@ -178,12 +204,8 @@
 			<div id="collapse3" class="panel-collapse collapse">
 				<div class="panel-body">
 					<div class="Destination_Information">
-						<p>Determined to offer the best and widest selection of 
-						cask ales, the Brewery Tap offers a range of guest ales, 
-						traditional hand-pull cider and, of course, a choice of 
-						beers from Chester’s own brewery – Spitting Feathers.</p>
-						<p>The Brewery Tap, 52-54 Lower Bridge Street, Chester, 
-						CH1 1RU</p>
+						<p>Determined to offer the best and widest selection of cask ales, the Brewery Tap offers a range of guest ales, traditional hand-pull cider and, of course, a choice of beers from Chester’s own brewery – Spitting Feathers.</p>
+						<p>The Brewery Tap, 52-54 Lower Bridge Street, Chester, CH1 1RU</p>
 						<p>01244 340999</p>
 					</div>
 					<div class="Destination_Gallery">
@@ -203,7 +225,7 @@
 									<img alt="The Brewery Tap" src="../Images/BreweryTap1.jpg">
 								</div>
 								<div class="item">
-									<img alt="Map" src="../Images/BreweryTap3.jpg">
+									<img alt="Map" src="../Images/BreweryTap3.jpg"> 
 								</div>
 								<div class="item">
 									<img alt="The Brewery Tap Bar" src="../Images/BreweryTap2.jpg">
@@ -229,11 +251,7 @@
 			<div id="collapse4" class="panel-collapse collapse">
 				<div class="panel-body">
 					<div class="Destination_Information">
-						<p>This nineteenth century city centre pub serves quality, 
-						country kitchen cooking with traditional ales and excellent 
-						wines. Proud of how much care and attention the give to 
-						managing their cellar, and serving the beers exactly as 
-						the brewers intended.</p>
+						<p>This nineteenth century city centre pub serves quality, country kitchen cooking with traditional ales and excellent wines. Proud of how much care and attention the give to managing their cellar, and serving the beers exactly as the brewers intended.</p>
 						<p>The Coach House, 39 Northgate Street, Chester, CH1 2HQ</p>
 						<p>01244 351900</p>
 					</div>
@@ -254,8 +272,7 @@
 									<img alt="Stanley House" src="../Images/CoachHouse1.jpg">
 								</div>
 								<div class="item">
-									<img alt="Map" src="../Images/CoachHouse3.jpg">
-								</div>
+									<img alt="Map" src="../Images/CoachHouse3.jpg"> </div>
 								<div class="item">
 									<img alt="Lamb Chops" src="../Images/CoachHouse2.jpg">
 								</div>
@@ -280,15 +297,8 @@
 			<div id="collapse5" class="panel-collapse collapse">
 				<div class="panel-body">
 					<div class="Destination_Information">
-						<p>The Real Ale Bar of the Hotel is located alongside the 
-						Shropshire Union Canal on the ground floor and is featured 
-						in Good Beer Guide 1994-2011. Serving a great selection 
-						of Real Ales, with 16 hand pumps, 10 regularly changing 
-						Cask Ales, over 2000 guest beers per year, a live jazz band 
-						every Monday and a Deli Counter that serves hot bar means, 
-						salads, jacket potatoes, sandwiches and baguettes.</p>
-						<p>Mill Hotel &amp; Spa Destination, Mill Hotel Ltd, Milton 
-						Street, Chester, CH1 3NF</p>
+						<p>The Real Ale Bar of the Hotel is located alongside the Shropshire Union Canal on the ground floor and is featured in Good Beer Guide 1994-2011. Serving a great selection of Real Ales, with 16 hand pumps, 10 regularly changing Cask Ales, over 2000 guest beers per year, a live jazz band every Monday and a Deli Counter that serves hot bar means, salads, jacket potatoes, sandwiches and baguettes.</p>
+						<p>Mill Hotel & Spa Destination, Mill Hotel Ltd, Milton Street, Chester, CH1 3NF</p>
 						<p>01244 350035</p>
 					</div>
 					<div class="Destination_Gallery">
@@ -308,8 +318,7 @@
 									<img alt="Stanley House" src="../Images/MillHotel1.jpg">
 								</div>
 								<div class="item">
-									<img alt="Map" src="../Images/MillHotel3.jpg">
-								</div>
+									<img alt="Map" src="../Images/MillHotel3.jpg"> </div>
 								<div class="item">
 									<img alt="Lamb Chops" src="../Images/MillHotel2.jpg">
 								</div>
@@ -334,13 +343,9 @@
 			<div id="collapse6" class="panel-collapse collapse">
 				<div class="panel-body">
 					<div class="Destination_Information">
-						<p>This old city of London boozer has a really good reputation 
-						for its food, great meeting place over a pub lunch with 
-						no doubt that half of the commercial and professional heart 
-						of the city will be in there at some point during the week.</p>
-						<p>The Old Harkers Arms, 1 Russell Street, Chester, Cheshire, 
-						CH3 5AL</p>
-						<p>01244 344 525</p>
+						<p>This old city of London boozer has a really good reputation for its food, great meeting place over a pub lunch with no doubt that half of the commercial and professional heart of the city will be in there at some point during the week.</p>
+						<p>The Old Harkers Arms, 1 Russell Street, Chester, Cheshire, CH3 5AL</p>
+						<p>02144 344 525</p>
 					</div>
 					<div class="Destination_Gallery">
 						<div id="carousel6" class="carousel slide" data-ride="carousel">
@@ -359,8 +364,7 @@
 									<img alt="Stanley House" src="../Images/HarkersArms1.jpg">
 								</div>
 								<div class="item">
-									<img alt="Map" src="../Images/HarkersArms3.jpg">
-								</div>
+									<img alt="Map" src="../Images/HarkersArms3.jpg"> </div>
 								<div class="item">
 									<img alt="Lamb Chops" src="../Images/HarkersArms2.jpg">
 								</div>
@@ -385,14 +389,10 @@
 			<div id="collapse7" class="panel-collapse collapse">
 				<div class="panel-body">
 					<div class="Destination_Information">
-						<p>This is the only working brewery within Chester, less 
-						than 50 yards from the site of the famous Northgate Brewery, 
-						won a CAMRA award winning beer in October 2012. The range 
-						of ales here is quickly expanding, combining the best of 
-						brewing tradition with contemporary styles.</p>
-						<p>57 Northgate Street, Chester, CH1 2HO</p>
-						<p>01244 325829</p>
-					</div>
+					<p>This is the only working brewery within Chester, less than 50 yards from the site of the famous Northgate Brewery, won a CAMRA award winning beer in October 2012. The range of ales here is quickly expanding, combining the best of brewing tradition with contemporary styles.</p>
+					<p>57 Northgate Street, Chester, CH1 2HO</p>
+					<p>01244 325829</p>
+						</div>
 					<div class="Destination_Gallery">
 						<div id="carousel7" class="carousel slide" data-ride="carousel">
 							<!-- Indicators -->
@@ -410,8 +410,7 @@
 									<img alt="Stanley House" src="../Images/PiedBull1.jpg">
 								</div>
 								<div class="item">
-									<img alt="Map" src="../Images/PiedBull3.jpg">
-								</div>
+									<img alt="Map" src="../Images/PiedBull3.jpg"> </div>
 								<div class="item">
 									<img alt="Lamb Chops" src="../Images/PiedBull2.jpg">
 								</div>
@@ -436,10 +435,7 @@
 			<div id="collapse8" class="panel-collapse collapse">
 				<div class="panel-body">
 					<div class="Destination_Information">
-						<p>Ring O’Bells is a welcoming Cheshire pub combining high 
-						class food with the finest wines and beers that hosts regular 
-						events including Farmers Markets so you can try even more 
-						local cuisine.</p>
+						<p>Ring O’Bells is a welcoming Cheshire pub combining high class food with the finest wines and beers that hosts regular events including Farmers Markets so you can try even more local cuisine.</p>
 						<p>Ring O’Bells, Village Rd, Christleton, Chester, CH3 7AS</p>
 						<p>01244 335422</p>
 					</div>
@@ -460,8 +456,7 @@
 									<img alt="Stanley House" src="../Images/RingoBells1.jpg">
 								</div>
 								<div class="item">
-									<img alt="Map" src="../Images/RingoBells3.jpg">
-								</div>
+									<img alt="Map" src="../Images/RingoBells3.jpg"> </div>
 								<div class="item">
 									<img alt="Lamb Chops" src="../Images/RingoBells2.jpg">
 								</div>
@@ -486,11 +481,7 @@
 			<div id="collapse9" class="panel-collapse collapse">
 				<div class="panel-body">
 					<div class="Destination_Information">
-						<p>Renowned as a music and arts venue, Telford's Warehouse 
-						offers an exceptional selection of European beers, CAMRA 
-						rated cask conditioned ales and an extensive wine list. 
-						Superbly located on the edge of the canal, Telford's offers 
-						a fantastic beer garden or grand indoor seating.</p>
+						<p>Renowned as a music  and arts venue, Telford's Warehouse offers an exceptional selection of European beers, CAMRA rated cask conditioned ales and an extensive wine list. Superbly located on the edge of the canal, Telford's offers a fantastic beer garden or grand indoor seating.</p>
 						<p>Telford’s Warehouse, Tower Wharf, Chester, CH1 4EZ</p>
 						<p>01244 390 090</p>
 					</div>
@@ -511,8 +502,7 @@
 									<img alt="Stanley House" src="../Images/Telfords1.jpg">
 								</div>
 								<div class="item">
-									<img alt="Map" src="../Images/Telfords3.jpg">
-								</div>
+									<img alt="Map" src="../Images/Telfords3.jpg"> </div>
 								<div class="item">
 									<img alt="Lamb Chops" src="../Images/Telfords2.jpg">
 								</div>
@@ -537,10 +527,7 @@
 			<div id="collapse10" class="panel-collapse collapse">
 				<div class="panel-body">
 					<div class="Destination_Information">
-						<p>Situated in the centre of Chester, close to the nightclubs, 
-						this is a popular circuit pub with a range of drinks found 
-						at the bar. Food is available every day until early evening 
-						with a menu full of many choices.</p>
+						<p>Situated in the centre of Chester, close to the nightclubs, this is a popular circuit pub with a range of drinks found at the bar. Food is available every day until early evening with a menu full of many choices.</p>
 						<p>Frodsham Street, Chester, CH1 3JL</p>
 						<p>01244 328007</p>
 					</div>
@@ -562,7 +549,7 @@
 								</div>
 								<div class="item">
 									<img alt="Map" src="../Images/TempleBar3.jpg">
-								</div>
+									</div>
 								<div class="item">
 									<img alt="Lamb Chops" src="../Images/TempleBar2.jpg">
 								</div>
@@ -587,10 +574,7 @@
 			<div id="collapse11" class="panel-collapse collapse">
 				<div class="panel-body">
 					<div class="Destination_Information">
-						<p>Kash Taprooms is an American Style bar selling American 
-						Craft beers and Cask Ales, such as Dead Pony Club, Blue 
-						Monkey, Hophead, Oakham, Sandstone, and from the local brewery, 
-						Frodsham Brewery, Spank 6%.</p>
+						<p>Kash Taprooms is an American Style bar selling American Craft beers and Cask Ales, such as Dead Pony Club, Blue Monkey, Hophead, Oakham, Sandstone, and from the local brewery, Frodsham Brewery, Spank 6%.</p>
 						<p>121 Brook Street, Chester, Cheshire, CH1 3DU</p>
 						<p>01244 401777</p>
 					</div>
@@ -611,8 +595,7 @@
 									<img alt="Stanley House" src="../Images/KashTaprooms1.jpg">
 								</div>
 								<div class="item">
-									<img alt="Map" src="../Images/KashTaprooms3.jpg">
-								</div>
+									<img alt="Map" src="../Images/KashTaprooms3.jpg"> </div>
 								<div class="item">
 									<img alt="Lamb Chops" src="../Images/KashTaprooms2.jpg">
 								</div>
@@ -629,10 +612,6 @@
 			</div>
 		</div>
 	</div>
-	<div class="filler">
-
-</div>
-
 </div>
 <!-- #EndEditable -->
 <div class="footer">

@@ -9,7 +9,7 @@
 <link href="../Bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
 <link href="../GreatBritishFoodTrailsStyleSheet.css" rel="stylesheet" type="text/css" />
 <!-- #BeginEditable "doctitle" -->
-<title>Great British Food Trail</title>
+<title>Clwydian Range</title>
 <!-- #EndEditable -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 <script src="../Bootstrap/js/collapse.js"></script>
@@ -19,6 +19,27 @@
 
 <script src="../device.js"></script>
 <script src="../inappbrowser.js"></script>
+
+<style type="text/css">
+
+      html { height: 100% }
+      body { height: 100%; margin: 0; padding: 0 }
+      #map-canvas { height: 100% }
+    </style>
+    <script type="text/javascript"
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB8jDR0YIs8s4BvExFK_7QUkitHtenuYh4&ampsensor=true">
+    </script>
+    <script type="text/javascript">
+      function initialize() {
+        var mapOptions = {
+          center: new google.maps.LatLng(-34.397, 150.644),
+          zoom: 8
+        };
+        var map = new google.maps.Map(document.getElementById("map-canvas"),
+            mapOptions);
+      }
+      google.maps.event.addDomListener(window, 'load', initialize);
+    </script>
 
 </head>
 
@@ -31,10 +52,16 @@
 			<button class="navbar-toggle" data-target="#bs-example-navbar-collapse-1" data-toggle="collapse" type="button">
 			<span class="sr-only">Toggle navigation</span>
 			<span class="icon-bar"></span><span class="icon-bar"></span>
-			<span class="icon-bar"></span></button>
-			<a class="navbar-brand" href="../index.html">Great British Food Trail</a>
-		</div>
-		<!-- Collect the nav links, forms, and other content for toggling -->
+			<span class="icon-bar"></span>
+			</button>
+			<div id="menu_back">
+      <span class="glyphicon glyphicon-chevron-left" onClick="history.go(-1);return true;"></span>
+      </div>      
+      <div id="app_title">
+      <a class="navbar-brand" href="../index.html">Great British Food Trail</a>
+      </div>
+    </div>
+    		<!-- Collect the nav links, forms, and other content for toggling -->
 		<div id="bs-example-navbar-collapse-1" class="collapse navbar-collapse">
 			<form class="navbar-form navbar-left" role="search">
 				<div class="form-group">
@@ -48,6 +75,7 @@
 				<li><a href="../Map.html">Map</a></li>
 				<li><a href="../Help.html">Help</a></li>
 				<li><a href="../TrailWebsites.html">Trail Websites</a></li>
+				<li><a href="../AboutUs.html">About Us</a></li>
 				<li class="divider"></li>
 				<!--<li class="dropdown">
 				<a class="dropdown-toggle" data-toggle="dropdown" href="#">Select 
@@ -68,6 +96,11 @@
 </nav>
 <!-- #BeginEditable "body" -->
 <div>
+<div class="panel panel-default">
+  <div class="panel-body">
+  <p>The Clwydian Range Food Trail</p>
+</div>
+</div>
 <div class="panel-group" id="accordion">
         <div class="panel panel-default">
             <div class="panel-heading">
@@ -79,10 +112,42 @@
             <div id="collapse1" class="panel-collapse collapse">
                 <div class="panel-body">
                     <div class="Destination_Information">
-                        Stanley House Hotel and Spa consists of two restaurants, ‘Grill On The Hill’ and ‘Mr Fred’s Bar’. ‘Grill On The Hill’ uses the best Lancashire meat and produce, whilst ‘Mr Fred’s Bar’ is a gastro-inspired menu, ranging from light bites to sharing platters, using local produce.                   
+                    <p>Fresh, local, seasonal, homemade food. A taste of wales with great food, all homemade from scratch using the best locally source, seasonal ingredients. Day menu includes breakfast and brunch section, homemade soups, main and light lunches, desserts, traditional English and Welsh afternoon teas and a great range of cakes and quality teas and fairtrade coffee. They specialise in making the best afternoon tea by using leaves in real tea pots to make a seriously good cup of tea. Featured on BBC’s Rip Off Britain with great review and compliments.</p>
+                    <p>Loggerheads Country Park, Ruthin Road, Loggerheads, Denbighshire, CH7 5LH</p>
+                    <p>01352 810397</p>
                     </div>
                     <div class="Destination_Gallery">
-                    </div>
+						<div id="carousel1" class="carousel slide" data-ride="carousel">
+							<!-- Indicators -->
+							<ol class="carousel-indicators">
+								<li class="active" data-slide-to="0" data-target="#carousel1">
+								</li>
+								<li data-slide-to="1" data-target="#carousel1">
+								</li>
+								<li data-slide-to="2" data-target="#carousel1">
+								</li>
+							</ol>
+							<!-- Wrapper for slides -->
+							<div class="carousel-inner">
+								<div class="item active">
+									<img alt="Stanley House" src="../Images/CaffiFlorence1.jpg">
+								</div>
+								<div class="item">
+									<img alt="Map" src="../Images/CaffiFlorence2.jpg">
+								</div>
+								<div class="item">
+									<img alt="Lamb Chops" src="../Images/CaffiFlorence3.jpg">
+								</div>
+							</div>
+														<!-- Controls -->
+							<a class="left carousel-control" data-slide="prev" href="#carousel1">
+							<span class="glyphicon glyphicon-chevron-left">
+							</span></a>
+							<a class="right carousel-control" data-slide="next" href="#carousel1">
+							<span class="glyphicon glyphicon-chevron-right">
+							</span></a></div>
+					</div>
+
                 </div>
             </div>
         </div>
@@ -97,10 +162,41 @@
             <div id="collapse2" class="panel-collapse collapse">
                 <div class="panel-body">
                     <div class="Destination_Information">
-                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                    <p>A family run business located on a working farm in an area of natural beauty. They produce the finest Welsh Lamb and Pork in the Clwydian Range. They offer locally produced products of poultry and beef along with homemade sausages from their home reared pork.</p>
+                    <p>Rhesgoed Farm, Llanbedr Dyffryn Clwyd, Ruthin, LL151YE</p>
+                    <p>01824703090</p>
                     </div>
-                    <div class="Destination_Gallery">
-                    </div>
+                   <div class="Destination_Gallery">
+						<div id="carousel2" class="carousel slide" data-ride="carousel">
+							<!-- Indicators -->
+							<ol class="carousel-indicators">
+								<li class="active" data-slide-to="0" data-target="#carousel2">
+								</li>
+								<li data-slide-to="1" data-target="#carousel2">
+								</li>
+								<li data-slide-to="2" data-target="#carousel2">
+								</li>
+							</ol>
+							<!-- Wrapper for slides -->
+							<div class="carousel-inner">
+								<div class="item active">
+									<img alt="Stanley House" src="../Images/Rhesgoed1.jpg">
+								</div>
+								<div class="item">
+									<img alt="Map" src="../Images/Rhesgoed3.jpg">
+								</div>
+								<div class="item">
+									<img alt="Lamb Chops" src="../Images/Rhesgoed2.jpg">
+								</div>
+							</div>
+														<!-- Controls -->
+							<a class="left carousel-control" data-slide="prev" href="#carousel2">
+							<span class="glyphicon glyphicon-chevron-left">
+							</span></a>
+							<a class="right carousel-control" data-slide="next" href="#carousel2">
+							<span class="glyphicon glyphicon-chevron-right">
+							</span></a></div>
+					</div>
                 </div>
             </div>
         </div>
@@ -115,10 +211,41 @@
             <div id="collapse3" class="panel-collapse collapse">
                 <div class="panel-body">
                     <div class="Destination_Information">
-                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                    <p>WG Jones offers beautiful cuts of meat and they pride themselves in quality bacon and sausages and have won True Taste Awards. They also feature great cotemporary classics and hot dishes from the extensive WG Jones menu.</p>
+                    <p>Well Street, Ruthin, LL151AF</p>
+                    <p>01824 702807</p>
                     </div>
                     <div class="Destination_Gallery">
-                    </div>
+						<div id="carousel3" class="carousel slide" data-ride="carousel">
+							<!-- Indicators -->
+							<ol class="carousel-indicators">
+								<li class="active" data-slide-to="0" data-target="#carousel3">
+								</li>
+								<li data-slide-to="1" data-target="#carousel3">
+								</li>
+								<li data-slide-to="2" data-target="#carousel3">
+								</li>
+							</ol>
+							<!-- Wrapper for slides -->
+							<div class="carousel-inner">
+								<div class="item active">
+									<img alt="Stanley House" src="../Images/WGJones1.jpg">
+								</div>
+								<div class="item">
+									<img alt="Map" src="../Images/WGJones3.jpg">
+								</div>
+								<div class="item">
+									<img alt="Lamb Chops" src="../Images/WGJones2.jpg">
+								</div>
+							</div>
+														<!-- Controls -->
+							<a class="left carousel-control" data-slide="prev" href="#carousel3">
+							<span class="glyphicon glyphicon-chevron-left">
+							</span></a>
+							<a class="right carousel-control" data-slide="next" href="#carousel3">
+							<span class="glyphicon glyphicon-chevron-right">
+							</span></a></div>
+					</div>
                 </div>
             </div>
         </div>
@@ -133,17 +260,45 @@
             <div id="collapse4" class="panel-collapse collapse">
                 <div class="panel-body">
                     <div class="Destination_Information">
-                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                    <p>Purveyors of fine food & wines, specialising in bespoke takeaways and outside catering. Leonardo’s Delicatessen has won several national awards including not only, Champion Pie (with their Chicken, Leek & Laver bread pie) at the British Pie awards in 2011, but also a Gold and Bronze award for their Steak & Kidney Pie and Chicken, Chilli & Cheese Pasty. They also achieved a Silver Award for the delicatessen at the True Taste of Wales 2011. They offer a wide range of local and continental cheeses, homemade pies, quiches, salads, pâtés, olives and charcuterie, as well as a wide range of Welsh wines, spirits and liqueurs. They also stock Charbonnel et Walker and Booja Booja chocolates alongside chocolates and fudges produced in Wales.</p>
+                    <p>4 Well Street, Ruthin, LL151AE</p>
+                    <p>01824707161</p>
                     </div>
                     <div class="Destination_Gallery">
-                    </div>
+						<div id="carousel4" class="carousel slide" data-ride="carousel">
+							<!-- Indicators -->
+							<ol class="carousel-indicators">
+								<li class="active" data-slide-to="0" data-target="#carousel4">
+								</li>
+								<li data-slide-to="1" data-target="#carousel4">
+								</li>
+								<li data-slide-to="2" data-target="#carousel4">
+								</li>
+							</ol>
+							<!-- Wrapper for slides -->
+							<div class="carousel-inner">
+								<div class="item active">
+									<img alt="Stanley House" src="../Images/Leonardos1.jpg">
+								</div>
+								<div class="item">
+									<img alt="Map" src="../Images/Leonardos3.jpg">
+								</div>
+								<div class="item">
+									<img alt="Lamb Chops" src="../Images/Leonardos2.jpg">
+								</div>
+							</div>
+														<!-- Controls -->
+							<a class="left carousel-control" data-slide="prev" href="#carousel4">
+							<span class="glyphicon glyphicon-chevron-left">
+							</span></a>
+							<a class="right carousel-control" data-slide="next" href="#carousel4">
+							<span class="glyphicon glyphicon-chevron-right">
+							</span></a></div>
+					</div>
                 </div>
             </div>
         </div>
         </div>
-<div class="filler">
-
-</div>
 
 </div>
 <!-- #EndEditable -->

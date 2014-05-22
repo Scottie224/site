@@ -9,7 +9,7 @@
 <link href="../Bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
 <link href="../GreatBritishFoodTrailsStyleSheet.css" rel="stylesheet" type="text/css" />
 <!-- #BeginEditable "doctitle" -->
-<title>Ribble Valley</title>
+<title>Ribble Valley Incomplete</title>
 <!-- #EndEditable -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 <script src="../Bootstrap/js/collapse.js"></script>
@@ -19,6 +19,27 @@
 
 <script src="../device.js"></script>
 <script src="../inappbrowser.js"></script>
+
+<style type="text/css">
+
+      html { height: 100% }
+      body { height: 100%; margin: 0; padding: 0 }
+      #map-canvas { height: 100% }
+    </style>
+    <script type="text/javascript"
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB8jDR0YIs8s4BvExFK_7QUkitHtenuYh4&ampsensor=true">
+    </script>
+    <script type="text/javascript">
+      function initialize() {
+        var mapOptions = {
+          center: new google.maps.LatLng(-34.397, 150.644),
+          zoom: 8
+        };
+        var map = new google.maps.Map(document.getElementById("map-canvas"),
+            mapOptions);
+      }
+      google.maps.event.addDomListener(window, 'load', initialize);
+    </script>
 
 </head>
 
@@ -31,10 +52,16 @@
 			<button class="navbar-toggle" data-target="#bs-example-navbar-collapse-1" data-toggle="collapse" type="button">
 			<span class="sr-only">Toggle navigation</span>
 			<span class="icon-bar"></span><span class="icon-bar"></span>
-			<span class="icon-bar"></span></button>
-			<a class="navbar-brand" href="../index.html">Great British Food Trail</a>
-		</div>
-		<!-- Collect the nav links, forms, and other content for toggling -->
+			<span class="icon-bar"></span>
+			</button>
+			<div id="menu_back">
+      <span class="glyphicon glyphicon-chevron-left" onClick="history.go(-1);return true;"></span>
+      </div>      
+      <div id="app_title">
+      <a class="navbar-brand" href="../index.html">Great British Food Trail</a>
+      </div>
+    </div>
+    		<!-- Collect the nav links, forms, and other content for toggling -->
 		<div id="bs-example-navbar-collapse-1" class="collapse navbar-collapse">
 			<form class="navbar-form navbar-left" role="search">
 				<div class="form-group">
@@ -48,6 +75,7 @@
 				<li><a href="../Map.html">Map</a></li>
 				<li><a href="../Help.html">Help</a></li>
 				<li><a href="../TrailWebsites.html">Trail Websites</a></li>
+				<li><a href="../AboutUs.html">About Us</a></li>
 				<li class="divider"></li>
 				<!--<li class="dropdown">
 				<a class="dropdown-toggle" data-toggle="dropdown" href="#">Select 
@@ -68,6 +96,11 @@
 </nav>
 <!-- #BeginEditable "body" -->
 <div>
+<div class="panel panel-default">
+  <div class="panel-body">
+  <p>The Ribble Valley Food Trail</p>
+</div>
+</div>
 	<div id="accordion" class="panel-group">
 		<div class="panel panel-default">
 			<div class="panel-heading">
@@ -88,14 +121,14 @@
 						<p>01254 769200</p>
 					</div>
 					<div class="Destination_Gallery">
-						<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+						<div id="carousel1" class="carousel slide" data-ride="carousel">
 							<!-- Indicators -->
 							<ol class="carousel-indicators">
-								<li class="active" data-slide-to="0" data-target="#carousel-example-generic">
+								<li class="active" data-slide-to="0" data-target="#carousel1">
 								</li>
-								<li data-slide-to="1" data-target="#carousel-example-generic">
+								<li data-slide-to="1" data-target="#carousel1">
 								</li>
-								<li data-slide-to="2" data-target="#carousel-example-generic">
+								<li data-slide-to="2" data-target="#carousel1">
 								</li>
 							</ol>
 							<!-- Wrapper for slides -->
@@ -105,17 +138,16 @@
 								</div>
 								<div class="item">
 									<img alt="Map" src="http://maps.googleapis.com/maps/api/staticmap?center=53.767684,-2.540424&amp;zoom=15&amp;size=600x300&amp;maptype=roadmap
-&amp;markers=color:red%7Clabel:C%7C53.767684,-2.540424&amp;sensor=false">
-								</div>
+&amp;markers=color:red%7Clabel:C%7C53.767684,-2.540424&amp;sensor=false"> </div>
 								<div class="item">
 									<img alt="Lamb Chops" src="../Images/StanleyHouse2.jpg">
 								</div>
 							</div>
-														<!-- Controls -->
-							<a class="left carousel-control" data-slide="prev" href="#carousel-example-generic">
+							<!-- Controls -->
+							<a class="left carousel-control" data-slide="prev" href="#carousel1">
 							<span class="glyphicon glyphicon-chevron-left">
 							</span></a>
-							<a class="right carousel-control" data-slide="next" href="#carousel-example-generic">
+							<a class="right carousel-control" data-slide="next" href="#carousel1">
 							<span class="glyphicon glyphicon-chevron-right">
 							</span></a></div>
 					</div>
@@ -131,26 +163,21 @@
 			<div id="collapse2" class="panel-collapse collapse">
 				<div class="panel-body">
 					<div class="Destination_Information">
-						Anim pariatur cliche reprehenderit, enim eiusmod high life 
-						accusamus terry richardson ad squid. 3 wolf moon officia 
-						aute, non cupidatat skateboard dolor brunch. Food truck 
-						quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, 
-						sunt aliqua put a bird on it squid single-origin coffee 
-						nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, 
-						craft beer labore wes anderson cred nesciunt sapiente ea 
-						proident. Ad vegan excepteur butcher vice lomo. Leggings 
-						occaecat craft beer farm-to-table, raw denim aesthetic synth 
-						nesciunt you probably haven't heard of them accusamus labore 
-						sustainable VHS. </div>
+						<p>The Hotel’s restaurant uses local and regional suppliers 
+						to source only the freshest and in season produce. </p>
+						<p>The Millstone Hotel, Church Lane, Mellor, Lancashire 
+						BB2 7JR</p>
+						<p>01254 813333</p>
+					</div>
 					<div class="Destination_Gallery">
-						<div id="carousel-example-generic0" class="carousel slide" data-ride="carousel">
+						<div id="carousel2" class="carousel slide" data-ride="carousel">
 							<!-- Indicators -->
 							<ol class="carousel-indicators">
-								<li class="active" data-slide-to="0" data-target="#carousel-example-generic">
+								<li class="active" data-slide-to="0" data-target="#carousel2">
 								</li>
-								<li data-slide-to="1" data-target="#carousel-example-generic">
+								<li data-slide-to="1" data-target="#carousel2">
 								</li>
-								<li data-slide-to="2" data-target="#carousel-example-generic">
+								<li data-slide-to="2" data-target="#carousel2">
 								</li>
 							</ol>
 							<!-- Wrapper for slides -->
@@ -160,24 +187,22 @@
 								</div>
 								<div class="item">
 									<img alt="Map" src="http://maps.googleapis.com/maps/api/staticmap?center=53.767684,-2.540424&amp;zoom=15&amp;size=600x300&amp;maptype=roadmap
-&amp;markers=color:red%7Clabel:C%7C53.767684,-2.540424&amp;sensor=false">
-								</div>
+&amp;markers=color:red%7Clabel:C%7C53.767684,-2.540424&amp;sensor=false"> </div>
 								<div class="item">
 									<img alt="Lamb Chops" src="../Images/StanleyHouse2.jpg">
 								</div>
 							</div>
-														<!-- Controls -->
-							<a class="left carousel-control" data-slide="prev" href="#carousel-example-generic">
+							<!-- Controls -->
+							<a class="left carousel-control" data-slide="prev" href="#carousel2">
 							<span class="glyphicon glyphicon-chevron-left">
 							</span></a>
-							<a class="right carousel-control" data-slide="next" href="#carousel-example-generic">
+							<a class="right carousel-control" data-slide="next" href="#carousel2">
 							<span class="glyphicon glyphicon-chevron-right">
 							</span></a></div>
 					</div>
 				</div>
-				</div>
 			</div>
-		
+		</div>
 		<div class="panel panel-default">
 			<div class="panel-heading">
 				<h4 class="panel-title">
@@ -187,22 +212,20 @@
 			<div id="collapse3" class="panel-collapse collapse">
 				<div class="panel-body">
 					<div class="Destination_Information">
-						Anim pariatur cliche reprehenderit, enim eiusmod high life 
-						accusamus terry richardson ad squid. 3 wolf moon officia 
-						aute, non cupidatat skateboard dolor brunch. Food truck 
-						quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, 
-						sunt aliqua put a bird on it squid single-origin coffee 
-						nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, 
-						craft beer labore wes anderson cred nesciunt sapiente ea 
-						proident. Ad vegan excepteur butcher vice lomo. Leggings 
-						occaecat craft beer farm-to-table, raw denim aesthetic synth 
-						nesciunt you probably haven't heard of them accusamus labore 
-						sustainable VHS. </div>
+						<p>This award-winning Ice cream is available from farm shops, 
+						tearooms and local restaurants and Hawkshaw Farm Park Visitor 
+						Centre. The ice cream is made from their own dairy herd 
+						with the use of locally sourced ingredients, such as cookied 
+						from Cottage Cookies at Trawden.</p>
+						<p>Mrs Dowson’s Ice Cream, Hawkshaw Farm, Longsight Road, 
+						Clayton-le-Dale, Blackburn, BB2 7JA</p>
+						<p>01254 812407</p>
+					</div>
 					<div class="Destination_Gallery">
-						<div id="carousel-example-generic1" class="carousel slide" data-ride="carousel">
+						<div id="carousel3" class="carousel slide" data-ride="carousel">
 							<!-- Indicators -->
 							<ol class="carousel-indicators">
-								<li class="active" data-slide-to="0" data-target="#carousel-example-generic">
+								<li class="active" data-slide-to="0" data-target="#carousel3">
 								</li>
 								<li data-slide-to="1" data-target="#carousel-example-generic">
 								</li>
@@ -216,24 +239,22 @@
 								</div>
 								<div class="item">
 									<img alt="Map" src="http://maps.googleapis.com/maps/api/staticmap?center=53.767684,-2.540424&amp;zoom=15&amp;size=600x300&amp;maptype=roadmap
-&amp;markers=color:red%7Clabel:C%7C53.767684,-2.540424&amp;sensor=false">
-								</div>
+&amp;markers=color:red%7Clabel:C%7C53.767684,-2.540424&amp;sensor=false"> </div>
 								<div class="item">
 									<img alt="Lamb Chops" src="../Images/StanleyHouse2.jpg">
 								</div>
 							</div>
-														<!-- Controls -->
-							<a class="left carousel-control" data-slide="prev" href="#carousel-example-generic">
+							<!-- Controls -->
+							<a class="left carousel-control" data-slide="prev" href="#carousel3">
 							<span class="glyphicon glyphicon-chevron-left">
 							</span></a>
-							<a class="right carousel-control" data-slide="next" href="#carousel-example-generic">
+							<a class="right carousel-control" data-slide="next" href="#carousel3">
 							<span class="glyphicon glyphicon-chevron-right">
 							</span></a></div>
 					</div>
 				</div>
-				</div>
 			</div>
-	
+		</div>
 		<div class="panel panel-default">
 			<div class="panel-heading">
 				<h4 class="panel-title">
@@ -243,26 +264,24 @@
 			<div id="collapse4" class="panel-collapse collapse">
 				<div class="panel-body">
 					<div class="Destination_Information">
-						Anim pariatur cliche reprehenderit, enim eiusmod high life 
-						accusamus terry richardson ad squid. 3 wolf moon officia 
-						aute, non cupidatat skateboard dolor brunch. Food truck 
-						quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, 
-						sunt aliqua put a bird on it squid single-origin coffee 
-						nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, 
-						craft beer labore wes anderson cred nesciunt sapiente ea 
-						proident. Ad vegan excepteur butcher vice lomo. Leggings 
-						occaecat craft beer farm-to-table, raw denim aesthetic synth 
-						nesciunt you probably haven't heard of them accusamus labore 
-						sustainable VHS. </div>
+						<p>Chef-patron, Nigel Haworth and Head Chef, Lisa Allen, 
+						former winners of BBC2’s Great British Menu are the top 
+						chefs working at Northcote. Nigel is very passionate about 
+						traditional Lancashire dishes and local artisan suppliers. 
+						It is hard to find anything on the menu that’s not locally 
+						sourced.</p>
+						<p>Northcote, Northcote Road, Langho, Blackburn, BB6 8BE</p>
+						<p>01254 240555</p>
+					</div>
 					<div class="Destination_Gallery">
-						<div id="carousel-example-generic2" class="carousel slide" data-ride="carousel">
+						<div id="carousel4" class="carousel slide" data-ride="carousel">
 							<!-- Indicators -->
 							<ol class="carousel-indicators">
-								<li class="active" data-slide-to="0" data-target="#carousel-example-generic">
+								<li class="active" data-slide-to="0" data-target="#carousel4">
 								</li>
-								<li data-slide-to="1" data-target="#carousel-example-generic">
+								<li data-slide-to="1" data-target="#carousel4">
 								</li>
-								<li data-slide-to="2" data-target="#carousel-example-generic">
+								<li data-slide-to="2" data-target="#carousel4">
 								</li>
 							</ol>
 							<!-- Wrapper for slides -->
@@ -272,24 +291,22 @@
 								</div>
 								<div class="item">
 									<img alt="Map" src="http://maps.googleapis.com/maps/api/staticmap?center=53.767684,-2.540424&amp;zoom=15&amp;size=600x300&amp;maptype=roadmap
-&amp;markers=color:red%7Clabel:C%7C53.767684,-2.540424&amp;sensor=false">
-								</div>
+&amp;markers=color:red%7Clabel:C%7C53.767684,-2.540424&amp;sensor=false"> </div>
 								<div class="item">
 									<img alt="Lamb Chops" src="../Images/StanleyHouse2.jpg">
 								</div>
 							</div>
-														<!-- Controls -->
-							<a class="left carousel-control" data-slide="prev" href="#carousel-example-generic">
+							<!-- Controls -->
+							<a class="left carousel-control" data-slide="prev" href="#carousel4">
 							<span class="glyphicon glyphicon-chevron-left">
 							</span></a>
-							<a class="right carousel-control" data-slide="next" href="#carousel-example-generic">
+							<a class="right carousel-control" data-slide="next" href="#carousel4">
 							<span class="glyphicon glyphicon-chevron-right">
 							</span></a></div>
 					</div>
 				</div>
-				</div>
 			</div>
-		
+		</div>
 		<div class="panel panel-default">
 			<div class="panel-heading">
 				<h4 class="panel-title">
@@ -299,26 +316,23 @@
 			<div id="collapse5" class="panel-collapse collapse">
 				<div class="panel-body">
 					<div class="Destination_Information">
-						Anim pariatur cliche reprehenderit, enim eiusmod high life 
-						accusamus terry richardson ad squid. 3 wolf moon officia 
-						aute, non cupidatat skateboard dolor brunch. Food truck 
-						quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, 
-						sunt aliqua put a bird on it squid single-origin coffee 
-						nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, 
-						craft beer labore wes anderson cred nesciunt sapiente ea 
-						proident. Ad vegan excepteur butcher vice lomo. Leggings 
-						occaecat craft beer farm-to-table, raw denim aesthetic synth 
-						nesciunt you probably haven't heard of them accusamus labore 
-						sustainable VHS. </div>
+						<p>This continental style café bar uses only the finest 
+						local and seasonal produce across the menu, daily specials 
+						and take-home offer. The proprietor, Hilary Cookson, believes 
+						in the local sourcing of foods and flavours. </p>
+						<p>Benedicts of Whalley, 1 George Street, Whalley, Lancashire 
+						BB7 9TH</p>
+						<p>01254 824468</p>
+					</div>
 					<div class="Destination_Gallery">
-						<div id="carousel-example-generic3" class="carousel slide" data-ride="carousel">
+						<div id="carousel5" class="carousel slide" data-ride="carousel">
 							<!-- Indicators -->
 							<ol class="carousel-indicators">
-								<li class="active" data-slide-to="0" data-target="#carousel-example-generic">
+								<li class="active" data-slide-to="0" data-target="#carousel5">
 								</li>
-								<li data-slide-to="1" data-target="#carousel-example-generic">
+								<li data-slide-to="1" data-target="#carousel5">
 								</li>
-								<li data-slide-to="2" data-target="#carousel-example-generic">
+								<li data-slide-to="2" data-target="#carousel5">
 								</li>
 							</ol>
 							<!-- Wrapper for slides -->
@@ -328,25 +342,22 @@
 								</div>
 								<div class="item">
 									<img alt="Map" src="http://maps.googleapis.com/maps/api/staticmap?center=53.767684,-2.540424&amp;zoom=15&amp;size=600x300&amp;maptype=roadmap
-&amp;markers=color:red%7Clabel:C%7C53.767684,-2.540424&amp;sensor=false">
-								</div>
+&amp;markers=color:red%7Clabel:C%7C53.767684,-2.540424&amp;sensor=false"> </div>
 								<div class="item">
 									<img alt="Lamb Chops" src="../Images/StanleyHouse2.jpg">
 								</div>
 							</div>
-														<!-- Controls -->
-							<a class="left carousel-control" data-slide="prev" href="#carousel-example-generic">
+							<!-- Controls -->
+							<a class="left carousel-control" data-slide="prev" href="#carousel5">
 							<span class="glyphicon glyphicon-chevron-left">
 							</span></a>
-							<a class="right carousel-control" data-slide="next" href="#carousel-example-generic">
+							<a class="right carousel-control" data-slide="next" href="#carousel5">
 							<span class="glyphicon glyphicon-chevron-right">
 							</span></a></div>
 					</div>
 				</div>
-
-				</div>
 			</div>
-		
+		</div>
 		<div class="panel panel-default">
 			<div class="panel-heading">
 				<h4 class="panel-title">
@@ -356,22 +367,21 @@
 			<div id="collapse6" class="panel-collapse collapse">
 				<div class="panel-body">
 					<div class="Destination_Information">
-						Anim pariatur cliche reprehenderit, enim eiusmod high life 
-						accusamus terry richardson ad squid. 3 wolf moon officia 
-						aute, non cupidatat skateboard dolor brunch. Food truck 
-						quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, 
-						sunt aliqua put a bird on it squid single-origin coffee 
-						nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, 
-						craft beer labore wes anderson cred nesciunt sapiente ea 
-						proident. Ad vegan excepteur butcher vice lomo. Leggings 
-						occaecat craft beer farm-to-table, raw denim aesthetic synth 
-						nesciunt you probably haven't heard of them accusamus labore 
-						sustainable VHS. </div>
+						<p>Breda Murphy is influenced by her wide personal culinary 
+						knowledge and experience from Ireland, South East Asia and 
+						local classic British dishes. All food is sourced from butchers 
+						in Clitheroe and Longridge, Wellgate Fisheries, Swarbrick’s, 
+						Jackson’s Creamery and free-range eggs from farms in Chipping 
+						and Bashall Eaves. </p>
+						<p>Food by Breda Murphy, Abbots Court, 41 Station Road, 
+						Whalley, Lancashire, BB7 9RH</p>
+						<p>01254 823446</p>
+					</div>
 					<div class="Destination_Gallery">
-						<div id="carousel-example-generic4" class="carousel slide" data-ride="carousel">
+						<div id="carousel6" class="carousel slide" data-ride="carousel">
 							<!-- Indicators -->
 							<ol class="carousel-indicators">
-								<li class="active" data-slide-to="0" data-target="#carousel-example-generic">
+								<li class="active" data-slide-to="0" data-target="#carousel6">
 								</li>
 								<li data-slide-to="1" data-target="#carousel-example-generic">
 								</li>
@@ -385,25 +395,22 @@
 								</div>
 								<div class="item">
 									<img alt="Map" src="http://maps.googleapis.com/maps/api/staticmap?center=53.767684,-2.540424&amp;zoom=15&amp;size=600x300&amp;maptype=roadmap
-&amp;markers=color:red%7Clabel:C%7C53.767684,-2.540424&amp;sensor=false">
-								</div>
+&amp;markers=color:red%7Clabel:C%7C53.767684,-2.540424&amp;sensor=false"> </div>
 								<div class="item">
 									<img alt="Lamb Chops" src="../Images/StanleyHouse2.jpg">
 								</div>
 							</div>
-														<!-- Controls -->
-							<a class="left carousel-control" data-slide="prev" href="#carousel-example-generic">
+							<!-- Controls -->
+							<a class="left carousel-control" data-slide="prev" href="#carousel6">
 							<span class="glyphicon glyphicon-chevron-left">
 							</span></a>
-							<a class="right carousel-control" data-slide="next" href="#carousel-example-generic">
+							<a class="right carousel-control" data-slide="next" href="#carousel6">
 							<span class="glyphicon glyphicon-chevron-right">
 							</span></a></div>
 					</div>
 				</div>
-
-				</div>
 			</div>
-		
+		</div>
 		<div class="panel panel-default">
 			<div class="panel-heading">
 				<h4 class="panel-title">
@@ -415,14 +422,14 @@
 					<div class="Destination_Information">
 						Coming Soon </div>
 					<div class="Destination_Gallery">
-						<div id="carousel-example-generic5" class="carousel slide" data-ride="carousel">
+						<div id="carousel7" class="carousel slide" data-ride="carousel">
 							<!-- Indicators -->
 							<ol class="carousel-indicators">
-								<li class="active" data-slide-to="0" data-target="#carousel-example-generic">
+								<li class="active" data-slide-to="0" data-target="#carousel7">
 								</li>
-								<li data-slide-to="1" data-target="#carousel-example-generic">
+								<li data-slide-to="1" data-target="#carousel7">
 								</li>
-								<li data-slide-to="2" data-target="#carousel-example-generic">
+								<li data-slide-to="2" data-target="#carousel7">
 								</li>
 							</ol>
 							<!-- Wrapper for slides -->
@@ -432,24 +439,22 @@
 								</div>
 								<div class="item">
 									<img alt="Map" src="http://maps.googleapis.com/maps/api/staticmap?center=53.767684,-2.540424&amp;zoom=15&amp;size=600x300&amp;maptype=roadmap
-&amp;markers=color:red%7Clabel:C%7C53.767684,-2.540424&amp;sensor=false">
-								</div>
+&amp;markers=color:red%7Clabel:C%7C53.767684,-2.540424&amp;sensor=false"> </div>
 								<div class="item">
 									<img alt="Lamb Chops" src="../Images/StanleyHouse2.jpg">
 								</div>
 							</div>
-														<!-- Controls -->
-							<a class="left carousel-control" data-slide="prev" href="#carousel-example-generic">
+							<!-- Controls -->
+							<a class="left carousel-control" data-slide="prev" href="#carousel7">
 							<span class="glyphicon glyphicon-chevron-left">
 							</span></a>
-							<a class="right carousel-control" data-slide="next" href="#carousel-example-generic">
+							<a class="right carousel-control" data-slide="next" href="#carousel7">
 							<span class="glyphicon glyphicon-chevron-right">
 							</span></a></div>
 					</div>
 				</div>
-				</div>
 			</div>
-		
+		</div>
 		<div class="panel panel-default">
 			<div class="panel-heading">
 				<h4 class="panel-title">
@@ -459,26 +464,23 @@
 			<div id="collapse8" class="panel-collapse collapse">
 				<div class="panel-body">
 					<div class="Destination_Information">
-						Anim pariatur cliche reprehenderit, enim eiusmod high life 
-						accusamus terry richardson ad squid. 3 wolf moon officia 
-						aute, non cupidatat skateboard dolor brunch. Food truck 
-						quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, 
-						sunt aliqua put a bird on it squid single-origin coffee 
-						nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, 
-						craft beer labore wes anderson cred nesciunt sapiente ea 
-						proident. Ad vegan excepteur butcher vice lomo. Leggings 
-						occaecat craft beer farm-to-table, raw denim aesthetic synth 
-						nesciunt you probably haven't heard of them accusamus labore 
-						sustainable VHS. </div>
+						<p>This country pub has a menu that is a tribute to local 
+						food, with atleast 95% of food being locally sourced. This 
+						pub has won many major awards in recent years, including 
+						AA North West Pub Of The Year and a Green Man Award. </p>
+						<p>The Three Fishes, Mitton Road, Mitton, Nr Whalley, Lancashire, 
+						BB7 9PQ</p>
+						<p>01254 826888</p>
+					</div>
 					<div class="Destination_Gallery">
-						<div id="carousel-example-generic6" class="carousel slide" data-ride="carousel">
+						<div id="carousel8" class="carousel slide" data-ride="carousel">
 							<!-- Indicators -->
 							<ol class="carousel-indicators">
-								<li class="active" data-slide-to="0" data-target="#carousel-example-generic">
+								<li class="active" data-slide-to="0" data-target="#carousel8">
 								</li>
-								<li data-slide-to="1" data-target="#carousel-example-generic">
+								<li data-slide-to="1" data-target="#carousel8">
 								</li>
-								<li data-slide-to="2" data-target="#carousel-example-generic">
+								<li data-slide-to="2" data-target="#carousel8">
 								</li>
 							</ol>
 							<!-- Wrapper for slides -->
@@ -488,24 +490,22 @@
 								</div>
 								<div class="item">
 									<img alt="Map" src="http://maps.googleapis.com/maps/api/staticmap?center=53.767684,-2.540424&amp;zoom=15&amp;size=600x300&amp;maptype=roadmap
-&amp;markers=color:red%7Clabel:C%7C53.767684,-2.540424&amp;sensor=false">
-								</div>
+&amp;markers=color:red%7Clabel:C%7C53.767684,-2.540424&amp;sensor=false"> </div>
 								<div class="item">
 									<img alt="Lamb Chops" src="../Images/StanleyHouse2.jpg">
 								</div>
 							</div>
-														<!-- Controls -->
-							<a class="left carousel-control" data-slide="prev" href="#carousel-example-generic">
+							<!-- Controls -->
+							<a class="left carousel-control" data-slide="prev" href="#carousel8">
 							<span class="glyphicon glyphicon-chevron-left">
 							</span></a>
-							<a class="right carousel-control" data-slide="next" href="#carousel-example-generic">
+							<a class="right carousel-control" data-slide="next" href="#carousel8">
 							<span class="glyphicon glyphicon-chevron-right">
 							</span></a></div>
 					</div>
 				</div>
-				</div>
 			</div>
-		
+		</div>
 		<div class="panel panel-default">
 			<div class="panel-heading">
 				<h4 class="panel-title">
@@ -515,26 +515,24 @@
 			<div id="collapse9" class="panel-collapse collapse">
 				<div class="panel-body">
 					<div class="Destination_Information">
-						Anim pariatur cliche reprehenderit, enim eiusmod high life 
-						accusamus terry richardson ad squid. 3 wolf moon officia 
-						aute, non cupidatat skateboard dolor brunch. Food truck 
-						quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, 
-						sunt aliqua put a bird on it squid single-origin coffee 
-						nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, 
-						craft beer labore wes anderson cred nesciunt sapiente ea 
-						proident. Ad vegan excepteur butcher vice lomo. Leggings 
-						occaecat craft beer farm-to-table, raw denim aesthetic synth 
-						nesciunt you probably haven't heard of them accusamus labore 
-						sustainable VHS. </div>
+						<p>A local butchers, stocking 76 varieties of award-winning 
+						sausages, available every day of the week, with cooked samples 
+						on Tuesdays, Fridays and Saturdays. Local ingredients are 
+						used, including outdoor reared pork and free-range eggs.
+						</p>
+						<p>Cowman’s Butchers, The Famous Sausage Shop, 13 Castle 
+						Street, Clitheroe, BB7 2BT</p>
+						<p>01200 423842</p>
+					</div>
 					<div class="Destination_Gallery">
-						<div id="carousel-example-generic7" class="carousel slide" data-ride="carousel">
+						<div id="carousel9" class="carousel slide" data-ride="carousel">
 							<!-- Indicators -->
 							<ol class="carousel-indicators">
-								<li class="active" data-slide-to="0" data-target="#carousel-example-generic">
+								<li class="active" data-slide-to="0" data-target="#carousel9">
 								</li>
-								<li data-slide-to="1" data-target="#carousel-example-generic">
+								<li data-slide-to="1" data-target="#carousel9">
 								</li>
-								<li data-slide-to="2" data-target="#carousel-example-generic">
+								<li data-slide-to="2" data-target="#carousel9">
 								</li>
 							</ol>
 							<!-- Wrapper for slides -->
@@ -544,25 +542,22 @@
 								</div>
 								<div class="item">
 									<img alt="Map" src="http://maps.googleapis.com/maps/api/staticmap?center=53.767684,-2.540424&amp;zoom=15&amp;size=600x300&amp;maptype=roadmap
-&amp;markers=color:red%7Clabel:C%7C53.767684,-2.540424&amp;sensor=false">
-								</div>
+&amp;markers=color:red%7Clabel:C%7C53.767684,-2.540424&amp;sensor=false"> </div>
 								<div class="item">
 									<img alt="Lamb Chops" src="../Images/StanleyHouse2.jpg">
 								</div>
 							</div>
-														<!-- Controls -->
-							<a class="left carousel-control" data-slide="prev" href="#carousel-example-generic">
+							<!-- Controls -->
+							<a class="left carousel-control" data-slide="prev" href="#carousel9">
 							<span class="glyphicon glyphicon-chevron-left">
 							</span></a>
-							<a class="right carousel-control" data-slide="next" href="#carousel-example-generic">
+							<a class="right carousel-control" data-slide="next" href="#carousel9">
 							<span class="glyphicon glyphicon-chevron-right">
 							</span></a></div>
 					</div>
 				</div>
-
-				</div>
 			</div>
-		
+		</div>
 		<div class="panel panel-default">
 			<div class="panel-heading">
 				<h4 class="panel-title">
@@ -572,26 +567,21 @@
 			<div id="collapse10" class="panel-collapse collapse">
 				<div class="panel-body">
 					<div class="Destination_Information">
-						Anim pariatur cliche reprehenderit, enim eiusmod high life 
-						accusamus terry richardson ad squid. 3 wolf moon officia 
-						aute, non cupidatat skateboard dolor brunch. Food truck 
-						quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, 
-						sunt aliqua put a bird on it squid single-origin coffee 
-						nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, 
-						craft beer labore wes anderson cred nesciunt sapiente ea 
-						proident. Ad vegan excepteur butcher vice lomo. Leggings 
-						occaecat craft beer farm-to-table, raw denim aesthetic synth 
-						nesciunt you probably haven't heard of them accusamus labore 
-						sustainable VHS. </div>
+						<p>A specialist cheese shop, delicatessen and café. Selling 
+						a wide range of both UK and continental artisan-made cheese.</p>
+						<p>Cheesie Tchaikovsky, The Ground Floor, Lee Carter House, 
+						Castle Street, Clitheroe, Lancashire, BB7 2BX</p>
+						<p>01200 428366</p>
+					</div>
 					<div class="Destination_Gallery">
-						<div id="carousel-example-generic8" class="carousel slide" data-ride="carousel">
+						<div id="carousel10" class="carousel slide" data-ride="carousel">
 							<!-- Indicators -->
 							<ol class="carousel-indicators">
-								<li class="active" data-slide-to="0" data-target="#carousel-example-generic">
+								<li class="active" data-slide-to="0" data-target="#carousel10">
 								</li>
-								<li data-slide-to="1" data-target="#carousel-example-generic">
+								<li data-slide-to="1" data-target="#carousel10">
 								</li>
-								<li data-slide-to="2" data-target="#carousel-example-generic">
+								<li data-slide-to="2" data-target="#carousel10">
 								</li>
 							</ol>
 							<!-- Wrapper for slides -->
@@ -601,24 +591,22 @@
 								</div>
 								<div class="item">
 									<img alt="Map" src="http://maps.googleapis.com/maps/api/staticmap?center=53.767684,-2.540424&amp;zoom=15&amp;size=600x300&amp;maptype=roadmap
-&amp;markers=color:red%7Clabel:C%7C53.767684,-2.540424&amp;sensor=false">
-								</div>
+&amp;markers=color:red%7Clabel:C%7C53.767684,-2.540424&amp;sensor=false"> </div>
 								<div class="item">
 									<img alt="Lamb Chops" src="../Images/StanleyHouse2.jpg">
 								</div>
 							</div>
-														<!-- Controls -->
-							<a class="left carousel-control" data-slide="prev" href="#carousel-example-generic">
+							<!-- Controls -->
+							<a class="left carousel-control" data-slide="prev" href="#carousel10">
 							<span class="glyphicon glyphicon-chevron-left">
 							</span></a>
-							<a class="right carousel-control" data-slide="next" href="#carousel-example-generic">
+							<a class="right carousel-control" data-slide="next" href="#carousel10">
 							<span class="glyphicon glyphicon-chevron-right">
 							</span></a></div>
 					</div>
 				</div>
-				</div>
 			</div>
-		
+		</div>
 		<div class="panel panel-default">
 			<div class="panel-heading">
 				<h4 class="panel-title">
@@ -628,26 +616,23 @@
 			<div id="collapse11" class="panel-collapse collapse">
 				<div class="panel-body">
 					<div class="Destination_Information">
-						Anim pariatur cliche reprehenderit, enim eiusmod high life 
-						accusamus terry richardson ad squid. 3 wolf moon officia 
-						aute, non cupidatat skateboard dolor brunch. Food truck 
-						quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, 
-						sunt aliqua put a bird on it squid single-origin coffee 
-						nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, 
-						craft beer labore wes anderson cred nesciunt sapiente ea 
-						proident. Ad vegan excepteur butcher vice lomo. Leggings 
-						occaecat craft beer farm-to-table, raw denim aesthetic synth 
-						nesciunt you probably haven't heard of them accusamus labore 
-						sustainable VHS. </div>
+						<p>Mansell’s Coffee Shop can be found in the corner of the 
+						Swan Courtyard. Cakes are prepared each morning using only 
+						free-rang eggs from a local farm, along with freshly prepared 
+						lunches each day using local produce.</p>
+						<p>Mansell’s Coffee Shop, 3 Swan Courtyard, Castle Street, 
+						Clitheroe, BB7 2DQ</p>
+						<p>01200 425129</p>
+					</div>
 					<div class="Destination_Gallery">
-						<div id="carousel-example-generic9" class="carousel slide" data-ride="carousel">
+						<div id="carousel11" class="carousel slide" data-ride="carousel">
 							<!-- Indicators -->
 							<ol class="carousel-indicators">
-								<li class="active" data-slide-to="0" data-target="#carousel-example-generic">
+								<li class="active" data-slide-to="0" data-target="#carousel11">
 								</li>
-								<li data-slide-to="1" data-target="#carousel-example-generic">
+								<li data-slide-to="1" data-target="#carousel11">
 								</li>
-								<li data-slide-to="2" data-target="#carousel-example-generic">
+								<li data-slide-to="2" data-target="#carousel11">
 								</li>
 							</ol>
 							<!-- Wrapper for slides -->
@@ -657,24 +642,22 @@
 								</div>
 								<div class="item">
 									<img alt="Map" src="http://maps.googleapis.com/maps/api/staticmap?center=53.767684,-2.540424&amp;zoom=15&amp;size=600x300&amp;maptype=roadmap
-&amp;markers=color:red%7Clabel:C%7C53.767684,-2.540424&amp;sensor=false">
-								</div>
+&amp;markers=color:red%7Clabel:C%7C53.767684,-2.540424&amp;sensor=false"> </div>
 								<div class="item">
 									<img alt="Lamb Chops" src="../Images/StanleyHouse2.jpg">
 								</div>
 							</div>
-														<!-- Controls -->
-							<a class="left carousel-control" data-slide="prev" href="#carousel-example-generic">
+							<!-- Controls -->
+							<a class="left carousel-control" data-slide="prev" href="#carousel11">
 							<span class="glyphicon glyphicon-chevron-left">
 							</span></a>
-							<a class="right carousel-control" data-slide="next" href="#carousel-example-generic">
+							<a class="right carousel-control" data-slide="next" href="#carousel11">
 							<span class="glyphicon glyphicon-chevron-right">
 							</span></a></div>
 					</div>
 				</div>
-				</div>
 			</div>
-		
+		</div>
 		<div class="panel panel-default">
 			<div class="panel-heading">
 				<h4 class="panel-title">
@@ -684,26 +667,22 @@
 			<div id="collapse12" class="panel-collapse collapse">
 				<div class="panel-body">
 					<div class="Destination_Information">
-						Anim pariatur cliche reprehenderit, enim eiusmod high life 
-						accusamus terry richardson ad squid. 3 wolf moon officia 
-						aute, non cupidatat skateboard dolor brunch. Food truck 
-						quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, 
-						sunt aliqua put a bird on it squid single-origin coffee 
-						nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, 
-						craft beer labore wes anderson cred nesciunt sapiente ea 
-						proident. Ad vegan excepteur butcher vice lomo. Leggings 
-						occaecat craft beer farm-to-table, raw denim aesthetic synth 
-						nesciunt you probably haven't heard of them accusamus labore 
-						sustainable VHS. </div>
+						<p>This wine institution is a multi-award winning independent 
+						wine merchants run by its founders, selling wines from all 
+						over the world. </p>
+						<p>D. Byrne &amp; Co, Victoria Buildings, 12 King Street, Clitheroe, 
+						BB7 2EP</p>
+						<p>01200 423152</p>
+					</div>
 					<div class="Destination_Gallery">
-						<div id="carousel-example-generic10" class="carousel slide" data-ride="carousel">
+						<div id="carousel12" class="carousel slide" data-ride="carousel">
 							<!-- Indicators -->
 							<ol class="carousel-indicators">
-								<li class="active" data-slide-to="0" data-target="#carousel-example-generic">
+								<li class="active" data-slide-to="0" data-target="#carousel12">
 								</li>
-								<li data-slide-to="1" data-target="#carousel-example-generic">
+								<li data-slide-to="1" data-target="#carousel12">
 								</li>
-								<li data-slide-to="2" data-target="#carousel-example-generic">
+								<li data-slide-to="2" data-target="#carousel12">
 								</li>
 							</ol>
 							<!-- Wrapper for slides -->
@@ -713,24 +692,22 @@
 								</div>
 								<div class="item">
 									<img alt="Map" src="http://maps.googleapis.com/maps/api/staticmap?center=53.767684,-2.540424&amp;zoom=15&amp;size=600x300&amp;maptype=roadmap
-&amp;markers=color:red%7Clabel:C%7C53.767684,-2.540424&amp;sensor=false">
-								</div>
+&amp;markers=color:red%7Clabel:C%7C53.767684,-2.540424&amp;sensor=false"> </div>
 								<div class="item">
 									<img alt="Lamb Chops" src="../Images/StanleyHouse2.jpg">
 								</div>
 							</div>
-														<!-- Controls -->
-							<a class="left carousel-control" data-slide="prev" href="#carousel-example-generic">
+							<!-- Controls -->
+							<a class="left carousel-control" data-slide="prev" href="#carousel12">
 							<span class="glyphicon glyphicon-chevron-left">
 							</span></a>
-							<a class="right carousel-control" data-slide="next" href="#carousel-example-generic">
+							<a class="right carousel-control" data-slide="next" href="#carousel12">
 							<span class="glyphicon glyphicon-chevron-right">
 							</span></a></div>
 					</div>
 				</div>
-				</div>
 			</div>
-		
+		</div>
 		<div class="panel panel-default">
 			<div class="panel-heading">
 				<h4 class="panel-title">
@@ -742,41 +719,33 @@
 					<div class="Destination_Information">
 						Coming Soon </div>
 					<div class="Destination_Gallery">
-						<div id="carousel-example-generic11" class="carousel slide" data-ride="carousel">
+						<div id="carousel131" class="carousel slide" data-ride="carousel">
 							<!-- Indicators -->
 							<ol class="carousel-indicators">
-								<li class="active" data-slide-to="0" data-target="#carousel-example-generic">
+								<li class="active" data-slide-to="0" data-target="#carousel13">
 								</li>
-								<li data-slide-to="1" data-target="#carousel-example-generic">
+								<li data-slide-to="1" data-target="#carousel13">
 								</li>
-								<li data-slide-to="2" data-target="#carousel-example-generic">
+								<li data-slide-to="2" data-target="#carousel13">
 								</li>
 							</ol>
 							<!-- Wrapper for slides -->
 							<div class="carousel-inner">
 								<div class="item active">
-									<img alt="Stanley House" src="../Images/StanleyHouse1.jpg">
-								</div>
-								<div class="item">
-									<img alt="Map" src="http://maps.googleapis.com/maps/api/staticmap?center=53.767684,-2.540424&amp;zoom=15&amp;size=600x300&amp;maptype=roadmap
-&amp;markers=color:red%7Clabel:C%7C53.767684,-2.540424&amp;sensor=false">
-								</div>
-								<div class="item">
-									<img alt="Lamb Chops" src="../Images/StanleyHouse2.jpg">
+									<img alt="Coming Soon" src="../Images/ComingSoon.fw.png">
 								</div>
 							</div>
-														<!-- Controls -->
-							<a class="left carousel-control" data-slide="prev" href="#carousel-example-generic">
+							<!-- Controls -->
+							<a class="left carousel-control" data-slide="prev" href="#carousel13">
 							<span class="glyphicon glyphicon-chevron-left">
 							</span></a>
-							<a class="right carousel-control" data-slide="next" href="#carousel-example-generic">
+							<a class="right carousel-control" data-slide="next" href="#carousel13">
 							<span class="glyphicon glyphicon-chevron-right">
 							</span></a></div>
 					</div>
 				</div>
-				</div>
 			</div>
-		
+		</div>
 		<div class="panel panel-default">
 			<div class="panel-heading">
 				<h4 class="panel-title">
@@ -786,26 +755,24 @@
 			<div id="collapse14" class="panel-collapse collapse">
 				<div class="panel-body">
 					<div class="Destination_Information">
-						Anim pariatur cliche reprehenderit, enim eiusmod high life 
-						accusamus terry richardson ad squid. 3 wolf moon officia 
-						aute, non cupidatat skateboard dolor brunch. Food truck 
-						quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, 
-						sunt aliqua put a bird on it squid single-origin coffee 
-						nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, 
-						craft beer labore wes anderson cred nesciunt sapiente ea 
-						proident. Ad vegan excepteur butcher vice lomo. Leggings 
-						occaecat craft beer farm-to-table, raw denim aesthetic synth 
-						nesciunt you probably haven't heard of them accusamus labore 
-						sustainable VHS. </div>
+						<p>This is the place to come for the best broth in Lancashire, 
+						according to many. Using recipes that have been passed down 
+						to him, the proprietor bakes, cooks and prepares all his 
+						products on-site, using as much local meat, poultry and 
+						vegetables as possible from local producers. </p>
+						<p>Ferguson’s Deli, Cabin 3, Clitheroe Market, Station Road, 
+						Clitheroe, Lancashire, BB7 2JW</p>
+						<p>07905 630461</p>
+					</div>
 					<div class="Destination_Gallery">
-						<div id="carousel-example-generic12" class="carousel slide" data-ride="carousel">
+						<div id="carousel14" class="carousel slide" data-ride="carousel">
 							<!-- Indicators -->
 							<ol class="carousel-indicators">
-								<li class="active" data-slide-to="0" data-target="#carousel-example-generic">
+								<li class="active" data-slide-to="0" data-target="#carousel14">
 								</li>
-								<li data-slide-to="1" data-target="#carousel-example-generic">
+								<li data-slide-to="1" data-target="#carousel14">
 								</li>
-								<li data-slide-to="2" data-target="#carousel-example-generic">
+								<li data-slide-to="2" data-target="#carousel14">
 								</li>
 							</ol>
 							<!-- Wrapper for slides -->
@@ -815,25 +782,22 @@
 								</div>
 								<div class="item">
 									<img alt="Map" src="http://maps.googleapis.com/maps/api/staticmap?center=53.767684,-2.540424&amp;zoom=15&amp;size=600x300&amp;maptype=roadmap
-&amp;markers=color:red%7Clabel:C%7C53.767684,-2.540424&amp;sensor=false">
-								</div>
+&amp;markers=color:red%7Clabel:C%7C53.767684,-2.540424&amp;sensor=false"> </div>
 								<div class="item">
 									<img alt="Lamb Chops" src="../Images/StanleyHouse2.jpg">
 								</div>
 							</div>
-														<!-- Controls -->
-							<a class="left carousel-control" data-slide="prev" href="#carousel-example-generic">
+							<!-- Controls -->
+							<a class="left carousel-control" data-slide="prev" href="#carousel14">
 							<span class="glyphicon glyphicon-chevron-left">
 							</span></a>
-							<a class="right carousel-control" data-slide="next" href="#carousel-example-generic">
+							<a class="right carousel-control" data-slide="next" href="#carousel14">
 							<span class="glyphicon glyphicon-chevron-right">
 							</span></a></div>
 					</div>
 				</div>
-
-				</div>
 			</div>
-		
+		</div>
 		<div class="panel panel-default">
 			<div class="panel-heading">
 				<h4 class="panel-title">
@@ -843,26 +807,25 @@
 			<div id="collapse15" class="panel-collapse collapse">
 				<div class="panel-body">
 					<div class="Destination_Information">
-						Anim pariatur cliche reprehenderit, enim eiusmod high life 
-						accusamus terry richardson ad squid. 3 wolf moon officia 
-						aute, non cupidatat skateboard dolor brunch. Food truck 
-						quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, 
-						sunt aliqua put a bird on it squid single-origin coffee 
-						nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, 
-						craft beer labore wes anderson cred nesciunt sapiente ea 
-						proident. Ad vegan excepteur butcher vice lomo. Leggings 
-						occaecat craft beer farm-to-table, raw denim aesthetic synth 
-						nesciunt you probably haven't heard of them accusamus labore 
-						sustainable VHS. </div>
+						<p>Exchange Coffee stocks over 30 varieties of coffee and 
+						just over 50 loose teas, with the belief that the secret 
+						to good coffee is freshness. They buy ‘green’ coffee from 
+						across the world to be roasted in small batches. As well 
+						as coffee, they also sell meat, fish, jam and make their 
+						own cakes. </p>
+						<p>Exchange Coffee Company, 24 Wellgate, Clitheroe, Lancashire, 
+						BB7 3DP</p>
+						<p>01200 442270</p>
+					</div>
 					<div class="Destination_Gallery">
-						<div id="carousel-example-generic13" class="carousel slide" data-ride="carousel">
+						<div id="carousel15" class="carousel slide" data-ride="carousel">
 							<!-- Indicators -->
 							<ol class="carousel-indicators">
-								<li class="active" data-slide-to="0" data-target="#carousel-example-generic">
+								<li class="active" data-slide-to="0" data-target="#carousel15">
 								</li>
-								<li data-slide-to="1" data-target="#carousel-example-generic">
+								<li data-slide-to="1" data-target="#carousel15">
 								</li>
-								<li data-slide-to="2" data-target="#carousel-example-generic">
+								<li data-slide-to="2" data-target="#carousel15">
 								</li>
 							</ol>
 							<!-- Wrapper for slides -->
@@ -872,24 +835,22 @@
 								</div>
 								<div class="item">
 									<img alt="Map" src="http://maps.googleapis.com/maps/api/staticmap?center=53.767684,-2.540424&amp;zoom=15&amp;size=600x300&amp;maptype=roadmap
-&amp;markers=color:red%7Clabel:C%7C53.767684,-2.540424&amp;sensor=false">
-								</div>
+&amp;markers=color:red%7Clabel:C%7C53.767684,-2.540424&amp;sensor=false"> </div>
 								<div class="item">
 									<img alt="Lamb Chops" src="../Images/StanleyHouse2.jpg">
 								</div>
 							</div>
-														<!-- Controls -->
-							<a class="left carousel-control" data-slide="prev" href="#carousel-example-generic">
+							<!-- Controls -->
+							<a class="left carousel-control" data-slide="prev" href="#carousel15">
 							<span class="glyphicon glyphicon-chevron-left">
 							</span></a>
-							<a class="right carousel-control" data-slide="next" href="#carousel-example-generic">
+							<a class="right carousel-control" data-slide="next" href="#carousel15">
 							<span class="glyphicon glyphicon-chevron-right">
 							</span></a></div>
 					</div>
 				</div>
-				</div>
 			</div>
-		
+		</div>
 		<div class="panel panel-default">
 			<div class="panel-heading">
 				<h4 class="panel-title">
@@ -899,26 +860,26 @@
 			<div id="collapse16" class="panel-collapse collapse">
 				<div class="panel-body">
 					<div class="Destination_Information">
-						Anim pariatur cliche reprehenderit, enim eiusmod high life 
-						accusamus terry richardson ad squid. 3 wolf moon officia 
-						aute, non cupidatat skateboard dolor brunch. Food truck 
-						quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, 
-						sunt aliqua put a bird on it squid single-origin coffee 
-						nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, 
-						craft beer labore wes anderson cred nesciunt sapiente ea 
-						proident. Ad vegan excepteur butcher vice lomo. Leggings 
-						occaecat craft beer farm-to-table, raw denim aesthetic synth 
-						nesciunt you probably haven't heard of them accusamus labore 
-						sustainable VHS. </div>
+						<p>The most popular fish merchants in the North West, providing 
+						fish and seafood to the region’s most popular restaurants, 
+						as well as selling seafood and fish in his Clitheroe shop 
+						and stall at Clitheroe market. Their philosophy is to buy 
+						the best fish available, by supporting Manchester wholesale 
+						fish market and buying direct from the Lancashire and Cumbrian 
+						coasts. </p>
+						<p>Wellgate Fisheries, 5 Wellgate, Clitheroe, Lancashire, 
+						BB7 2DS</p>
+						<p>01200 423511</p>
+					</div>
 					<div class="Destination_Gallery">
-						<div id="carousel-example-generic14" class="carousel slide" data-ride="carousel">
+						<div id="carousel16" class="carousel slide" data-ride="carousel">
 							<!-- Indicators -->
 							<ol class="carousel-indicators">
-								<li class="active" data-slide-to="0" data-target="#carousel-example-generic">
+								<li class="active" data-slide-to="0" data-target="#carousel16">
 								</li>
-								<li data-slide-to="1" data-target="#carousel-example-generic">
+								<li data-slide-to="1" data-target="#carousel16">
 								</li>
-								<li data-slide-to="2" data-target="#carousel-example-generic">
+								<li data-slide-to="2" data-target="#carouse1l6">
 								</li>
 							</ol>
 							<!-- Wrapper for slides -->
@@ -928,24 +889,22 @@
 								</div>
 								<div class="item">
 									<img alt="Map" src="http://maps.googleapis.com/maps/api/staticmap?center=53.767684,-2.540424&amp;zoom=15&amp;size=600x300&amp;maptype=roadmap
-&amp;markers=color:red%7Clabel:C%7C53.767684,-2.540424&amp;sensor=false">
-								</div>
+&amp;markers=color:red%7Clabel:C%7C53.767684,-2.540424&amp;sensor=false"> </div>
 								<div class="item">
 									<img alt="Lamb Chops" src="../Images/StanleyHouse2.jpg">
 								</div>
 							</div>
-														<!-- Controls -->
-							<a class="left carousel-control" data-slide="prev" href="#carousel-example-generic">
+							<!-- Controls -->
+							<a class="left carousel-control" data-slide="prev" href="#carousel16">
 							<span class="glyphicon glyphicon-chevron-left">
 							</span></a>
-							<a class="right carousel-control" data-slide="next" href="#carousel-example-generic">
+							<a class="right carousel-control" data-slide="next" href="#carousel16">
 							<span class="glyphicon glyphicon-chevron-right">
 							</span></a></div>
 					</div>
 				</div>
-				</div>
 			</div>
-		
+		</div>
 		<div class="panel panel-default">
 			<div class="panel-heading">
 				<h4 class="panel-title">
@@ -955,26 +914,26 @@
 			<div id="collapse17" class="panel-collapse collapse">
 				<div class="panel-body">
 					<div class="Destination_Information">
-						Anim pariatur cliche reprehenderit, enim eiusmod high life 
-						accusamus terry richardson ad squid. 3 wolf moon officia 
-						aute, non cupidatat skateboard dolor brunch. Food truck 
-						quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, 
-						sunt aliqua put a bird on it squid single-origin coffee 
-						nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, 
-						craft beer labore wes anderson cred nesciunt sapiente ea 
-						proident. Ad vegan excepteur butcher vice lomo. Leggings 
-						occaecat craft beer farm-to-table, raw denim aesthetic synth 
-						nesciunt you probably haven't heard of them accusamus labore 
-						sustainable VHS. </div>
+						<p>The award-winning inn uses local produce, including duck 
+						and fowl, country style meats for beef and pork and fish 
+						and seafood. When in season, local game is supplied directly 
+						from local shoots, while herbs and salad leaves are grown 
+						and used from the garden. Fresh bread is baked every morning, 
+						as well as making their own chutneys and pickles, ice cream 
+						and sorbet and petit fours. </p>
+						<p>The Duke of York Inn, Brow Top, Grindleton, Nr Clitheroe, 
+						Lancashire, BB7 4QR</p>
+						<p>01200 441266</p>
+					</div>
 					<div class="Destination_Gallery">
-						<div id="carousel-example-generic15" class="carousel slide" data-ride="carousel">
+						<div id="carousel17" class="carousel slide" data-ride="carousel">
 							<!-- Indicators -->
 							<ol class="carousel-indicators">
-								<li class="active" data-slide-to="0" data-target="#carousel-example-generic">
+								<li class="active" data-slide-to="0" data-target="#carousel17">
 								</li>
-								<li data-slide-to="1" data-target="#carousel-example-generic">
+								<li data-slide-to="1" data-target="#carousel17">
 								</li>
-								<li data-slide-to="2" data-target="#carousel-example-generic">
+								<li data-slide-to="2" data-target="#carousel17">
 								</li>
 							</ol>
 							<!-- Wrapper for slides -->
@@ -983,26 +942,23 @@
 									<img alt="Stanley House" src="../Images/StanleyHouse1.jpg">
 								</div>
 								<div class="item">
-									<img alt="Map" src="http://maps.googleapis.com/maps/api/staticmap?center=53.767684,-2.540424&amp;zoom=15&amp;size=600x300&amp;maptype=roadmap
-&amp;markers=color:red%7Clabel:C%7C53.767684,-2.540424&amp;sensor=false">
-								</div>
+									<img alt="Map" src="https://www.google.co.uk/maps/place/Duke+Of+York/@53.904849,-2.368173,17z/data=!3m1!4b1!4m2!3m1!1s0x487b84c346d0b4ef:0x35ef5050097946a3?hl=en">
+							 </a>> </div>
 								<div class="item">
 									<img alt="Lamb Chops" src="../Images/StanleyHouse2.jpg">
 								</div>
 							</div>
-														<!-- Controls -->
-							<a class="left carousel-control" data-slide="prev" href="#carousel-example-generic">
+							<!-- Controls -->
+							<a class="left carousel-control" data-slide="prev" href="#carousel17">
 							<span class="glyphicon glyphicon-chevron-left">
 							</span></a>
-							<a class="right carousel-control" data-slide="next" href="#carousel-example-generic">
+							<a class="right carousel-control" data-slide="next" href="#carousel17">
 							<span class="glyphicon glyphicon-chevron-right">
 							</span></a></div>
 					</div>
 				</div>
-
-				</div>
 			</div>
-		
+		</div>
 		<div class="panel panel-default">
 			<div class="panel-heading">
 				<h4 class="panel-title">
@@ -1012,26 +968,24 @@
 			<div id="collapse18" class="panel-collapse collapse">
 				<div class="panel-body">
 					<div class="Destination_Information">
-						Anim pariatur cliche reprehenderit, enim eiusmod high life 
-						accusamus terry richardson ad squid. 3 wolf moon officia 
-						aute, non cupidatat skateboard dolor brunch. Food truck 
-						quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, 
-						sunt aliqua put a bird on it squid single-origin coffee 
-						nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, 
-						craft beer labore wes anderson cred nesciunt sapiente ea 
-						proident. Ad vegan excepteur butcher vice lomo. Leggings 
-						occaecat craft beer farm-to-table, raw denim aesthetic synth 
-						nesciunt you probably haven't heard of them accusamus labore 
-						sustainable VHS. </div>
+						<p>Chef-patrons, Kate and Gary Peill and head chef Greg 
+						Barnes, create their menus based on locally sourced ingredients, 
+						including, vegetables, cheese and meat. Bread Is baked in-house 
+						using organic flour, as well as Ice cream, which uses locally 
+						sourced milk. </p>
+						<p>The Spread Eagle Inn, Sawley, Nr Clitheroe, Lancashire, 
+						BB7 4NH</p>
+						<p>01200 441202</p>
+					</div>
 					<div class="Destination_Gallery">
-						<div id="carousel-example-generic16" class="carousel slide" data-ride="carousel">
+						<div id="carousel18" class="carousel slide" data-ride="carousel">
 							<!-- Indicators -->
 							<ol class="carousel-indicators">
-								<li class="active" data-slide-to="0" data-target="#carousel-example-generic">
+								<li class="active" data-slide-to="0" data-target="#carousel18">
 								</li>
-								<li data-slide-to="1" data-target="#carousel-example-generic">
+								<li data-slide-to="1" data-target="#carousel18">
 								</li>
-								<li data-slide-to="2" data-target="#carousel-example-generic">
+								<li data-slide-to="2" data-target="#carousel18">
 								</li>
 							</ol>
 							<!-- Wrapper for slides -->
@@ -1041,25 +995,22 @@
 								</div>
 								<div class="item">
 									<img alt="Map" src="http://maps.googleapis.com/maps/api/staticmap?center=53.767684,-2.540424&amp;zoom=15&amp;size=600x300&amp;maptype=roadmap
-&amp;markers=color:red%7Clabel:C%7C53.767684,-2.540424&amp;sensor=false">
-								</div>
+&amp;markers=color:red%7Clabel:C%7C53.767684,-2.540424&amp;sensor=false"> </div>
 								<div class="item">
 									<img alt="Lamb Chops" src="../Images/StanleyHouse2.jpg">
 								</div>
 							</div>
-														<!-- Controls -->
-							<a class="left carousel-control" data-slide="prev" href="#carousel-example-generic">
+							<!-- Controls -->
+							<a class="left carousel-control" data-slide="prev" href="#carousel18">
 							<span class="glyphicon glyphicon-chevron-left">
 							</span></a>
-							<a class="right carousel-control" data-slide="next" href="#carousel-example-generic">
+							<a class="right carousel-control" data-slide="next" href="#carousel18">
 							<span class="glyphicon glyphicon-chevron-right">
 							</span></a></div>
 					</div>
 				</div>
-
-				</div>
 			</div>
-		
+		</div>
 		<div class="panel panel-default">
 			<div class="panel-heading">
 				<h4 class="panel-title">
@@ -1069,26 +1020,25 @@
 			<div id="collapse19" class="panel-collapse collapse">
 				<div class="panel-body">
 					<div class="Destination_Information">
-						Anim pariatur cliche reprehenderit, enim eiusmod high life 
-						accusamus terry richardson ad squid. 3 wolf moon officia 
-						aute, non cupidatat skateboard dolor brunch. Food truck 
-						quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, 
-						sunt aliqua put a bird on it squid single-origin coffee 
-						nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, 
-						craft beer labore wes anderson cred nesciunt sapiente ea 
-						proident. Ad vegan excepteur butcher vice lomo. Leggings 
-						occaecat craft beer farm-to-table, raw denim aesthetic synth 
-						nesciunt you probably haven't heard of them accusamus labore 
-						sustainable VHS. </div>
+						<p>With the head chef being a keen allotment grower, the 
+						aim is to source all produce from local suppliers. A range 
+						of organic and natural produce is used where possible, from 
+						all meats, to dairy, to vegetables. Food is baked in-house 
+						too, in the bakery and pastry room, including bread and 
+						biscuits. </p>
+						<p>Stirk House Hotel, Gisburn, Nr Clitheroe, Lancashire, 
+						BB7 4LJ</p>
+						<p>01200 445581</p>
+					</div>
 					<div class="Destination_Gallery">
-						<div id="carousel-example-generic17" class="carousel slide" data-ride="carousel">
+						<div id="carousel19" class="carousel slide" data-ride="carousel">
 							<!-- Indicators -->
 							<ol class="carousel-indicators">
-								<li class="active" data-slide-to="0" data-target="#carousel-example-generic">
+								<li class="active" data-slide-to="0" data-target="#carousel19">
 								</li>
-								<li data-slide-to="1" data-target="#carousel-example-generic">
+								<li data-slide-to="1" data-target="#carousel19">
 								</li>
-								<li data-slide-to="2" data-target="#carousel-example-generic">
+								<li data-slide-to="2" data-target="#carousel19">
 								</li>
 							</ol>
 							<!-- Wrapper for slides -->
@@ -1098,24 +1048,22 @@
 								</div>
 								<div class="item">
 									<img alt="Map" src="http://maps.googleapis.com/maps/api/staticmap?center=53.767684,-2.540424&amp;zoom=15&amp;size=600x300&amp;maptype=roadmap
-&amp;markers=color:red%7Clabel:C%7C53.767684,-2.540424&amp;sensor=false">
-								</div>
+&amp;markers=color:red%7Clabel:C%7C53.767684,-2.540424&amp;sensor=false"> </div>
 								<div class="item">
 									<img alt="Lamb Chops" src="../Images/StanleyHouse2.jpg">
 								</div>
 							</div>
-														<!-- Controls -->
-							<a class="left carousel-control" data-slide="prev" href="#carousel-example-generic">
+							<!-- Controls -->
+							<a class="left carousel-control" data-slide="prev" href="#carousel19">
 							<span class="glyphicon glyphicon-chevron-left">
 							</span></a>
-							<a class="right carousel-control" data-slide="next" href="#carousel-example-generic">
+							<a class="right carousel-control" data-slide="next" href="#carousel19">
 							<span class="glyphicon glyphicon-chevron-right">
 							</span></a></div>
 					</div>
 				</div>
-				</div>
 			</div>
-		
+		</div>
 		<div class="panel panel-default">
 			<div class="panel-heading">
 				<h4 class="panel-title">
@@ -1125,26 +1073,24 @@
 			<div id="collapse20" class="panel-collapse collapse">
 				<div class="panel-body">
 					<div class="Destination_Information">
-						Anim pariatur cliche reprehenderit, enim eiusmod high life 
-						accusamus terry richardson ad squid. 3 wolf moon officia 
-						aute, non cupidatat skateboard dolor brunch. Food truck 
-						quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, 
-						sunt aliqua put a bird on it squid single-origin coffee 
-						nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, 
-						craft beer labore wes anderson cred nesciunt sapiente ea 
-						proident. Ad vegan excepteur butcher vice lomo. Leggings 
-						occaecat craft beer farm-to-table, raw denim aesthetic synth 
-						nesciunt you probably haven't heard of them accusamus labore 
-						sustainable VHS. </div>
+						<p>Run by Ian O’Reilly and Emma Robinson, who believe that 
+						food should travel the fewest possible miles, be reared 
+						or grown naturally and not overly processed. From Friday 
+						and Saturday, home-produced items are sold, including meat, 
+						dairy items and vegetables at low prices. </p>
+						<p>Gazegill Organic Farm, Lower Gazegill Farm, Cross Hill 
+						Lane, Rimington, Lancashire, BB7 4EE</p>
+						<p>01200 445519</p>
+						. </div>
 					<div class="Destination_Gallery">
-						<div id="carousel-example-generic18" class="carousel slide" data-ride="carousel">
+						<div id="carousel20" class="carousel slide" data-ride="carousel">
 							<!-- Indicators -->
 							<ol class="carousel-indicators">
-								<li class="active" data-slide-to="0" data-target="#carousel-example-generic">
+								<li class="active" data-slide-to="0" data-target="#carousel20">
 								</li>
-								<li data-slide-to="1" data-target="#carousel-example-generic">
+								<li data-slide-to="1" data-target="#carousel20">
 								</li>
-								<li data-slide-to="2" data-target="#carousel-example-generic">
+								<li data-slide-to="2" data-target="#carousel20">
 								</li>
 							</ol>
 							<!-- Wrapper for slides -->
@@ -1154,24 +1100,22 @@
 								</div>
 								<div class="item">
 									<img alt="Map" src="http://maps.googleapis.com/maps/api/staticmap?center=53.767684,-2.540424&amp;zoom=15&amp;size=600x300&amp;maptype=roadmap
-&amp;markers=color:red%7Clabel:C%7C53.767684,-2.540424&amp;sensor=false">
-								</div>
+&amp;markers=color:red%7Clabel:C%7C53.767684,-2.540424&amp;sensor=false"> </div>
 								<div class="item">
 									<img alt="Lamb Chops" src="../Images/StanleyHouse2.jpg">
 								</div>
 							</div>
-														<!-- Controls -->
-							<a class="left carousel-control" data-slide="prev" href="#carousel-example-generic">
+							<!-- Controls -->
+							<a class="left carousel-control" data-slide="prev" href="#carousel20">
 							<span class="glyphicon glyphicon-chevron-left">
 							</span></a>
-							<a class="right carousel-control" data-slide="next" href="#carousel-example-generic">
+							<a class="right carousel-control" data-slide="next" href="#carousel20">
 							<span class="glyphicon glyphicon-chevron-right">
 							</span></a></div>
 					</div>
 				</div>
-				</div>
 			</div>
-		
+		</div>
 		<div class="panel panel-default">
 			<div class="panel-heading">
 				<h4 class="panel-title">
@@ -1181,26 +1125,23 @@
 			<div id="collapse21" class="panel-collapse collapse">
 				<div class="panel-body">
 					<div class="Destination_Information">
-						Anim pariatur cliche reprehenderit, enim eiusmod high life 
-						accusamus terry richardson ad squid. 3 wolf moon officia 
-						aute, non cupidatat skateboard dolor brunch. Food truck 
-						quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, 
-						sunt aliqua put a bird on it squid single-origin coffee 
-						nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, 
-						craft beer labore wes anderson cred nesciunt sapiente ea 
-						proident. Ad vegan excepteur butcher vice lomo. Leggings 
-						occaecat craft beer farm-to-table, raw denim aesthetic synth 
-						nesciunt you probably haven't heard of them accusamus labore 
-						sustainable VHS. </div>
+						<p>Producer, Richard Lomax believes that good eggs come 
+						from good hens, so this is the home of good, free-range 
+						eggs. Lomax says, “It only takes one bad egg to upset the 
+						customer, so we look after the birds well”. </p>
+						<p>Robinsons Eggs, The Cottage, Lower Edge Farm, Slaidburn, 
+						Lancashire, BB7 4TP</p>
+						<p>07929 049307</p>
+					</div>
 					<div class="Destination_Gallery">
-						<div id="carousel-example-generic19" class="carousel slide" data-ride="carousel">
+						<div id="carousel21" class="carousel slide" data-ride="carousel">
 							<!-- Indicators -->
 							<ol class="carousel-indicators">
-								<li class="active" data-slide-to="0" data-target="#carousel-example-generic">
+								<li class="active" data-slide-to="0" data-target="#carousel21">
 								</li>
-								<li data-slide-to="1" data-target="#carousel-example-generic">
+								<li data-slide-to="1" data-target="#carousel21">
 								</li>
-								<li data-slide-to="2" data-target="#carousel-example-generic">
+								<li data-slide-to="2" data-target="#carousel21">
 								</li>
 							</ol>
 							<!-- Wrapper for slides -->
@@ -1210,24 +1151,22 @@
 								</div>
 								<div class="item">
 									<img alt="Map" src="http://maps.googleapis.com/maps/api/staticmap?center=53.767684,-2.540424&amp;zoom=15&amp;size=600x300&amp;maptype=roadmap
-&amp;markers=color:red%7Clabel:C%7C53.767684,-2.540424&amp;sensor=false">
-								</div>
+&amp;markers=color:red%7Clabel:C%7C53.767684,-2.540424&amp;sensor=false"> </div>
 								<div class="item">
 									<img alt="Lamb Chops" src="../Images/StanleyHouse2.jpg">
 								</div>
 							</div>
-														<!-- Controls -->
-							<a class="left carousel-control" data-slide="prev" href="#carousel-example-generic">
+							<!-- Controls -->
+							<a class="left carousel-control" data-slide="prev" href="#carousel21">
 							<span class="glyphicon glyphicon-chevron-left">
 							</span></a>
-							<a class="right carousel-control" data-slide="next" href="#carousel-example-generic">
+							<a class="right carousel-control" data-slide="next" href="#carousel21">
 							<span class="glyphicon glyphicon-chevron-right">
 							</span></a></div>
 					</div>
 				</div>
-				</div>
 			</div>
-		
+		</div>
 		<div class="panel panel-default">
 			<div class="panel-heading">
 				<h4 class="panel-title">
@@ -1237,26 +1176,24 @@
 			<div id="collapse22" class="panel-collapse collapse">
 				<div class="panel-body">
 					<div class="Destination_Information">
-						Anim pariatur cliche reprehenderit, enim eiusmod high life 
-						accusamus terry richardson ad squid. 3 wolf moon officia 
-						aute, non cupidatat skateboard dolor brunch. Food truck 
-						quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, 
-						sunt aliqua put a bird on it squid single-origin coffee 
-						nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, 
-						craft beer labore wes anderson cred nesciunt sapiente ea 
-						proident. Ad vegan excepteur butcher vice lomo. Leggings 
-						occaecat craft beer farm-to-table, raw denim aesthetic synth 
-						nesciunt you probably haven't heard of them accusamus labore 
-						sustainable VHS. </div>
+						<p>Running a herd of pedigree Belted Galloway cattle, customers 
+						are travelling all the way from Manchester and Todmorden. 
+						The beef is available all year round, with special cuts 
+						that can be ordered in advance. Hung by quality butchers, 
+						the highest tenderness and flavour is achieved. </p>
+						<p>Beltin Good Beef, Croasdale House Farm, Catlow Road, 
+						Slaidburn, Clitheroe BB7 3AQ</p>
+						<p>01200 446279</p>
+					</div>
 					<div class="Destination_Gallery">
-						<div id="carousel-example-generic20" class="carousel slide" data-ride="carousel">
+						<div id="carousel22" class="carousel slide" data-ride="carousel">
 							<!-- Indicators -->
 							<ol class="carousel-indicators">
-								<li class="active" data-slide-to="0" data-target="#carousel-example-generic">
+								<li class="active" data-slide-to="0" data-target="#carousel22">
 								</li>
-								<li data-slide-to="1" data-target="#carousel-example-generic">
+								<li data-slide-to="1" data-target="#carousel22">
 								</li>
-								<li data-slide-to="2" data-target="#carousel-example-generic">
+								<li data-slide-to="2" data-target="#carousel22">
 								</li>
 							</ol>
 							<!-- Wrapper for slides -->
@@ -1266,24 +1203,22 @@
 								</div>
 								<div class="item">
 									<img alt="Map" src="http://maps.googleapis.com/maps/api/staticmap?center=53.767684,-2.540424&amp;zoom=15&amp;size=600x300&amp;maptype=roadmap
-&amp;markers=color:red%7Clabel:C%7C53.767684,-2.540424&amp;sensor=false">
-								</div>
+&amp;markers=color:red%7Clabel:C%7C53.767684,-2.540424&amp;sensor=false"> </div>
 								<div class="item">
 									<img alt="Lamb Chops" src="../Images/StanleyHouse2.jpg">
 								</div>
 							</div>
-														<!-- Controls -->
-							<a class="left carousel-control" data-slide="prev" href="#carousel-example-generic">
+							<!-- Controls -->
+							<a class="left carousel-control" data-slide="prev" href="#carousel22">
 							<span class="glyphicon glyphicon-chevron-left">
 							</span></a>
-							<a class="right carousel-control" data-slide="next" href="#carousel-example-generic">
+							<a class="right carousel-control" data-slide="next" href="#carousel22">
 							<span class="glyphicon glyphicon-chevron-right">
 							</span></a></div>
 					</div>
 				</div>
-				</div>
 			</div>
-		
+		</div>
 		<div class="panel panel-default">
 			<div class="panel-heading">
 				<h4 class="panel-title">
@@ -1293,26 +1228,25 @@
 			<div id="collapse23" class="panel-collapse collapse">
 				<div class="panel-body">
 					<div class="Destination_Information">
-						Anim pariatur cliche reprehenderit, enim eiusmod high life 
-						accusamus terry richardson ad squid. 3 wolf moon officia 
-						aute, non cupidatat skateboard dolor brunch. Food truck 
-						quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, 
-						sunt aliqua put a bird on it squid single-origin coffee 
-						nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, 
-						craft beer labore wes anderson cred nesciunt sapiente ea 
-						proident. Ad vegan excepteur butcher vice lomo. Leggings 
-						occaecat craft beer farm-to-table, raw denim aesthetic synth 
-						nesciunt you probably haven't heard of them accusamus labore 
-						sustainable VHS. </div>
+						<p>Not only does The Parkers Arms champion local food, but 
+						the menus try to reflect the produce through the seasons, 
+						with local-shot game, beef and lamb being used frequently. 
+						Other produce for sale include, vegetables, game, cheese 
+						and fresh fruit. Cakes, pastries, bread, biscuits, preserves, 
+						chutneys and cordials are also made on-site. </p>
+						<p>The Parker’s Arms, Newton-in-Bowland, Nr Clitheroe, Lancashire, 
+						BB7 3DY</p>
+						<p>01200 446236</p>
+					</div>
 					<div class="Destination_Gallery">
-						<div id="carousel-example-generic21" class="carousel slide" data-ride="carousel">
+						<div id="carousel23" class="carousel slide" data-ride="carousel">
 							<!-- Indicators -->
 							<ol class="carousel-indicators">
-								<li class="active" data-slide-to="0" data-target="#carousel-example-generic">
+								<li class="active" data-slide-to="0" data-target="#carousel23">
 								</li>
-								<li data-slide-to="1" data-target="#carousel-example-generic">
+								<li data-slide-to="1" data-target="#carousel23">
 								</li>
-								<li data-slide-to="2" data-target="#carousel-example-generic">
+								<li data-slide-to="2" data-target="#carousel23">
 								</li>
 							</ol>
 							<!-- Wrapper for slides -->
@@ -1322,24 +1256,22 @@
 								</div>
 								<div class="item">
 									<img alt="Map" src="http://maps.googleapis.com/maps/api/staticmap?center=53.767684,-2.540424&amp;zoom=15&amp;size=600x300&amp;maptype=roadmap
-&amp;markers=color:red%7Clabel:C%7C53.767684,-2.540424&amp;sensor=false">
-								</div>
+&amp;markers=color:red%7Clabel:C%7C53.767684,-2.540424&amp;sensor=false"> </div>
 								<div class="item">
 									<img alt="Lamb Chops" src="../Images/StanleyHouse2.jpg">
 								</div>
 							</div>
-														<!-- Controls -->
-							<a class="left carousel-control" data-slide="prev" href="#carousel-example-generic">
+							<!-- Controls -->
+							<a class="left carousel-control" data-slide="prev" href="#carousel23">
 							<span class="glyphicon glyphicon-chevron-left">
 							</span></a>
-							<a class="right carousel-control" data-slide="next" href="#carousel-example-generic">
+							<a class="right carousel-control" data-slide="next" href="#carousel23">
 							<span class="glyphicon glyphicon-chevron-right">
 							</span></a></div>
 					</div>
 				</div>
-				</div>
 			</div>
-		
+		</div>
 		<div class="panel panel-default">
 			<div class="panel-heading">
 				<h4 class="panel-title">
@@ -1349,26 +1281,23 @@
 			<div id="collapse24" class="panel-collapse collapse">
 				<div class="panel-body">
 					<div class="Destination_Information">
-						Anim pariatur cliche reprehenderit, enim eiusmod high life 
-						accusamus terry richardson ad squid. 3 wolf moon officia 
-						aute, non cupidatat skateboard dolor brunch. Food truck 
-						quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, 
-						sunt aliqua put a bird on it squid single-origin coffee 
-						nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, 
-						craft beer labore wes anderson cred nesciunt sapiente ea 
-						proident. Ad vegan excepteur butcher vice lomo. Leggings 
-						occaecat craft beer farm-to-table, raw denim aesthetic synth 
-						nesciunt you probably haven't heard of them accusamus labore 
-						sustainable VHS. </div>
+						<p>Jamie Cadman, has a passion for good local produce for 
+						a low price. Most of the food, including beef, lamb, pheasant, 
+						chicken and duck. Herbs and fruit are home-grown and bread 
+						is baked on-site every day. </p>
+						<p>The Inn at Whitewell, Forest of Bowland, Nr Clitheroe, 
+						Lancashire, BB7 3AT</p>
+						<p>01200 448222</p>
+					</div>
 					<div class="Destination_Gallery">
-						<div id="carousel-example-generic22" class="carousel slide" data-ride="carousel">
+						<div id="carousel24" class="carousel slide" data-ride="carousel">
 							<!-- Indicators -->
 							<ol class="carousel-indicators">
-								<li class="active" data-slide-to="0" data-target="#carousel-example-generic">
+								<li class="active" data-slide-to="0" data-target="#carousel24">
 								</li>
-								<li data-slide-to="1" data-target="#carousel-example-generic">
+								<li data-slide-to="1" data-target="#carousel24">
 								</li>
-								<li data-slide-to="2" data-target="#carousel-example-generic">
+								<li data-slide-to="2" data-target="#carousel24">
 								</li>
 							</ol>
 							<!-- Wrapper for slides -->
@@ -1378,24 +1307,22 @@
 								</div>
 								<div class="item">
 									<img alt="Map" src="http://maps.googleapis.com/maps/api/staticmap?center=53.767684,-2.540424&amp;zoom=15&amp;size=600x300&amp;maptype=roadmap
-&amp;markers=color:red%7Clabel:C%7C53.767684,-2.540424&amp;sensor=false">
-								</div>
+&amp;markers=color:red%7Clabel:C%7C53.767684,-2.540424&amp;sensor=false"> </div>
 								<div class="item">
 									<img alt="Lamb Chops" src="../Images/StanleyHouse2.jpg">
 								</div>
 							</div>
-														<!-- Controls -->
-							<a class="left carousel-control" data-slide="prev" href="#carousel-example-generic">
+							<!-- Controls -->
+							<a class="left carousel-control" data-slide="prev" href="#carousel24">
 							<span class="glyphicon glyphicon-chevron-left">
 							</span></a>
-							<a class="right carousel-control" data-slide="next" href="#carousel-example-generic">
+							<a class="right carousel-control" data-slide="next" href="#carousel24">
 							<span class="glyphicon glyphicon-chevron-right">
 							</span></a></div>
 					</div>
 				</div>
-				</div>
 			</div>
-		
+		</div>
 		<div class="panel panel-default">
 			<div class="panel-heading">
 				<h4 class="panel-title">
@@ -1405,26 +1332,27 @@
 			<div id="collapse25" class="panel-collapse collapse">
 				<div class="panel-body">
 					<div class="Destination_Information">
-						Anim pariatur cliche reprehenderit, enim eiusmod high life 
-						accusamus terry richardson ad squid. 3 wolf moon officia 
-						aute, non cupidatat skateboard dolor brunch. Food truck 
-						quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, 
-						sunt aliqua put a bird on it squid single-origin coffee 
-						nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, 
-						craft beer labore wes anderson cred nesciunt sapiente ea 
-						proident. Ad vegan excepteur butcher vice lomo. Leggings 
-						occaecat craft beer farm-to-table, raw denim aesthetic synth 
-						nesciunt you probably haven't heard of them accusamus labore 
-						sustainable VHS. </div>
+						<p>Janet, the creator of The Gibbon Bridge Hotel, is a champion 
+						of local suppliers, including Leagram’s Organic Dairy for 
+						cheese, Johnson and Swarbrick for poultry, Brendan Anderton 
+						for meat, Bowland Brewery for beer and Ann Forshaw’s Alston 
+						Dairy for yoghurt. With a kitchen garden, greenhouses and 
+						poly tunnels, produce, including, seasonal herbs, fruits 
+						and vegetables provide head chef Gary Buxton and head baker 
+						Janet Bamber with fresh produce daily. </p>
+						<p>The Gibbon Bridge Hotel, Chipping, Forest of Bowland, 
+						Lancashire, PR3 2TQ</p>
+						<p>01995 61456</p>
+					</div>
 					<div class="Destination_Gallery">
-						<div id="carousel-example-generic23" class="carousel slide" data-ride="carousel">
+						<div id="carousel25" class="carousel slide" data-ride="carousel">
 							<!-- Indicators -->
 							<ol class="carousel-indicators">
-								<li class="active" data-slide-to="0" data-target="#carousel-example-generic">
+								<li class="active" data-slide-to="0" data-target="#carousel25">
 								</li>
-								<li data-slide-to="1" data-target="#carousel-example-generic">
+								<li data-slide-to="1" data-target="#carousel25">
 								</li>
-								<li data-slide-to="2" data-target="#carousel-example-generic">
+								<li data-slide-to="2" data-target="#carousel25">
 								</li>
 							</ol>
 							<!-- Wrapper for slides -->
@@ -1434,25 +1362,22 @@
 								</div>
 								<div class="item">
 									<img alt="Map" src="http://maps.googleapis.com/maps/api/staticmap?center=53.767684,-2.540424&amp;zoom=15&amp;size=600x300&amp;maptype=roadmap
-&amp;markers=color:red%7Clabel:C%7C53.767684,-2.540424&amp;sensor=false">
-								</div>
+&amp;markers=color:red%7Clabel:C%7C53.767684,-2.540424&amp;sensor=false"> </div>
 								<div class="item">
 									<img alt="Lamb Chops" src="../Images/StanleyHouse2.jpg">
 								</div>
 							</div>
-														<!-- Controls -->
-							<a class="left carousel-control" data-slide="prev" href="#carousel-example-generic">
+							<!-- Controls -->
+							<a class="left carousel-control" data-slide="prev" href="#carousel25">
 							<span class="glyphicon glyphicon-chevron-left">
 							</span></a>
-							<a class="right carousel-control" data-slide="next" href="#carousel-example-generic">
+							<a class="right carousel-control" data-slide="next" href="#carousel25">
 							<span class="glyphicon glyphicon-chevron-right">
 							</span></a></div>
 					</div>
 				</div>
-
-				</div>
 			</div>
-		
+		</div>
 		<div class="panel panel-default">
 			<div class="panel-heading">
 				<h4 class="panel-title">
@@ -1462,26 +1387,27 @@
 			<div id="collapse26" class="panel-collapse collapse">
 				<div class="panel-body">
 					<div class="Destination_Information">
-						Anim pariatur cliche reprehenderit, enim eiusmod high life 
-						accusamus terry richardson ad squid. 3 wolf moon officia 
-						aute, non cupidatat skateboard dolor brunch. Food truck 
-						quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, 
-						sunt aliqua put a bird on it squid single-origin coffee 
-						nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, 
-						craft beer labore wes anderson cred nesciunt sapiente ea 
-						proident. Ad vegan excepteur butcher vice lomo. Leggings 
-						occaecat craft beer farm-to-table, raw denim aesthetic synth 
-						nesciunt you probably haven't heard of them accusamus labore 
-						sustainable VHS. </div>
+						<p>This dairy has multi award-winning handmade and waxed 
+						organic cheeses direct from his Soil Association-accredited 
+						dairy, or many local outlets. Organic sheet milk is used, 
+						while cows milk comes from suppliers within a 10 mile radius 
+						of the dairy. Organic, creamy, crumbly, mature, soft Lancashire 
+						cheese is made on-site, while cheeses are also available 
+						with different flavours, including, ginger, apricot and 
+						garlic. </p>
+						<p>Leagram Organic Dairy, High Head Farm Buildings, Green 
+						Lane, Chipping, PR3 2TQ</p>
+						<p>01995 61532</p>
+					</div>
 					<div class="Destination_Gallery">
-						<div id="carousel-example-generic24" class="carousel slide" data-ride="carousel">
+						<div id="carousel26" class="carousel slide" data-ride="carousel">
 							<!-- Indicators -->
 							<ol class="carousel-indicators">
-								<li class="active" data-slide-to="0" data-target="#carousel-example-generic">
+								<li class="active" data-slide-to="0" data-target="#carousel26">
 								</li>
-								<li data-slide-to="1" data-target="#carousel-example-generic">
+								<li data-slide-to="1" data-target="#carousel26">
 								</li>
-								<li data-slide-to="2" data-target="#carousel-example-generic">
+								<li data-slide-to="2" data-target="#carousel26">
 								</li>
 							</ol>
 							<!-- Wrapper for slides -->
@@ -1491,24 +1417,22 @@
 								</div>
 								<div class="item">
 									<img alt="Map" src="http://maps.googleapis.com/maps/api/staticmap?center=53.767684,-2.540424&amp;zoom=15&amp;size=600x300&amp;maptype=roadmap
-&amp;markers=color:red%7Clabel:C%7C53.767684,-2.540424&amp;sensor=false">
-								</div>
+&amp;markers=color:red%7Clabel:C%7C53.767684,-2.540424&amp;sensor=false"> </div>
 								<div class="item">
 									<img alt="Lamb Chops" src="../Images/StanleyHouse2.jpg">
 								</div>
 							</div>
-														<!-- Controls -->
-							<a class="left carousel-control" data-slide="prev" href="#carousel-example-generic">
+							<!-- Controls -->
+							<a class="left carousel-control" data-slide="prev" href="#carousel26">
 							<span class="glyphicon glyphicon-chevron-left">
 							</span></a>
-							<a class="right carousel-control" data-slide="next" href="#carousel-example-generic">
+							<a class="right carousel-control" data-slide="next" href="#carousel26">
 							<span class="glyphicon glyphicon-chevron-right">
 							</span></a></div>
 					</div>
 				</div>
-				</div>
 			</div>
-		
+		</div>
 		<div class="panel panel-default">
 			<div class="panel-heading">
 				<h4 class="panel-title">
@@ -1518,26 +1442,24 @@
 			<div id="collapse27" class="panel-collapse collapse">
 				<div class="panel-body">
 					<div class="Destination_Information">
-						Anim pariatur cliche reprehenderit, enim eiusmod high life 
-						accusamus terry richardson ad squid. 3 wolf moon officia 
-						aute, non cupidatat skateboard dolor brunch. Food truck 
-						quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, 
-						sunt aliqua put a bird on it squid single-origin coffee 
-						nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, 
-						craft beer labore wes anderson cred nesciunt sapiente ea 
-						proident. Ad vegan excepteur butcher vice lomo. Leggings 
-						occaecat craft beer farm-to-table, raw denim aesthetic synth 
-						nesciunt you probably haven't heard of them accusamus labore 
-						sustainable VHS. </div>
+						<p>The Butchers sells its own meat from the family farm, 
+						along with locally sourced beef, lamb and pork. Also sells 
+						cheese, potatoes, eggs and black puddings. The owner, Robert 
+						Robinson, also produces is own award-winning ice creams.
+						</p>
+						<p>Robinson Bros Butchers, Wilsden, Garstang Road, Chipping, 
+						Preston, Lancashire, PR3 2QH</p>
+						<p>01995 61234</p>
+					</div>
 					<div class="Destination_Gallery">
-						<div id="carousel-example-generic25" class="carousel slide" data-ride="carousel">
+						<div id="carousel27" class="carousel slide" data-ride="carousel">
 							<!-- Indicators -->
 							<ol class="carousel-indicators">
-								<li class="active" data-slide-to="0" data-target="#carousel-example-generic">
+								<li class="active" data-slide-to="0" data-target="#carousel27">
 								</li>
-								<li data-slide-to="1" data-target="#carousel-example-generic">
+								<li data-slide-to="1" data-target="#carousel27">
 								</li>
-								<li data-slide-to="2" data-target="#carousel-example-generic">
+								<li data-slide-to="2" data-target="#carousel27">
 								</li>
 							</ol>
 							<!-- Wrapper for slides -->
@@ -1547,24 +1469,22 @@
 								</div>
 								<div class="item">
 									<img alt="Map" src="http://maps.googleapis.com/maps/api/staticmap?center=53.767684,-2.540424&amp;zoom=15&amp;size=600x300&amp;maptype=roadmap
-&amp;markers=color:red%7Clabel:C%7C53.767684,-2.540424&amp;sensor=false">
-								</div>
+&amp;markers=color:red%7Clabel:C%7C53.767684,-2.540424&amp;sensor=false"> </div>
 								<div class="item">
 									<img alt="Lamb Chops" src="../Images/StanleyHouse2.jpg">
 								</div>
 							</div>
-														<!-- Controls -->
-							<a class="left carousel-control" data-slide="prev" href="#carousel-example-generic">
+							<!-- Controls -->
+							<a class="left carousel-control" data-slide="prev" href="#carousel27">
 							<span class="glyphicon glyphicon-chevron-left">
 							</span></a>
-							<a class="right carousel-control" data-slide="next" href="#carousel-example-generic">
+							<a class="right carousel-control" data-slide="next" href="#carousel27">
 							<span class="glyphicon glyphicon-chevron-right">
 							</span></a></div>
 					</div>
 				</div>
-				</div>
 			</div>
-		
+		</div>
 		<div class="panel panel-default">
 			<div class="panel-heading">
 				<h4 class="panel-title">
@@ -1574,26 +1494,29 @@
 			<div id="collapse28" class="panel-collapse collapse">
 				<div class="panel-body">
 					<div class="Destination_Information">
-						Anim pariatur cliche reprehenderit, enim eiusmod high life 
-						accusamus terry richardson ad squid. 3 wolf moon officia 
-						aute, non cupidatat skateboard dolor brunch. Food truck 
-						quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, 
-						sunt aliqua put a bird on it squid single-origin coffee 
-						nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, 
-						craft beer labore wes anderson cred nesciunt sapiente ea 
-						proident. Ad vegan excepteur butcher vice lomo. Leggings 
-						occaecat craft beer farm-to-table, raw denim aesthetic synth 
-						nesciunt you probably haven't heard of them accusamus labore 
-						sustainable VHS. </div>
+						<p>This Dairy specialises in premium yoghurt and crème fraiche 
+						made with the milk of their RSPCA-accredited herd. Dairy 
+						produce includes crème fraiche, smoothies, luxury thick 
+						and creamy yogurts, with real fruit, and farmhouse ice cream. 
+						Beef in the farm shop is family-farm Aberdeen Angus, which 
+						is hung for up to three weeks, while pork is from their 
+						own and locally-sourced and lamb from Little Town or local 
+						farms. Bread, cakes and pies are also sold, as well as local 
+						jams, preserves, honey, pickles, chutneys and seasonal vegetables.
+						</p>
+						<p>Little Town Dairy, Farm Shop and Tea Room, Chipping Road, 
+						Thornley, Lancashire, PR3 2TB</p>
+						<p>01772 782429</p>
+					</div>
 					<div class="Destination_Gallery">
-						<div id="carousel-example-generic26" class="carousel slide" data-ride="carousel">
+						<div id="carousel28" class="carousel slide" data-ride="carousel">
 							<!-- Indicators -->
 							<ol class="carousel-indicators">
-								<li class="active" data-slide-to="0" data-target="#carousel-example-generic">
+								<li class="active" data-slide-to="0" data-target="#carousel28">
 								</li>
-								<li data-slide-to="1" data-target="#carousel-example-generic">
+								<li data-slide-to="1" data-target="#carousel28">
 								</li>
-								<li data-slide-to="2" data-target="#carousel-example-generic">
+								<li data-slide-to="2" data-target="#carousel28">
 								</li>
 							</ol>
 							<!-- Wrapper for slides -->
@@ -1603,23 +1526,22 @@
 								</div>
 								<div class="item">
 									<img alt="Map" src="http://maps.googleapis.com/maps/api/staticmap?center=53.767684,-2.540424&amp;zoom=15&amp;size=600x300&amp;maptype=roadmap
-&amp;markers=color:red%7Clabel:C%7C53.767684,-2.540424&amp;sensor=false">
-								</div>
+&amp;markers=color:red%7Clabel:C%7C53.767684,-2.540424&amp;sensor=false"> </div>
 								<div class="item">
 									<img alt="Lamb Chops" src="../Images/StanleyHouse2.jpg">
 								</div>
 							</div>
-														<!-- Controls -->
-							<a class="left carousel-control" data-slide="prev" href="#carousel-example-generic">
+							<!-- Controls -->
+							<a class="left carousel-control" data-slide="prev" href="#carousel28">
 							<span class="glyphicon glyphicon-chevron-left">
 							</span></a>
-							<a class="right carousel-control" data-slide="next" href="#carousel-example-generic">
+							<a class="right carousel-control" data-slide="next" href="#carousel28">
 							<span class="glyphicon glyphicon-chevron-right">
 							</span></a></div>
 					</div>
 				</div>
-				</div>
 			</div>
+		</div>
 		<div class="panel panel-default">
 			<div class="panel-heading">
 				<h4 class="panel-title">
@@ -1629,18 +1551,31 @@
 			<div id="collapse29" class="panel-collapse collapse">
 				<div class="panel-body">
 					<div class="Destination_Information">
-						Anim pariatur cliche reprehenderit, enim eiusmod high life 
-						accusamus terry richardson ad squid. 3 wolf moon officia 
-						aute, non cupidatat skateboard dolor brunch. Food truck 
-						quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, 
-						sunt aliqua put a bird on it squid single-origin coffee 
-						nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, 
-						craft beer labore wes anderson cred nesciunt sapiente ea 
-						proident. Ad vegan excepteur butcher vice lomo. Leggings 
-						occaecat craft beer farm-to-table, raw denim aesthetic synth 
-						nesciunt you probably haven't heard of them accusamus labore 
-						sustainable VHS. </div>
+						Coming Soon </div>
 					<div class="Destination_Gallery">
+						<div id="carousel29" class="carousel slide" data-ride="carousel">
+							<!-- Indicators -->
+							<ol class="carousel-indicators">
+								<li class="active" data-slide-to="0" data-target="#carousel29">
+								</li>
+								<li data-slide-to="1" data-target="#carousel29">
+								</li>
+								<li data-slide-to="2" data-target="#carousel29">
+								</li>
+							</ol>
+							<!-- Wrapper for slides -->
+							<div class="carousel-inner">
+								<div class="item active">
+									<img alt="Coming Soon" src="../Images/ComingSoon.fw.png">
+								</div>
+							</div>
+							<!-- Controls -->
+							<a class="left carousel-control" data-slide="prev" href="#carousel29">
+							<span class="glyphicon glyphicon-chevron-left">
+							</span></a>
+							<a class="right carousel-control" data-slide="next" href="#carousel29">
+							<span class="glyphicon glyphicon-chevron-right">
+							</span></a></div>
 					</div>
 				</div>
 			</div>
@@ -1654,26 +1589,24 @@
 			<div id="collapse30" class="panel-collapse collapse">
 				<div class="panel-body">
 					<div class="Destination_Information">
-						Anim pariatur cliche reprehenderit, enim eiusmod high life 
-						accusamus terry richardson ad squid. 3 wolf moon officia 
-						aute, non cupidatat skateboard dolor brunch. Food truck 
-						quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, 
-						sunt aliqua put a bird on it squid single-origin coffee 
-						nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, 
-						craft beer labore wes anderson cred nesciunt sapiente ea 
-						proident. Ad vegan excepteur butcher vice lomo. Leggings 
-						occaecat craft beer farm-to-table, raw denim aesthetic synth 
-						nesciunt you probably haven't heard of them accusamus labore 
-						sustainable VHS. </div>
+						<p>This traditional bakery sells freshly baked breads, cakes 
+						and biscuits. Cakes are also made for different occasions, 
+						including weddings cakes, birthday cakes and novelty cakes. 
+						All produce is baked using local ingredients, including 
+						eggs from Lipton’s Farm Longrige. </p>
+						<p>Tina’s Corner Bakery, 76 Derby Road, Longridge, Preston, 
+						Lancashire PR3 3FE</p>
+						<p>01772 782514</p>
+					</div>
 					<div class="Destination_Gallery">
-						<div id="carousel-example-generic27" class="carousel slide" data-ride="carousel">
+						<div id="carousel30" class="carousel slide" data-ride="carousel">
 							<!-- Indicators -->
 							<ol class="carousel-indicators">
-								<li class="active" data-slide-to="0" data-target="#carousel-example-generic">
+								<li class="active" data-slide-to="0" data-target="#carousel30">
 								</li>
-								<li data-slide-to="1" data-target="#carousel-example-generic">
+								<li data-slide-to="1" data-target="#carousel30">
 								</li>
-								<li data-slide-to="2" data-target="#carousel-example-generic">
+								<li data-slide-to="2" data-target="#carousel30">
 								</li>
 							</ol>
 							<!-- Wrapper for slides -->
@@ -1683,24 +1616,22 @@
 								</div>
 								<div class="item">
 									<img alt="Map" src="http://maps.googleapis.com/maps/api/staticmap?center=53.767684,-2.540424&amp;zoom=15&amp;size=600x300&amp;maptype=roadmap
-&amp;markers=color:red%7Clabel:C%7C53.767684,-2.540424&amp;sensor=false">
-								</div>
+&amp;markers=color:red%7Clabel:C%7C53.767684,-2.540424&amp;sensor=false"> </div>
 								<div class="item">
 									<img alt="Lamb Chops" src="../Images/StanleyHouse2.jpg">
 								</div>
 							</div>
-														<!-- Controls -->
-							<a class="left carousel-control" data-slide="prev" href="#carousel-example-generic">
+							<!-- Controls -->
+							<a class="left carousel-control" data-slide="prev" href="#carousel30">
 							<span class="glyphicon glyphicon-chevron-left">
 							</span></a>
-							<a class="right carousel-control" data-slide="next" href="#carousel-example-generic">
+							<a class="right carousel-control" data-slide="next" href="#carousel30">
 							<span class="glyphicon glyphicon-chevron-right">
 							</span></a></div>
 					</div>
 				</div>
-				</div>
 			</div>
-		
+		</div>
 		<div class="panel panel-default">
 			<div class="panel-heading">
 				<h4 class="panel-title">
@@ -1710,46 +1641,29 @@
 			<div id="collapse31" class="panel-collapse collapse">
 				<div class="panel-body">
 					<div class="Destination_Information">
-						Anim pariatur cliche reprehenderit, enim eiusmod high life 
-						accusamus terry richardson ad squid. 3 wolf moon officia 
-						aute, non cupidatat skateboard dolor brunch. Food truck 
-						quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, 
-						sunt aliqua put a bird on it squid single-origin coffee 
-						nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, 
-						craft beer labore wes anderson cred nesciunt sapiente ea 
-						proident. Ad vegan excepteur butcher vice lomo. Leggings 
-						occaecat craft beer farm-to-table, raw denim aesthetic synth 
-						nesciunt you probably haven't heard of them accusamus labore 
-						sustainable VHS. </div>
+						Coming Soon </div>
 					<div class="Destination_Gallery">
-						<div id="carousel-example-generic28" class="carousel slide" data-ride="carousel">
+						<div id="carousel31" class="carousel slide" data-ride="carousel">
 							<!-- Indicators -->
 							<ol class="carousel-indicators">
-								<li class="active" data-slide-to="0" data-target="#carousel-example-generic">
+								<li class="active" data-slide-to="0" data-target="#carousel31">
 								</li>
-								<li data-slide-to="1" data-target="#carousel-example-generic">
+								<li data-slide-to="1" data-target="#carousel31">
 								</li>
-								<li data-slide-to="2" data-target="#carousel-example-generic">
+								<li data-slide-to="2" data-target="#carousel31">
 								</li>
 							</ol>
 							<!-- Wrapper for slides -->
 							<div class="carousel-inner">
 								<div class="item active">
-									<img alt="Stanley House" src="../Images/StanleyHouse1.jpg">
-								</div>
-								<div class="item">
-									<img alt="Map" src="http://maps.googleapis.com/maps/api/staticmap?center=53.767684,-2.540424&amp;zoom=15&amp;size=600x300&amp;maptype=roadmap
-&amp;markers=color:red%7Clabel:C%7C53.767684,-2.540424&amp;sensor=false">
-								</div>
-								<div class="item">
-									<img alt="Lamb Chops" src="../Images/StanleyHouse2.jpg">
+									<img alt="Coming Soon" src="../Images/ComingSoon.fw.png">
 								</div>
 							</div>
-														<!-- Controls -->
-							<a class="left carousel-control" data-slide="prev" href="#carousel-example-generic">
+							<!-- Controls -->
+							<a class="left carousel-control" data-slide="prev" href="#carousel31">
 							<span class="glyphicon glyphicon-chevron-left">
 							</span></a>
-							<a class="right carousel-control" data-slide="next" href="#carousel-example-generic">
+							<a class="right carousel-control" data-slide="next" href="#carousel31">
 							<span class="glyphicon glyphicon-chevron-right">
 							</span></a></div>
 					</div>
@@ -1765,26 +1679,25 @@
 			<div id="collapse32" class="panel-collapse collapse">
 				<div class="panel-body">
 					<div class="Destination_Information">
-						Anim pariatur cliche reprehenderit, enim eiusmod high life 
-						accusamus terry richardson ad squid. 3 wolf moon officia 
-						aute, non cupidatat skateboard dolor brunch. Food truck 
-						quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, 
-						sunt aliqua put a bird on it squid single-origin coffee 
-						nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, 
-						craft beer labore wes anderson cred nesciunt sapiente ea 
-						proident. Ad vegan excepteur butcher vice lomo. Leggings 
-						occaecat craft beer farm-to-table, raw denim aesthetic synth 
-						nesciunt you probably haven't heard of them accusamus labore 
-						sustainable VHS. </div>
+						<p>The owners believe that fresh is the best, sourcing produce 
+						and the on-site preparation of every morsel of food from 
+						scratch. The Inn has been included in Alastair Sawday’s 
+						Guide to Slow Food, a new publication listing the best food 
+						establishments sourcing products within a small geographical 
+						area and adhering to traditional cooking methods. </p>
+						<p>The Red Pump Inn, Clitheroe Road, Bashall Eaves, BB7 
+						3DA</p>
+						<p>01254 826227</p>
+					</div>
 					<div class="Destination_Gallery">
-						<div id="carousel-example-generic29" class="carousel slide" data-ride="carousel">
+						<div id="carousel32" class="carousel slide" data-ride="carousel">
 							<!-- Indicators -->
 							<ol class="carousel-indicators">
-								<li class="active" data-slide-to="0" data-target="#carousel-example-generic">
+								<li class="active" data-slide-to="0" data-target="#carousel32">
 								</li>
-								<li data-slide-to="1" data-target="#carousel-example-generic">
+								<li data-slide-to="1" data-target="#carousel32">
 								</li>
-								<li data-slide-to="2" data-target="#carousel-example-generic">
+								<li data-slide-to="2" data-target="#carousel32">
 								</li>
 							</ol>
 							<!-- Wrapper for slides -->
@@ -1794,17 +1707,16 @@
 								</div>
 								<div class="item">
 									<img alt="Map" src="http://maps.googleapis.com/maps/api/staticmap?center=53.767684,-2.540424&amp;zoom=15&amp;size=600x300&amp;maptype=roadmap
-&amp;markers=color:red%7Clabel:C%7C53.767684,-2.540424&amp;sensor=false">
-								</div>
+&amp;markers=color:red%7Clabel:C%7C53.767684,-2.540424&amp;sensor=false"> </div>
 								<div class="item">
 									<img alt="Lamb Chops" src="../Images/StanleyHouse2.jpg">
 								</div>
 							</div>
-														<!-- Controls -->
-							<a class="left carousel-control" data-slide="prev" href="#carousel-example-generic">
+							<!-- Controls -->
+							<a class="left carousel-control" data-slide="prev" href="#carousel32">
 							<span class="glyphicon glyphicon-chevron-left">
 							</span></a>
-							<a class="right carousel-control" data-slide="next" href="#carousel-example-generic">
+							<a class="right carousel-control" data-slide="next" href="#carousel32">
 							<span class="glyphicon glyphicon-chevron-right">
 							</span></a></div>
 					</div>
@@ -1820,26 +1732,25 @@
 			<div id="collapse33" class="panel-collapse collapse">
 				<div class="panel-body">
 					<div class="Destination_Information">
-						Anim pariatur cliche reprehenderit, enim eiusmod high life 
-						accusamus terry richardson ad squid. 3 wolf moon officia 
-						aute, non cupidatat skateboard dolor brunch. Food truck 
-						quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, 
-						sunt aliqua put a bird on it squid single-origin coffee 
-						nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, 
-						craft beer labore wes anderson cred nesciunt sapiente ea 
-						proident. Ad vegan excepteur butcher vice lomo. Leggings 
-						occaecat craft beer farm-to-table, raw denim aesthetic synth 
-						nesciunt you probably haven't heard of them accusamus labore 
-						sustainable VHS. </div>
+						<p>This is now a flourishing food visitor centre, with an 
+						award-winning 90-seater restaurant. It is home to several 
+						artisan food producers, and produces an ever-increasing 
+						range of food made with the finest local ingredients. It 
+						stocks many ready meals, cakes, ice cream and preserves, 
+						as well as flowers and seasonal gifts. </p>
+						<p>Bashall Barn, Bashall Town, Clitheroe, Lancashire, BB7 
+						3LQ</p>
+						<p>01200 428964</p>
+						. </div>
 					<div class="Destination_Gallery">
-						<div id="carousel-example-generic30" class="carousel slide" data-ride="carousel">
+						<div id="carousel33" class="carousel slide" data-ride="carousel">
 							<!-- Indicators -->
 							<ol class="carousel-indicators">
-								<li class="active" data-slide-to="0" data-target="#carousel-example-generic">
+								<li class="active" data-slide-to="0" data-target="#carousel33">
 								</li>
-								<li data-slide-to="1" data-target="#carousel-example-generic">
+								<li data-slide-to="1" data-target="#carousel33">
 								</li>
-								<li data-slide-to="2" data-target="#carousel-example-generic">
+								<li data-slide-to="2" data-target="#carousel33">
 								</li>
 							</ol>
 							<!-- Wrapper for slides -->
@@ -1849,17 +1760,16 @@
 								</div>
 								<div class="item">
 									<img alt="Map" src="http://maps.googleapis.com/maps/api/staticmap?center=53.767684,-2.540424&amp;zoom=15&amp;size=600x300&amp;maptype=roadmap
-&amp;markers=color:red%7Clabel:C%7C53.767684,-2.540424&amp;sensor=false">
-								</div>
+&amp;markers=color:red%7Clabel:Stanley House Hotel & Spa%753.767684,-2.540424&amp;sensor=false"> </div>
 								<div class="item">
 									<img alt="Lamb Chops" src="../Images/StanleyHouse2.jpg">
 								</div>
 							</div>
-														<!-- Controls -->
-							<a class="left carousel-control" data-slide="prev" href="#carousel-example-generic">
+							<!-- Controls -->
+							<a class="left carousel-control" data-slide="prev" href="#carousel33">
 							<span class="glyphicon glyphicon-chevron-left">
 							</span></a>
-							<a class="right carousel-control" data-slide="next" href="#carousel-example-generic">
+							<a class="right carousel-control" data-slide="next" href="#carousel33">
 							<span class="glyphicon glyphicon-chevron-right">
 							</span></a></div>
 					</div>
@@ -1867,9 +1777,6 @@
 			</div>
 		</div>
 	</div>
-	<div class="filler">
-
-</div>
 </div>
 <!-- #EndEditable -->
 <div class="footer">
