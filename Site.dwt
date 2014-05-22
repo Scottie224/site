@@ -60,7 +60,7 @@
     </div>
     		<!-- Collect the nav links, forms, and other content for toggling -->
 		<div id="bs-example-navbar-collapse-1" class="collapse navbar-collapse">
-			<form class="navbar-form navbar-left" role="search">
+			<form class="navbar-form navbar-right" role="search">
 				<div class="form-group">
 					<input class="form-control" placeholder="Search" type="text">
 				</div>
@@ -93,7 +93,9 @@
 </nav>
 <!-- #BeginEditable "body" -->
 <div>
+<div class="filler">
 
+</div>
 </div>
 <!-- #EndEditable -->
 <div class="footer">
