@@ -20,26 +20,8 @@
 <script src="device.js"></script>
 <script src="inappbrowser.js"></script>
 
-<style type="text/css">
-
-      html { height: 100% }
-      body { height: 100%; margin: 0; padding: 0 }
-      #map-canvas { height: 100% }
-    </style>
-    <script type="text/javascript"
-      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB8jDR0YIs8s4BvExFK_7QUkitHtenuYh4&ampsensor=true">
-    </script>
-    <script type="text/javascript">
-      function initialize() {
-        var mapOptions = {
-          center: new google.maps.LatLng(-34.397, 150.644),
-          zoom: 8
-        };
-        var map = new google.maps.Map(document.getElementById("map-canvas"),
-            mapOptions);
-      }
-      google.maps.event.addDomListener(window, 'load', initialize);
-    </script>
+<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
+<script type="text/javascript" src="Scripts/Map.js"></script>
 
 </head>
 
@@ -105,7 +87,7 @@
   <div class="panel-body">
     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus et imperdiet eros. Morbi sed varius lectus. Aenean quis metus facilisis erat tincidunt convallis. Morbi ornare dolor eu turpis hendrerit, vitae condimentum lorem accumsan. Donec tincidunt, justo eget facilisis vulputate, ligula magna pellentesque dui, vitae sagittis elit nisl at sapien. Fusce ornare congue turpis sit amet rutrum. Cras bibendum massa vel interdum condimentum. Praesent ut eleifend lacus. Pellentesque a placerat velit. Cras consequat molestie nunc, in egestas sem laoreet vitae.  </div>
 </div>
-<div id="filler">
+<div class="filler">
 	</div>
 
 </div>

@@ -20,26 +20,8 @@
 <script src="device.js"></script>
 <script src="inappbrowser.js"></script>
 
-<style type="text/css">
-
-      html { height: 100% }
-      body { height: 100%; margin: 0; padding: 0 }
-      #map-canvas { height: 100% }
-    </style>
-    <script type="text/javascript"
-      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB8jDR0YIs8s4BvExFK_7QUkitHtenuYh4&ampsensor=true">
-    </script>
-    <script type="text/javascript">
-      function initialize() {
-        var mapOptions = {
-          center: new google.maps.LatLng(-34.397, 150.644),
-          zoom: 8
-        };
-        var map = new google.maps.Map(document.getElementById("map-canvas"),
-            mapOptions);
-      }
-      google.maps.event.addDomListener(window, 'load', initialize);
-    </script>
+<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
+<script type="text/javascript" src="Scripts/Map.js"></script>
 
 </head>
 
@@ -108,7 +90,7 @@
   <p>They're fantastic and easy to do, all you need is a car, some time off and a map and you're on your way!</p>
   </div>
 </div>
-<div id="filler">
+<div class="filler">
 	</div>
 
 </div>
