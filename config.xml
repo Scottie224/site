@@ -55,7 +55,7 @@
 	
 	<gap:plugin name="org.apache.cordova.core.device" />
 	<gap:plugin name="org.apache.cordova.inappbrowser" />
-	
+	<gap:plugin name="org.apache.cordova.geolocation" />
 	
 </widget>
 
