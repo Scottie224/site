@@ -25,9 +25,7 @@
    
    }
    
-}
-
-geolocation();   
+} 
 
   var GeoLatlng = new google.maps.LatLng(lat, lng);
     var markerGeo = new google.maps.Marker({
