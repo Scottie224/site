@@ -227,7 +227,7 @@ html {
 	-o-background-size:cover;
 	background-position:center center;
 	background-attachment:fixed;
-	height:auto;
+	height:100%;
 	}
 body {
 	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
