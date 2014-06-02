@@ -9,17 +9,22 @@
       var lng = position.coords.longitude;
       
       localStorage.setItem("latitude", lat);
-      localStorage.setItem("longitude", lng);
-      
-      alert("lat: " +  lat + "long: " + lng);  
+      localStorage.setItem("longitude", lng);       
    }
    
 //runs at error   
    function onError(error){
-      alert("message: " + error.message);
+      alert(error.message);
    
    }
    
 }
 
 geolocation();
+
+  var GeoLatlng = new google.maps.LatLng(lat, lng);
+    var markerGeo = new google.maps.Marker({
+        position: GeoLatlng,
+        map: map,
+        title: 'Geolocation'
+    });
