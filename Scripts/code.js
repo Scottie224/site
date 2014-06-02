@@ -9,7 +9,14 @@
       var lng = position.coords.longitude;
       
       localStorage.setItem("latitude", lat);
-      localStorage.setItem("longitude", lng);       
+      localStorage.setItem("longitude", lng);
+      
+        var GeoLatlng = new google.maps.LatLng(lat, lng);
+    var markerGeo = new google.maps.Marker({
+        position: GeoLatlng,
+        map: map,
+        title: 'Geolocation'
+    });
    }
    
 //runs at error   
