@@ -1,37 +1,34 @@
-﻿function geolocation(){
-//checks geolocation availability
-   var options = { enableHighAccuracy: true };
-   watchID = navigator.geolocation.watchPosition(onSuccess, onError, options);
-   
-//runs if geolocation available
-   function onSuccess(position){
-      var lat = position.coords.latitude;
-      var lng = position.coords.longitude;
-      
-      localStorage.setItem("latitude", lat);
-      localStorage.setItem("longitude", lng);
-      
-        var GeoLatlng = new google.maps.LatLng(lat, lng);
-    var markerGeo = new google.maps.Marker({
-        position: GeoLatlng,
-        map: map,
-        title: 'Geolocation'
-    });
-   }
-   
-//runs at error   
-   function onError(error){
-      alert(error.message);
-   
-   }
-   
-}
+﻿navigator.geolocation.getCurrentPosition(geolocationSuccess,
+                                         [geolocationError],
+                                         [geolocationOptions]);
 
-geolocation();
+    // Wait for device API libraries to load
+    //
+    document.addEventListener("deviceready", onDeviceReady, false);
 
-  var GeoLatlng = new google.maps.LatLng(lat, lng);
-    var markerGeo = new google.maps.Marker({
-        position: GeoLatlng,
-        map: map,
-        title: 'Geolocation'
-    });
+    // device APIs are available
+    //
+    function onDeviceReady() {
+        navigator.geolocation.getCurrentPosition(onSuccess, onError);
+    }
+
+    // onSuccess Geolocation
+    //
+    function onSuccess(position) {
+        var element = document.getElementById('geolocation');
+        element.innerHTML = 'Latitude: '           + position.coords.latitude              + '<br />' +
+                            'Longitude: '          + position.coords.longitude             + '<br />' +
+                            'Altitude: '           + position.coords.altitude              + '<br />' +
+                            'Accuracy: '           + position.coords.accuracy              + '<br />' +
+                            'Altitude Accuracy: '  + position.coords.altitudeAccuracy      + '<br />' +
+                            'Heading: '            + position.coords.heading               + '<br />' +
+                            'Speed: '              + position.coords.speed                 + '<br />' +
+                            'Timestamp: '          + position.timestamp                    + '<br />';
+    }
+
+    // onError Callback receives a PositionError object
+    //
+    function onError(error) {
+        alert('code: '    + error.code    + '\n' +
+              'message: ' + error.message + '\n');
+    }
