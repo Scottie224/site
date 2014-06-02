@@ -221,7 +221,7 @@ html {
 	-webkit-tap-highlight-color: rgba(0,0,0,0);
 	background-image: url('../../Images/bgimage.jpg');
 	background-repeat:no-repeat;
-	background-size:100% 100%;/*keeps background size intact*/
+	background-size:cover;
 }
 body {
 	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
