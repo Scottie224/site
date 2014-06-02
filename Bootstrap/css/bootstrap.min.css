@@ -225,6 +225,7 @@ html {
 	-webkit-background-size:cover;
 	-moz-background-size:cover;
 	-o-background-size:cover;
+	background-position:center center;
 	}
 body {
 	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
