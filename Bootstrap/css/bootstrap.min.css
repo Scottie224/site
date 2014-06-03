@@ -5025,6 +5025,7 @@ th.visible-print, td.visible-print {
 }
 .infocentrelogo {
 	float: left;
+	padding-right:50px;
 }
 .chesterlogo {
 	float: right;
