@@ -1,6 +1,6 @@
-﻿navigator.geolocation.getCurrentPosition(geolocationSuccess,
-                                         [geolocationError],
-                                         [geolocationOptions]);
+﻿navigator.geolocation.getCurrentPosition(onSuccess,
+                                         onError,
+                                         {timeout: 5000});
 
     // Wait for device API libraries to load
     //
