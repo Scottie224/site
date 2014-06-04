@@ -590,12 +590,12 @@ pre code {
 @media (min-width:768px){
 .container {
 	width: 750px;
-}
+	}
 }
 @media (min-width:992px){
 .container {
 	width: 970px;
-}
+	}
 }
 @media (min-width:1200px){
 .container {
@@ -5078,7 +5078,7 @@ th.visible-print, td.visible-print {
 }
 }
 .footer {
-	text-align: center;
+	text-align:center;
 	font-weight: bold;
 	background: rgb(192,175,175);
 /* Old browsers */background: -moz-linear-gradient(top, rgba(192,175,175,1) 0%, rgba(255,255,255,1) 100%); /* FF3.6+ */;
@@ -5097,10 +5097,13 @@ th.visible-print, td.visible-print {
 }
 .infocentrelogo {
 	float: right;
-	margin-left:80px;
+	width:37px;
+	height:37px;
 }
 .chesterlogo {
 	float: left;
+	width:37px;
+	height:37px;
 }
 .filler {
 	height: 50px;
