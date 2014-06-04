@@ -224,11 +224,15 @@ html {
   	-moz-background-size: cover;
   	-o-background-size: cover;
   	background-size: cover;
+  	height: 100%;
+	width:100%;
   	}
 body {
 	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
 	font-size: 16px;
 	line-height: 1.42857143;
+	height: 100%;
+	width:100%;
 }
 input, button, select, textarea {
 	font-family: inherit;
@@ -5023,7 +5027,8 @@ th.visible-print, td.visible-print {
 	float: right;
 }
 .filler {
-	padding-bottom: 50px;
+	height: 50px;
+	width:auto;
 	clear: both;
 }
 #map_canvas {
