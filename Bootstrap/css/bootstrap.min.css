@@ -5044,10 +5044,10 @@ th.visible-print, td.visible-print {
 	bottom: 0pt;
 }
 .infocentrelogo {
-	float: left;
+	float: right;
 }
 .chesterlogo {
-	float: right;
+	float: left;
 }
 .filler {
 	height: 50px;
