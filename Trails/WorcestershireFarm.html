@@ -1,0 +1,511 @@
+﻿<!DOCTYPE html>
+<html dir="ltr">
+
+<!-- #BeginTemplate "../Site.dwt" -->
+
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+<meta content="width=device-width, initial-scale=1" name="viewport">
+<link href="../Bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+<link href="../GreatBritishFoodTrailsStyleSheet.css" rel="stylesheet" type="text/css" />
+<!-- #BeginEditable "doctitle" -->
+<title>Worcestershire</title>
+<!-- #EndEditable -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script src="../Bootstrap/js/collapse.js"></script>
+<script src="../Bootstrap/js/carousel.js"></script>
+<script src="../Bootstrap/js/dropdown.js"></script>
+<script src="../cordova.js"></script>
+<!--Plugins-->
+<script src="../device.js"></script>
+<script src="../inappbrowser.js"></script>
+<script src="../geolocation.js"></script>
+</head>
+
+<body>
+
+<nav class="navbar navbar-default" role="navigation">
+	<div class="container-fluid">
+		<!-- Brand and toggle get grouped for better mobile display -->
+		<div class="navbar-header">
+			<button class="navbar-toggle" data-target="#bs-example-navbar-collapse-1" data-toggle="collapse" type="button">
+			<span class="sr-only">Toggle navigation</span>
+			<span class="icon-bar"></span><span class="icon-bar"></span>
+			<span class="icon-bar"></span></button>
+			<div id="menu_back">
+				<span class="glyphicon glyphicon-chevron-left" onclick="history.go(-1);return true;">
+				</span></div>
+			<div id="app_title">
+				<a class="navbar-brand" href="../index.html">Great British Food Trail</a>
+			</div>
+		</div>
+		<!-- Collect the nav links, forms, and other content for toggling -->
+		<div id="bs-example-navbar-collapse-1" class="collapse navbar-collapse">
+			<!--<form class="navbar-form navbar-right" role="search">
+				<div class="form-group">
+					<input class="form-control" placeholder="Search" type="text">
+				</div>
+				<button class="btn btn-default" type="submit">Submit</button>
+			</form>-->
+			<ul class="nav navbar-nav navbar-right">
+				<li><a href="../AboutFoodTrails.html">What are Food Trails?</a></li>
+				<li><a href="../Trails.html">Trails</a></li>
+				<li><a href="../Map.html">Map</a></li>
+				<li><a href="../Help.html">Help</a></li>
+				<li><a href="../TrailWebsites.html">Trail Websites</a></li>
+				<li><a href="../AboutUs.html">About Us</a></li>
+				<li class="divider"></li>
+				<!--<li class="dropdown">
+				<a class="dropdown-toggle" data-toggle="dropdown" href="#">Select 
+				Language<b class="caret"></b></a>
+				<ul class="dropdown-menu">
+					<li><a href="#">English</a></li>
+					<li><a href="#">French</a></li>
+					<li><a href="#">Spanish</a></li>
+					<li><a href="#">German</a></li>
+					<li class="divider"></li>
+					<li><a href="#"></a></li>
+				</ul>
+				</li>-->
+			</ul>
+		</div>
+		<!-- /.navbar-collapse --></div>
+	<!-- /.container-fluid -->
+</nav>
+<!-- #BeginEditable "body" -->
+<div>
+<div class="panel panel-default">
+		<div class="trail-heading">
+			<h1>Farm Shops and Local Producers</h1>
+		</div>
+	</div>
+
+<div>
+<div id="accordion" class="panel-group">
+		<div class="panel panel-default">
+			<div class="panel-heading">
+				<h4 class="panel-title">
+				<a data-parent="#accordion" data-toggle="collapse" href="#collapse1">Array Fruit Farm</a></h4>
+			</div>
+			<div id="collapse1" class="panel-collapse collapse">
+				<div class="panel-body">
+					<div class="Destination_Information">
+						<p>This Farm Shop opened in 1958 and continues to sell a wide range of fresh and local produce, including fruit and vegetables, meat, eggs, preserves, honey, cakes and biscuits.</p>
+						<p>Perryfields Road, Bromsgrove, B61 8QN</p>
+						<p>01527 875888</p>
+					</div>
+					<div class="Destination_Gallery">
+						<div id="carousel1" class="carousel slide" data-ride="carousel">
+							<!-- Indicators -->
+							<ol class="carousel-indicators">
+								<li class="active" data-slide-to="0" data-target="#carousel1">
+								</li>
+							</ol>
+							<!-- Wrapper for slides -->
+							<div class="carousel-inner">
+								<div class="item active">
+									<img alt="Array Fruit Farm" src="../Images/Worcestershire/Array Fruit Farm.jpg">
+								</div>
+							</div>
+							<!-- Controls -->
+							<a class="left carousel-control" data-slide="prev" href="#carousel1">
+							<span class="glyphicon glyphicon-chevron-left">
+							</span></a>
+							<a class="right carousel-control" data-slide="next" href="#carousel1">
+							<span class="glyphicon glyphicon-chevron-right">
+							</span></a></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="panel panel-default">
+			<div class="panel-heading">
+				<h4 class="panel-title">
+				<a data-parent="#accordion" data-toggle="collapse" href="#collapse2">Ellenden Farm Shop</a></h4>
+			</div>
+			<div id="collapse2" class="panel-collapse collapse">
+				<div class="panel-body">
+					<div class="Destination_Information">
+						<p>This is a family-run, award-winning farm shop that specialises in highly reputable home-bred beef and lamb, local free-range chicken and pork. The family is passionate about sourcing and providing local fresh produce, selling home-grown seasonal fruit and vegetables, their own free-range eggs, local bread, cakes, preserves, beverages and dairy produce.</p>
+						<p>Evesham Road, Harvington, Evesham, WR11 8LU</p>
+						<p>01386 870296</p>
+					</div>
+					<div class="Destination_Gallery">
+						<div id="carousel2" class="carousel slide" data-ride="carousel">
+							<!-- Indicators -->
+							<ol class="carousel-indicators">
+								<li class="active" data-slide-to="0" data-target="#carousel2">
+								</li>
+							</ol>
+							<!-- Wrapper for slides -->
+							<div class="carousel-inner">
+								<div class="item active">
+									<img alt="Ellenden Farm Shop" src="../Images/Worcestershire/Ellenden Farm Shop.jpg">
+								</div>
+							</div>
+							<!-- Controls -->
+							<a class="left carousel-control" data-slide="prev" href="#carousel2">
+							<span class="glyphicon glyphicon-chevron-left">
+							</span></a>
+							<a class="right carousel-control" data-slide="next" href="#carousel2">
+							<span class="glyphicon glyphicon-chevron-right">
+							</span></a></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="panel panel-default">
+			<div class="panel-heading">
+				<h4 class="panel-title">
+				<a data-parent="#accordion" data-toggle="collapse" href="#collapse3">Gwilliams Farm Shop</a></h4>
+			</div>
+			<div id="collapse3" class="panel-collapse collapse">
+				<div class="panel-body">
+					<div class="Destination_Information">
+						<p>This is a small family-run Farm with a Farm Shop, where the owners pride themselves on the quality and freshness of their produce. Grows seasonal fruit and vegetables and their beef is reared from calves, they also sell locally produced cakes, pies, pickles, chutneys, drinks, dairy products and meats.</p>
+						<p>Ombersley Road, Claines, Worcester, WR3 7RH</p>
+						<p>01905 756490</p>
+					</div>
+					<div class="Destination_Gallery">
+						<div id="carousel3" class="carousel slide" data-ride="carousel">
+							<!-- Indicators -->
+							<ol class="carousel-indicators">
+								<li class="active" data-slide-to="0" data-target="#carousel3">
+								</li>
+							</ol>
+							<!-- Wrapper for slides -->
+							<div class="carousel-inner">
+								<div class="item active">
+									<img alt="Gwilliams Farm Shop" src="../Images/Worcestershire/GWilliams Farm Shop.jpg">
+								</div>
+							</div>
+							<!-- Controls -->
+							<a class="left carousel-control" data-slide="prev" href="#carousel3">
+							<span class="glyphicon glyphicon-chevron-left">
+							</span></a>
+							<a class="right carousel-control" data-slide="next" href="#carousel3">
+							<span class="glyphicon glyphicon-chevron-right">
+							</span></a></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="panel panel-default">
+			<div class="panel-heading">
+				<h4 class="panel-title">
+				<a data-parent="#accordion" data-toggle="collapse" href="#collapse4">Hodgehill Farm Shop</a></h4>
+			</div>
+			<div id="collapse4" class="panel-collapse collapse">
+				<div class="panel-body">
+					<div class="Destination_Information">
+						<p>This Farm Shop sells it all, from fresh fruit and vegetables, to pickles and jams, from home-grown flowers to bedding and houseplants, from seeds and bulbs to roses and trees.</p>
+						<p>Birmingham Road, Kidderminster, Worcestershire, DY10 3NR</p>
+						<p>01562 822058</p>
+					</div>
+					<div class="Destination_Gallery">
+						<div id="carousel4" class="carousel slide" data-ride="carousel">
+							<!-- Indicators -->
+							<ol class="carousel-indicators">
+								<li class="active" data-slide-to="0" data-target="#carousel4">
+								</li>
+							</ol>
+							<!-- Wrapper for slides -->
+							<div class="carousel-inner">
+								<div class="item active">
+									<img alt="Hodgehill Farm Shop" src="../Images/Worcestershire/Hodgehill Farm Shop.jpg">
+								</div>
+							</div>
+							<!-- Controls -->
+							<a class="left carousel-control" data-slide="prev" href="#carousel4">
+							<span class="glyphicon glyphicon-chevron-left">
+							</span></a>
+							<a class="right carousel-control" data-slide="next" href="#carousel4">
+							<span class="glyphicon glyphicon-chevron-right">
+							</span></a></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="panel panel-default">
+			<div class="panel-heading">
+				<h4 class="panel-title">
+				<a data-parent="#accordion" data-toggle="collapse" href="#collapse5">Hopleys Farm Shop</a></h4>
+			</div>
+			<div id="collapse5" class="panel-collapse collapse">
+				<div class="panel-body">
+					<div class="Destination_Information">
+						<p>Selling fresh and seasonal produce from across the region. Locally sourced plants, meat, dairy products, sweet foods, preserves and local beverages.</p>
+						<p>Cleobury Road, Bewdley, Worcestershire, DY12 2QL</p>
+						<p>01299 404826</p>
+					</div>
+					<div class="Destination_Gallery">
+						<div id="carousel5" class="carousel slide" data-ride="carousel">
+							<!-- Indicators -->
+							<ol class="carousel-indicators">
+								<li class="active" data-slide-to="0" data-target="#carousel5">
+								</li>
+							</ol>
+							<!-- Wrapper for slides -->
+							<div class="carousel-inner">
+								<div class="item active">
+									<img alt="Hopleys Farm Shop" src="../Images/Worcestershire/Hopleys Farm Shop.jpg">
+								</div>
+							</div>
+							<!-- Controls -->
+							<a class="left carousel-control" data-slide="prev" href="#carousel5">
+							<span class="glyphicon glyphicon-chevron-left">
+							</span></a>
+							<a class="right carousel-control" data-slide="next" href="#carousel5">
+							<span class="glyphicon glyphicon-chevron-right">
+							</span></a></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="panel panel-default">
+			<div class="panel-heading">
+				<h4 class="panel-title">
+				<a data-parent="#accordion" data-toggle="collapse" href="#collapse6">Meadwell Farm Shop</a></h4>
+			</div>
+			<div id="collapse6" class="panel-collapse collapse">
+				<div class="panel-body">
+					<div class="Destination_Information">
+						<p>This is a family-run Farm Shop, selling home-grown and locally sourced produce. They also have a Veg Box delivery service within Evesham and surrounding villages. Jams, chutneys and cakes are made on-site and juices and dairy that are also available to buy.</p>
+						<p>Cleeve Road, Middle Littleton, Evesham, WR11 8JR</p>
+						<p>01386 834241</p>
+					</div>
+					<div class="Destination_Gallery">
+						<div id="carousel6" class="carousel slide" data-ride="carousel">
+							<!-- Indicators -->
+							<ol class="carousel-indicators">
+								<li class="active" data-slide-to="0" data-target="#carousel6">
+								</li>
+							</ol>
+							<!-- Wrapper for slides -->
+							<div class="carousel-inner">
+								<div class="item active">
+									<img alt="Meadwell Farm Shop" src="../Images/Worcestershire/Meadwell Farm Shop.jpg">
+								</div>
+							</div>
+							<!-- Controls -->
+							<a class="left carousel-control" data-slide="prev" href="#carousel6">
+							<span class="glyphicon glyphicon-chevron-left">
+							</span></a>
+							<a class="right carousel-control" data-slide="next" href="#carousel6">
+							<span class="glyphicon glyphicon-chevron-right">
+							</span></a></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="panel panel-default">
+			<div class="panel-heading">
+				<h4 class="panel-title">
+				<a data-parent="#accordion" data-toggle="collapse" href="#collapse7">M J Freemantle</a></h4>
+			</div>
+			<div id="collapse7" class="panel-collapse collapse">
+				<div class="panel-body">
+					<div class="Destination_Information">
+						<p>This working farm, located near Pershore, produces an assortment of fruit and vegetables, including pumpkins, squashes, gourds and plums, which are all sold direct from the farm.</p>
+						<p>The Holding, Smokey Lane, Cropthorne, Pershore, WR10 3NF</p>
+						<p>01386 860151</p>
+					</div>
+					<div class="Destination_Gallery">
+						<div id="carousel7" class="carousel slide" data-ride="carousel">
+							<!-- Indicators -->
+							<ol class="carousel-indicators">
+								<li class="active" data-slide-to="0" data-target="#carousel7">
+								</li>
+							</ol>
+							<!-- Wrapper for slides -->
+							<div class="carousel-inner">
+								<div class="item active">
+									<img alt="M J Freemantle" src="../Images/Worcestershire/M J Freemantle.jpg">
+								</div>
+							</div>
+							<!-- Controls -->
+							<a class="left carousel-control" data-slide="prev" href="#carousel7">
+							<span class="glyphicon glyphicon-chevron-left">
+							</span></a>
+							<a class="right carousel-control" data-slide="next" href="#carousel7">
+							<span class="glyphicon glyphicon-chevron-right">
+							</span></a></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="panel panel-default">
+			<div class="panel-heading">
+				<h4 class="panel-title">
+				<a data-parent="#accordion" data-toggle="collapse" href="#collapse8">Old Yarr Estates Farm Shop</a></h4>
+			</div>
+			<div id="collapse8" class="panel-collapse collapse">
+				<div class="panel-body">
+					<div class="Destination_Information">
+						<p>This Farm Shop stands on 300 acres of land, towards Freckenham, where their food is sourced. The shop sells fresh produce and a variety of locally sourced beverages, along with the new delicatessen which offers many cellar-matured cheeses, complements and condiments and freshly baked bread and dressings.</p>
+						<p>Astwood Lane, Astwood Bank, Redditch, B96 6PS</p>
+						<p>01527 894167</p>
+					</div>
+					<div class="Destination_Gallery">
+						<div id="carousel12" class="carousel slide" data-ride="carousel">
+							<!-- Indicators -->
+							<ol class="carousel-indicators">
+								<li class="active" data-slide-to="0" data-target="#carousel8">
+								</li>
+							</ol>
+							<!-- Wrapper for slides -->
+							<div class="carousel-inner">
+								<div class="item active">
+									<img alt="Old Yarr Estates Farm Shop" src="../Images/Worcestershire/Old Yarr Estates Farm Shop.jpg">
+								</div>
+							</div>
+							<!-- Controls -->
+							<a class="left carousel-control" data-slide="prev" href="#carousel8">
+							<span class="glyphicon glyphicon-chevron-left">
+							</span></a>
+							<a class="right carousel-control" data-slide="next" href="#carousel8">
+							<span class="glyphicon glyphicon-chevron-right">
+							</span></a></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="panel panel-default">
+			<div class="panel-heading">
+				<h4 class="panel-title">
+				<a data-parent="#accordion" data-toggle="collapse" href="#collapse9">Revills Farm Shop</a></h4>
+			</div>
+			<div id="collapse9" class="panel-collapse collapse">
+				<div class="panel-body">
+					<div class="Destination_Information">
+						<p>Opening just 8 years ago, this Farm Shop has a reputation for home grown fruit and vegetables. The shop is stocked by local produce, including meat and dairy products, preserves, baked items and beverages.</p>
+						<p>Bourne Road, Defford, NR. Worcester, WR8 9BS</p>
+						<p>01386 750466</p>
+					</div>
+					<div class="Destination_Gallery">
+						<div id="carousel9" class="carousel slide" data-ride="carousel9">
+							<!-- Indicators -->
+							<ol class="carousel-indicators">
+								<li class="active" data-slide-to="0" data-target="#carousel9">
+								</li>
+							</ol>
+							<!-- Wrapper for slides -->
+							<div class="carousel-inner">
+								<div class="item active">
+									<img alt="Revills Farm Shop" src="../Images/Worcestershire/Revills Farm Shop.jpg">
+								</div>
+							</div>
+							<!-- Controls -->
+							<a class="left carousel-control" data-slide="prev" href="#carousel9">
+							<span class="glyphicon glyphicon-chevron-left">
+							</span></a>
+							<a class="right carousel-control" data-slide="next" href="#carousel9">
+							<span class="glyphicon glyphicon-chevron-right">
+							</span></a></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="panel panel-default">
+			<div class="panel-heading">
+				<h4 class="panel-title">
+				<a data-parent="#accordion" data-toggle="collapse" href="#collapse10">Sutton House Farm Shop</a></h4>
+			</div>
+			<div id="collapse10" class="panel-collapse collapse">
+				<div class="panel-body">
+					<div class="Destination_Information">
+						<p>This is a mixed family farm with cows, sheep, potatoes, thatching straw and fruit, which are used to produce their own juices. A regular supply of honey is maintained through beekeeping that has been part of the business for 30 years.</p>
+						<p>Sutton House, Sutton, Tenbury Wells, Worcestershire, WR15 8RJ</p>
+						<p>01584 810424</p>
+					</div>
+					<div class="Destination_Gallery">
+						<div id="carousel10" class="carousel slide" data-ride="carousel10">
+							<!-- Indicators -->
+							<ol class="carousel-indicators">
+								<li class="active" data-slide-to="0" data-target="#carousel10">
+								</li>
+							</ol>
+							<!-- Wrapper for slides -->
+							<div class="carousel-inner">
+								<div class="item active">
+									<img alt="Sutton House Farm Shop" src="../Images/Worcestershire/Sutton House Farm Shop.jpg">
+								</div>
+							</div>
+							<!-- Controls -->
+							<a class="left carousel-control" data-slide="prev" href="#carousel10">
+							<span class="glyphicon glyphicon-chevron-left">
+							</span></a>
+							<a class="right carousel-control" data-slide="next" href="#carousel10">
+							<span class="glyphicon glyphicon-chevron-right">
+							</span></a></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="panel panel-default">
+			<div class="panel-heading">
+				<h4 class="panel-title">
+				<a data-parent="#accordion" data-toggle="collapse" href="#collapse11">Wayside Farm Shop</a></h4>
+			</div>
+			<div id="collapse11" class="panel-collapse collapse">
+				<div class="panel-body">
+					<div class="Destination_Information">
+						<p>This traditional farm shop and tearoom supports local growers and independent food producers. They sell seasonal fruit and vegetables, dairy products, sausages and pies. Stocking local honey, beer and cider, they also produce their own range of preserves and home-baked goodies. Flowers and plants are also available and made to order hampers. This Farm Shop has featured in BBC Countryfile and Bill’s Tasty Weekends.</p>
+						<p>50 Pitchers Hill, Wickhamford, Evesham, WR11 7RT</p>
+						<p>01386 830546</p>
+					</div>
+					<div class="Destination_Gallery">
+						<div id="carousel11" class="carousel slide" data-ride="carousel">
+							<!-- Indicators -->
+							<ol class="carousel-indicators">
+								<li class="active" data-slide-to="0" data-target="#carousel11">
+								</li>
+							</ol>
+							<!-- Wrapper for slides -->
+							<div class="carousel-inner">
+								<div class="item active">
+									<img alt="Wayside Farm Shop" src="../Images/Worcestershire/Wayside Farm Shop.jpg">
+								</div>
+							</div>
+							<!-- Controls -->
+							<a class="left carousel-control" data-slide="prev" href="#carousel11">
+							<span class="glyphicon glyphicon-chevron-left">
+							</span></a>
+							<a class="right carousel-control" data-slide="next" href="#carousel11">
+							<span class="glyphicon glyphicon-chevron-right">
+							</span></a></div>
+					</div>
+				</div>
+			</div>
+		</div>
+</div>
+<div class="filler">
+
+</div>
+</div>
+</div>
+<!-- #EndEditable -->
+<div class="footer">
+	<div class="chesterlogo">
+		<img id="chesterlogo" alt="University of Chester" height="35" src="../Images/chesteruni_logo.png" width="87" />
+	</div>
+	© 2014
+	<div class="infocentrelogo">
+		<img id="infocentrelogo" alt="Informatics Centre" height="37" src="../Images/ic_logo.png" width="37" />
+	</div>
+</div>
+<script>
+function openUrl(url) {
+    if(device.platform === 'Android') {
+        navigator.app.loadUrl(url, {openExternal:true});
+    } else {
+        window.open(url, '_system');
+    }
+}
+</script>
+
+</body>
+
+<!-- #EndTemplate -->
+
+</html>
